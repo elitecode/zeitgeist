@@ -1,0 +1,587 @@
+*
+{
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-weight : bold;
+	color: white;
+}
+
+html,
+body {
+  	height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+	min-width: 1250px;
+	/*background-color: #222;*/
+}
+
+h1
+{
+	font-variant: small-caps;
+}
+
+#visualisation
+{
+	position: fixed;
+	z-index: -1;
+	bottom: 0;
+	width: 100%;
+	/*right: 0;*/
+}
+
+.bars
+{
+	position: absolute;
+	background-color: rgba(255,255,255,0.4);
+	bottom: 0;
+	width: 0.6%;
+	/*clear: both;*/
+	/*float: left;*/
+	/*margin-left: 2px;*/
+	/*margin-right: 2px;*/
+}
+
+#updates
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	/*background: rgba(0,0,0,0.5);*/
+	font-size: 18px;
+	font-variant: small-caps;
+}
+
+#news
+{
+	font-size: 14px;
+}
+
+audio:hover, audio:focus, audio:active
+{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.8;
+}
+
+audio
+{
+	position: fixed;
+	width: 20%;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.4;
+}
+
+.people
+{
+	position: relative;
+	margin-top: 2em;
+}
+
+#maincontainer
+{
+	/*position: relative;*/
+	min-height: 550px;
+}
+
+#contactpeople
+{
+	min-height: 450px;
+	margin-bottom: 2em;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.img-circle
+{
+	max-width: 14em;
+	text-align: center;
+	position: relative;
+	left: -10px;
+}
+
+.people-box
+{
+	position: relative;
+	float:left;
+	margin-top: 2em;
+	margin-left: 2em;
+}
+
+.people-name
+{
+	font-variant:small-caps;
+	margin-top: 1em;
+	font-size: 22px;
+}
+
+.peoplecontainer
+{
+	/*position: absolute;*/
+	/*width: 180px;*/
+	position: relative;
+	max-width: 176px;
+	/*left: 10px;
+	right: 10px;*/
+	z-index: -1;
+	min-height: 385px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0,rgba(0,0,0,0) 7em,rgba(0,0,0,0.4) 7.001em,rgba(0,0,0,0.4) 100%);
+	/*background: rgba(0,0,0,0.3);*/
+}
+
+.peopledesignation
+{
+	font-variant: small-caps;
+	font-size: 16px;
+}
+
+.people-description
+{
+	/*background: rgba(0,0,0,0.3);*/
+	/*for IE*/
+	font-weight: 400;
+	letter-spacing: 0px;
+	-pie-background:  rgba(200, 54, 54, 0.5);
+    behavior: url(PIE.htc);	
+}
+
+#people-web
+{
+	margin: 0 auto;
+	margin-bottom: 2em;
+	text-align: center;
+	width: 700px;
+	padding: 20px 20px 20px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#people-web-container
+{
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.people-web-box
+{
+	display: inline-block;
+	/*margin-left: 20px;*/
+	/*margin-right: 20px;*/
+	margin-bottom: 10px;
+}
+
+.people-web-image-box
+{
+	width: 150px;
+	height: 180px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.people-web-image-text
+{
+	height: 180px;
+	color: white;
+	
+	/*rgb(50,200,150);*/
+	text-align: center;
+}
+
+.people-web-image
+{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.people-web-image-box-container
+{
+	position: relative;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+.people-web-image-box-container:hover
+{
+	background-color: rgb(255,111,56);
+	-webkit-transform: translate(0,-90px);
+	-moz-transform: translate(0,-90px);
+	-o-transform: translate(0,-90px);
+	-ms-transform: translate(0,-90px);
+	transform: translate(0,-90px);
+}
+
+.people-web-image > img
+{
+	position: relative;
+	width: 100%;
+}
+
+.people-web-name
+{
+	font-variant: small-caps;
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+
+#people-separator
+{
+	border-bottom: 3px solid white;
+	font-size: 24px;
+	text-align: left;
+	font-variant: small-caps;
+}
+
+#about-text
+{
+	font-weight: normal;
+	text-align: left;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	-webkit-filter: drop-shadow(2px 2px 3px rgba(255,255,255,0.7));
+    filter:         drop-shadow(0px 0px 5px #FFFFFF); 		
+}
+#about-box
+{
+	margin-top: 5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	background: linear-gradient(to right, rgba(0,0,0,0) 0,rgba(0,0,0,0.4) 6.501em,rgba(0,0,0,0.4) 90%,rgba(0,0,0,0) 100%);
+	behavior: url(PIE.htc);
+	/*for IE*/
+	
+}
+
+#loader-box
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+
+#loader
+{
+	position:relative;
+     width:300px;
+     height:200px;
+     z-index:15;
+     top:50%;
+     left:50%;
+     margin:-100px 0 0 -150px;
+}
+
+#progress
+{
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(255,255,255,0.5));
+    filter:         drop-shadow(0px 0px 8px #FFFFFF); 
+	text-align: center;
+}
+
+#wrap 
+{
+  min-height: 100%;
+	width: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -69px;
+  /* Pad bottom by footer height */
+  padding: 0 0 69px;
+}
+
+#wrap > .container
+{
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#top-row
+{
+	z-index: 10;
+	margin-top: 2em;
+}
+
+#logo, #logoHover
+{
+	position: absolute;
+	display: block;
+	max-width: 10em;
+	width: 7em;
+}
+
+#nav-bar
+{
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#login-container
+{
+	float:right;
+	position: absolute;
+	width: 20%;
+	right: 2em;
+	top: 0em;
+	/*background-color: rgba(50,100,150,0.4);*/
+}
+
+#login-name
+{
+	height: 100%;
+	position: relative;
+	float: left;
+	font-size: 18px;
+	font-variant: small-caps;
+	background-color: rgba(200,50,50,0.3);
+	padding: 8px;
+	padding-top: 50px;
+	border: 2px solid;
+	border-top: 0;
+	max-width: 60%;
+}
+
+#login
+{
+	 position: relative;
+	 width: 30%;
+	 float: right;
+	 padding-top: 2em;
+}
+
+#nav-bar > ul
+{
+	padding-right: 12em;
+}
+
+ul
+{
+	list-style-type: none;
+	text-align: center;
+}
+
+ul li
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav-image
+{
+	width: 5.2em;
+	border: 0;
+}
+
+.description
+{
+	/*position: absolute;*/
+	font-size: 14px;
+	text-align: center;
+	max-height: 0.1px;
+	min-height: 0.1px;
+}
+
+.list
+{
+	margin-left: 0.2em !important;
+	margin-right: 0.2em !important;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: 0 none; 
+}
+
+#footer
+{
+	position: relative;
+	bottom: 0;
+	background: rgba(0,0,0,0.4);
+	min-width: 1250px;
+}
+
+#footer > .container
+{
+	padding-bottom: 1em;
+}
+
+#footer-list
+{
+	padding-left: 0;
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+
+.social-image
+{
+	width : 45px;
+}
+
+#twit
+{
+	margin-left: 0.4em;
+}
+
+/*styling for page transition animation */
+
+.fade {
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.fade.ng-enter {
+	transition: all 1.5s ease;
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    transition: all 0.0s ease;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+/*styling for homepage*/
+
+#homepage-logo
+{
+	margin-top: 6em;
+	width:62%;
+	text-align: center;
+	padding-bottom: 10em;
+}
+
+#news-container
+{
+	width : 10em;
+	margin-top: 2em;
+	margin-left: 10em;
+	background-color: white;
+	color: black;
+}
+
+#news-heading
+{
+	width: 10em;
+	background-color: #BCDDEF;
+}
+
+/*styling for gallery page */
+
+#gallery-box
+{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	/*margin-left: -65px;
+	margin-right: -65px;*/
+	margin-top: -35px;
+	/*margin-bottom: 1em;*/
+}
+
+/* styling for events page */
+
+.event-box /*this is currently in use for sponsors*/
+{
+	margin-top: 4em;
+}
+
+.event-brief
+{
+	margin-top: 20em;
+}
+
+#last
+{
+	margin-bottom: 5em;
+}
+
+/*styling for sponsors page */
+
+.sponsor-logo
+{
+	max-width: 14em;
+}
+
+#sponsor-container
+{
+	/*background: rgba(0,0,0,0.4);*/
+	background: linear-gradient(to right, rgba(0,0,0,0) 0,rgba(0,0,0,0.4) 10%,rgba(0,0,0,0.4) 90%,rgba(0,0,0,0) 100%);
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	/*for IE*/
+	-pie-background:  rgba(200, 54, 54, 0.5);
+    behavior: url(PIE.htc);
+    width: 70%;
+}
+
+/*styling for contact page */
+
+#people-images
+{
+	margin-top: 3em;
+	width: 80%;
+}
+
+/*styling for info page */
+
+#info-image
+{
+	margin-top: 3em;
+	margin-bottom: 2em;
+	width: 80%;
+}
+
+#events:hover
+{
+	content: url("../images/Icon-Events-color.png");
+}
+#nav-bar #sponsors:hover
+{
+	content: url('../images/Icon-Sponsors-color.png');
+}
+#nav-bar #gallery:hover
+{
+	content: url('../images/Icon-Gallery-color.png');
+}
+#nav-bar #contact:hover
+{
+	content: url('../images/Icon-Contact-color.png');
+}
+#nav-bar #info:hover
+{
+	content: url('../images/Icon-AboutUs-color.png');
+}
+#logospan #logo:hover
+{
+	content: url("../images/Z-color.png");
+}
+#login-container #register:hover
+{
+	content: url('../images/Icon-Register-color.png');
+}
+#login-container #login_img:hover
+{
+	content: url('../images/Icon-Logout-color.png');
+}
+#footer #facebook:hover
+{
+	content: url('../images/Icon-F-color.png');
+}
+#footer #youtube:hover
+{
+	content: url('../images/Icon-Y-color.png');
+}
