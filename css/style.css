@@ -547,19 +547,19 @@ a img
 
 div#events:hover
 {
-	background: url("../images/Icon-Events-color.png");
+	content: url("../images/Icon-Events-color.png");
 }
 div#nav-bar #sponsors:hover
 {
-	background: url('../images/Icon-Sponsors-color.png');
+	content: url('../images/Icon-Sponsors-color.png');
 }
 #nav-bar #gallery:hover
 {
-	background: url('../images/Icon-Gallery-color.png');
+	content: url('../images/Icon-Gallery-color.png');
 }
 #nav-bar #contact:hover
 {
-	background: url('../images/Icon-Contact-color.png');
+	content: url('../images/Icon-Contact-color.png');
 }
 #nav-bar #info:hover
 {
