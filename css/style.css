@@ -78,6 +78,7 @@ audio
 
 #maincontainer
 {
+	margin-top: 40px;
 	/*position: relative;*/
 	min-height: 550px;
 }
