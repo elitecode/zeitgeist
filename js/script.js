@@ -30,12 +30,35 @@ $(document).ready(function(){
 		i = i + 1;
 	},2000);
 
-	$("#nav-image").mouseover(function(){
-		var src = $(this).attr('src');
-		src = src.split(".");
-		src = src[0]+'-color.png';
-		$(this).attr('src') = src;
-	});
+	$(".nav-image").mouseover(add_color);	//refer to the add function below
 
+	$(".nav-image").mouseleave(remove_color);
 
+	/*same thing for footer*/
+
+	$(".social-image").mouseover(add_color);
+	$(".social-image").mouseleave(remove_color);
+
+	$("#logo").mouseover(add_color);
+	$("#logo").mouseleave(remove_color);
 });
+
+function add_color()
+{
+	var src = $(this).attr('src');
+	src = src.split(".");
+	src = src[0]+'-color.png';
+	console.log(src);
+	$(this).attr('src',src);
+}
+
+function remove_color()
+{
+	var src = $(this).attr('src');
+	src = src.split("-color");
+	console.log(src);
+	src = src[0] + '.png';
+	console.log(src);
+	$(this).attr('src',src);
+
+}

@@ -545,7 +545,9 @@ a img
 	width: 80%;
 }
 
-div#events:hover
+/*no need for this now */
+
+/*div#nav-bar #events:hover
 {
 	content: url("../images/Icon-Events-color.png");
 }
@@ -563,25 +565,26 @@ div#nav-bar #sponsors:hover
 }
 #nav-bar #info:hover
 {
-	background: url('../images/Icon-AboutUs-color.png');
+	content: url('../images/Icon-AboutUs-color.png');
 }
 #logospan #logo:hover
 {
-	background: url("../images/Z-color.png");
+	content: url("../images/Z-color.png");
 }
 #login-container #register:hover
 {
-	background: url('../images/Icon-Register-color.png');
+	content: url('../images/Icon-Register-color.png');
 }
 #login-container #login_img:hover
 {
-	background: url('../images/Icon-Logout-color.png');
+	content: url('../images/Icon-Logout-color.png');
 }
 #footer #facebook:hover
 {
-	background: url('../images/Icon-F-color.png');
+	content: url('../images/Icon-F-color.png');
 }
 #footer #youtube:hover
 {
-	background: url('../images/Icon-Y-color.png');
+	content: url('../images/Icon-Y-color.png');
 }
+*/
