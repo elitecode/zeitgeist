@@ -30,20 +30,12 @@ $(document).ready(function(){
 		i = i + 1;
 	},2000);
 
-	// setInterval(function(){
-	// 	if(i == 3)
-	// 		i = 0;
+	$("#nav-image").mouseover(function(){
+		var src = $(this).attr('src');
+		src = src.split(".");
+		src = src[0]+'-color.png';
+		$(this).attr('src') = src;
+	});
 
-	// 	// $("#news").fadeOut(function(){
-	// 	// 	$(this).text(news[i]).fadeIn();
-	// 	// });
-
-	// 	$('#news').animate({'opacity' : 0 }, 1000, function(){
-	// 		console.log(i);
-	// 	 	$(this).text(news[i]);
-	// 	}).animate({'opacity':1}, 1000);
-
-	// 	i = i + 1;
-	// },2000);
 
 });
