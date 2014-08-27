@@ -30,20 +30,35 @@ $(document).ready(function(){
 		i = i + 1;
 	},2000);
 
-	// setInterval(function(){
-	// 	if(i == 3)
-	// 		i = 0;
+	$(".nav-image").mouseover(add_color);	//refer to the add function below
 
-	// 	// $("#news").fadeOut(function(){
-	// 	// 	$(this).text(news[i]).fadeIn();
-	// 	// });
+	$(".nav-image").mouseleave(remove_color);
 
-	// 	$('#news').animate({'opacity' : 0 }, 1000, function(){
-	// 		console.log(i);
-	// 	 	$(this).text(news[i]);
-	// 	}).animate({'opacity':1}, 1000);
+	/*same thing for footer*/
 
-	// 	i = i + 1;
-	// },2000);
+	$(".social-image").mouseover(add_color);
+	$(".social-image").mouseleave(remove_color);
 
+	$("#logo").mouseover(add_color);
+	$("#logo").mouseleave(remove_color);
 });
+
+function add_color()
+{
+	var src = $(this).attr('src');
+	src = src.split(".");
+	src = src[0]+'-color.png';
+	console.log(src);
+	$(this).attr('src',src);
+}
+
+function remove_color()
+{
+	var src = $(this).attr('src');
+	src = src.split("-color");
+	console.log(src);
+	src = src[0] + '.png';
+	console.log(src);
+	$(this).attr('src',src);
+
+}

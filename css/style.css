@@ -545,11 +545,13 @@ a img
 	width: 80%;
 }
 
-#events:hover
+/*no need for this now */
+
+/*div#nav-bar #events:hover
 {
 	content: url("../images/Icon-Events-color.png");
 }
-#nav-bar #sponsors:hover
+div#nav-bar #sponsors:hover
 {
 	content: url('../images/Icon-Sponsors-color.png');
 }
@@ -585,3 +587,4 @@ a img
 {
 	content: url('../images/Icon-Y-color.png');
 }
+*/

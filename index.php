@@ -83,7 +83,7 @@
             
             <a href = "#">
               <span id="logospan">
-              <img src = "images/Z-white.png" id ="logo">
+                <img src = "images/Z-white.png" id ="logo">
               <!-- <img src = "images/Z-color.png" id ="logoHover"> -->
               </span>
             </a>
