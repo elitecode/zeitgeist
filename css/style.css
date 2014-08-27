@@ -545,43 +545,43 @@ a img
 	width: 80%;
 }
 
-#events:hover
+div#events:hover
 {
-	content: url("../images/Icon-Events-color.png");
+	background: url("../images/Icon-Events-color.png");
 }
-#nav-bar #sponsors:hover
+div#nav-bar #sponsors:hover
 {
-	content: url('../images/Icon-Sponsors-color.png');
+	background: url('../images/Icon-Sponsors-color.png');
 }
 #nav-bar #gallery:hover
 {
-	content: url('../images/Icon-Gallery-color.png');
+	background: url('../images/Icon-Gallery-color.png');
 }
 #nav-bar #contact:hover
 {
-	content: url('../images/Icon-Contact-color.png');
+	background: url('../images/Icon-Contact-color.png');
 }
 #nav-bar #info:hover
 {
-	content: url('../images/Icon-AboutUs-color.png');
+	background: url('../images/Icon-AboutUs-color.png');
 }
 #logospan #logo:hover
 {
-	content: url("../images/Z-color.png");
+	background: url("../images/Z-color.png");
 }
 #login-container #register:hover
 {
-	content: url('../images/Icon-Register-color.png');
+	background: url('../images/Icon-Register-color.png');
 }
 #login-container #login_img:hover
 {
-	content: url('../images/Icon-Logout-color.png');
+	background: url('../images/Icon-Logout-color.png');
 }
 #footer #facebook:hover
 {
-	content: url('../images/Icon-F-color.png');
+	background: url('../images/Icon-F-color.png');
 }
 #footer #youtube:hover
 {
-	content: url('../images/Icon-Y-color.png');
+	background: url('../images/Icon-Y-color.png');
 }
