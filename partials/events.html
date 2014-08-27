@@ -48,8 +48,8 @@
 				If you have any further queries related to this event, mail your queries at support@zeitgeist.org.in.
 			</div>
 		</div>
-		<button class="event-register" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" onclick="closing()" >CLOSE</button>
+		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/mrnmsz.jpg"></div>								
 </div>
@@ -85,8 +85,8 @@
 				</ul> -->
 			</div>
 		</div>
-		<button class="event-register" id="floater" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" id="floater" onclick="closing()" >CLOSE</button>
+		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
@@ -151,8 +151,8 @@
 				</ul> -->
 			</div>
 		</div>
-		<button class="event-register" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" onclick="closing()" >CLOSE</button>
+		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
@@ -219,8 +219,8 @@
 		 			</ul> -->
 			</div>
 		</div>
-		<button class="event-register" id="floater" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" id="floater" onclick="closing()" >CLOSE</button>
+		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
@@ -274,8 +274,8 @@
 					</ul>
 			</div>
 		</div>
-		<button class="event-register" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" onclick="closing()" >CLOSE</button>
+		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
@@ -327,7 +327,6 @@ function showing(e)
 	e = e || window.event;
     e = e.target || e.srcElement;
     e = $(e).parent().parent();
-    console.log(e);
     e.animate({"width":"100%"},500,function(){
 		e.find('.event-close').show();
 		e.find('.event-text').fadeIn(200);
@@ -408,8 +407,8 @@ function closing(e)
 
 					</div>
 				</div>
-				<button class="event-register" onclick="showing()" >SEE MORE</button>
-				<button class="event-close" onclick="closing()" >CLOSE</button>
+				<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+				<button class="event-close" onclick="closing(event)" >CLOSE</button>
 			</div>
 		<div class="event-image"><img src="images/events/z.jpg"></div>								
 	</div>
@@ -469,8 +468,8 @@ function closing(e)
 				</ul> -->
 			</div>
 		</div>
-		<button class="event-register" id="floater" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" id="floater" onclick="closing()" >CLOSE</button>
+		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
@@ -507,8 +506,8 @@ function closing(e)
 					</ul> -->
 			</div>
 		</div>
-		<button class="event-register" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" onclick="closing()" >CLOSE</button>
+		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
@@ -546,8 +545,8 @@ function closing(e)
 				</ul> -->
 			</div>
 		</div>
-		<button class="event-register" id="floater" onclick="showing()" >SEE MORE</button>
-		<button class="event-close" id="floater" onclick="closing()" >CLOSE</button>
+		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
 </div>
