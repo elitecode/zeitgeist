@@ -78,6 +78,7 @@ audio
 
 #maincontainer
 {
+	margin-top: 40px;
 	/*position: relative;*/
 	min-height: 550px;
 }
@@ -494,11 +495,6 @@ a img
 
 /* styling for events page */
 
-.event-box /*this is currently in use for sponsors*/
-{
-	margin-top: 4em;
-}
-
 .event-brief
 {
 	margin-top: 20em;
@@ -513,7 +509,37 @@ a img
 
 .sponsor-logo
 {
-	max-width: 14em;
+	padding: 10px;
+	/*max-width: 14em;*/
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+.event-box
+{
+	margin-top: 4em;
+}
+
+.sponsor-logo:hover
+{
+	background: rgba(255,255,255,0.3);
+}
+
+.sponsor-category
+{
+	font-size: 22px;
+	font-variant: small-caps;
+	padding-bottom: 6px;
+	border-bottom: 3px solid white;
+	margin-bottom: 10px;
+}
+
+.sponsors
+{
+	position: relative;
+	width: 100%;
+	text-align: center;
 }
 
 #sponsor-container
@@ -526,6 +552,7 @@ a img
 	-pie-background:  rgba(200, 54, 54, 0.5);
     behavior: url(PIE.htc);
     width: 70%;
+    margin-top: 2em;
 }
 
 /*styling for contact page */
