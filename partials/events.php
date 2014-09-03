@@ -61,10 +61,10 @@ session_start();
 
 <div class="wrap" id="floater">
 	<div class="event-desc-container" id="floater">
-		<div class="event-title">Torque</div>
+		<div class="event-title">Torque ( War Of Bands )</div>
 		<div class="event-text">
 			<div class="event-caption">
-				An unprecedented platform where the top-notch bands from every part of the country compete for the ultimate glory. Be prepared to hold your hands highas they jam up their electrifying chords and rolls to numb your senses ... BUT IN THE END NOTHING ELSE MATTERS ..
+				An unprecedented platform where the top-notch bands from every part of the country compete for the ultimate glory. Be prepared to hold your hands high as they jam up their electrifying chords and rolls to numb your senses ... <span style="color:rgb(250,100,50);">BUT IN THE END NOTHING ELSE MATTERS ..</span>
 				<br>
 				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
 			</div>
@@ -72,9 +72,9 @@ session_start();
 				<br><span class="event-subtitle">Rules :</span><br>
 				<ul>
 					<li>Maximum band strength (on stage members) is seven (7).</li>
-					<li>Each band will be given 20 minutes to perform and 10 minutes sound check</li>
-					<li>Language of lyrics is not a criterion</li>
-					<li>Details of the prelims (if any) will be announced on 1st of March which would be held on 7th of September.</li>
+					<li>Each band will be given 20 minutes to perform and 10 minutes sound check.</li>
+					<li>Language of lyrics is not a criterion.</li>
+					<li>Details of the prelims (if any) will be announced well in advance.</li>
 					<li>An elimination round may be held depending on the number of participants.</li>
 					<li>Drum kit will be provided to the participants.</li>
 				</ul>
@@ -89,172 +89,41 @@ session_start();
 				</ul> -->
 			</div>
 		</div>
+		<?php
+		if(!isset($_SESSION['torque']))
+			{?>
+		 <button class="register-button" id="floater" onclick = "showLight('torque')">REGISTER</button>
+		<?php }
+		else
+		{ ?>
+			<div class="registered-div" id="floater" ><p>REGISTERED</p></div>
+		<?php } ?>
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>	
 	<div>
-	 <a style="color:white;text-decoration:none" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Register!</a>
-                         
+	                         
 	
 </div>
 </div>
 
- <div id="light" class="white_content"><p style="color:red;"></p> 
-                        
-                        <br>
-                         <?php
-			if(!isset($_SESSION['torque']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_team.php"<?php } ?> onsubmit="return validateForm();">
-					<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Group Name.." name="team_name" id="team_name">
-					<div id="error1"><p style="color:red;">Enter your Group Name</p></div>
-					
-					<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Group Lead.." name="leader_name" id="leader_name">
-					<div id="error2"><p style="color:red;">Enter your Group Leader</p></div>
-					<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Contact.." name="contactno" id="contactno">
-					<div id="error3"><p style="color:red;">Enter your Contact</p></div>
-
-					<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Size of group.." name="team_size" id="team_size">
-					<div id="error4"><p style="color:red;">Enter your Group Size</p></div>
-					<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="College.." name="college_name" id="college_name">
-					<div id="error5"><p style="color:red;">Enter your College Name</p></div>
-					
-					<input type="hidden" name="event_name" value="torque"/>
-					<input type="submit" value="REGISTER" id="rajbhai" style="margin-left:13em;width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-		    </form>			
-            <?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-                          <br>
-                          <a style="text-decoration:none;" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
-                        <p style="text-align:center;">Close</p></a></div>
-		         <div id="fade1" class="black_overlay"></div>
-   
-   
-<style type="text/css">
-	
-	.black_overlay{
-        display: none;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.0);
-        z-index:1001;
-        -moz-opacity: 0.8;
-        opacity:.80;
-        filter: alpha(opacity=80);
-    }
-    .white_content {
-        display: none;
-        position: absolute;
-        top: 25%;
-        left: 25%;
-      	right: 25%;
-      	min-width: 480px;
-        padding: 16px;
-        margin: 10px;
-       	/*border: 2px solid white;*/
-        background-color: rgba(0,0,0,0.9);
-        z-index:1002;
-        overflow: auto;
-    }
-    .black_overlay1{
-        display: none;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.0);
-        z-index:1001;
-        -moz-opacity: 0.8;
-        opacity:.80;
-        filter: alpha(opacity=80);
-    }
-    .white_content1 {
-        display: none;
-        position: absolute;
-        top: 25%;
-        left: 25%;
-      	right: 25%;
-      	min-width: 480px;
-        padding: 16px;
-        margin: 10px;
-       	/*border: 2px solid white;*/
-        background-color: rgba(0,0,0,0.9);
-        z-index:1002;
-        overflow: auto;
-    }
-</style>
-<script type="text/javascript">
-	$('#error1').hide();
-	$('#error2').hide();
-	$('#error3').hide();
-	$('#error4').hide();
-	$('#error5').hide();
-	
-</script>
-    	<script type="text/javascript">
-    	// Validate Title
-    	function validateForm()
-    	{
-    $('#error1').hide();
-	$('#error2').hide();
-	$('#error3').hide();
-	$('#error4').hide();
-	$('#error5').hide();
-	
-    	var check=0;
-    	var title = $("#team_name").val();
-    	if (title=="" || title==null) { $('#error1').show();check=check+1;} else	{}
-    	
-    	
-    	var title1 = $("#leader_name").val();
-    	if (title1=="" || title1==null) { $('#error2').show();check=check+1;} else{}
-    	var title2 = $("#contactno").val();
-    	if (title2=="" || title2==null) { $('#error3').show();check=check+1;} else{}
-    	var title3 = $("#team_size").val();
-    	if (title3=="" || title3==null) { $('#error4').show();check=check+1;} else{}
-    	var title4 = $("#college_name").val();
-    	if (title4=="" || title4==null) { $('#error5').show();check=check+1;} else{}
-    	if (check>0)
-    	return false;
-    }
-
-    	
-</script>
-
+ 
 							
 <div class="wrap">
 	<div class="event-desc-container">
-		<div class="event-title">Tarang</div>
+		<div class="event-title">Tarang ( Group Dance )</div>
 		<div class="event-text">
 			<div class="event-caption">
-				
-				" We are only as strong as we are united , as weak as we are divided " - J.K. Rowling  
+				<span style="color:rgb(250,100,50);"> We are only as strong as we are united , as weak as we are divided " - J.K. Rowling</span>  <br>
 
-				Zeigeist brings you the manifestation of synchronisation , coordination and spirit of unity in a spanking new avatar "TARANG" where colleges from across country come up with unique styles of dancing maintaning a perfect harmony between eastern and western dance forms...And we are pretty sure that this event will compel you to be on your toes and ride the Gala wave... 
+				Zeitgeist brings you the manifestation of synchronization, coordination and spirit of unity in a spanking new avatar "TARANG" where colleges from across country come up with unique styles of dancing maintaining a perfect harmony between eastern and western dance forms...And we are pretty sure that this event will compel you to be on your toes and ride the Gala wave... 
 
 				<br>
 				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
 			</div>
 			<div class="event-description">
-				<br><span class="event-subtitle">Rules :</span><br>
+			<br><span class="event-subtitle">Rules :</span><br>
 				<ul>
 					<li>Any number of teams from a college can participate.</li>
 					
@@ -300,109 +169,35 @@ session_start();
 				</ul> -->
 			</div>
 		</div>
+
+		
+		<?php
+		if(!isset($_SESSION['tarang']))
+			{?>
+		<button class="register-button" onclick = "showLight('tarang')">REGISTER</button>
+		<?php }
+		else
+		{ ?>
+			<div class="registered-div"><p>REGISTERED</p></div>
+		<?php } ?>
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>
-	<div>
-		<a style="color:white;text-decoration:none" href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade1').style.display='block'">Register!</a>
-     
-
-	</div>
-	
-
-
-
 
 
 							
 </div>
 
-<div id="light1" class="white_content1"><p style="color:red;"></p> 
-<?php
-		if(!isset($_SESSION['tarang']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_team.php"<?php } ?>onsubmit="return validateForm1();">
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Group Name.." name="team_name">
-			<div id="error6"><p style="color:red;">Enter your Group Name</p></div>
-					
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Group Lead.." name="leader_name">
-			<div id="error7"><p style="color:red;">Enter your Group Lead</p></div>
-					
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Contact.." name="contactno">
-			<div id="error8"><p style="color:red;">Enter your Contact</p></div>
-					
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="Size of group.." name="team_size">
-			<div id="error9"><p style="color:red;">Enter your Group Size</p></div>
-					
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-left:9em;margin-top:3em;border:2px solid white;" placeholder="College.." name="college_name">
-			<div id="error10"><p style="color:red;">Enter your College Name</p></div>
-					
-			<input type="hidden" name="event_name" value="tarang"/>
-			<input type="submit" value="REGISTER" id="rajbhai" style="margin-left:9em;width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-              </form>
-              <?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-		<br>
-                          <a style="text-decoration:none;" href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade1').style.display='none'">
-                        <p style="text-align:center;">Close</p></a></div>
-		         <div id="fade1" class="black_overlay1"></div>								
-<script type="text/javascript">
-	$('#error6').hide();
-	$('#error7').hide();
-	$('#error8').hide();
-	$('#error9').hide();
-	$('#error10').hide();
-	
-</script>
-    	<script type="text/javascript">
-    	// Validate Title
-    	function validateForm1()
-    	{
-    $('#error6').hide();
-	$('#error7').hide();
-	$('#error8').hide();
-	$('#error9').hide();
-	$('#error10').hide();
-	
-    	var check=0;
-    	var title = $("#team_name").val();
-    	if (title=="" || title==null) { $('#error6').show();check=check+1;} else	{}
-    	
-    	
-    	var title1 = $("#leader_name").val();
-    	if (title1=="" || title1==null) { $('#error7').show();check=check+1;} else{}
-    	var title2 = $("#contactno").val();
-    	if (title2=="" || title2==null) { $('#error8').show();check=check+1;} else{}
-    	var title3 = $("#team_size").val();
-    	if (title3=="" || title3==null) { $('#error9').show();check=check+1;} else{}
-    	var title4 = $("#college_name").val();
-    	if (title4=="" || title4==null) { $('#error10').show();check=check+1;} else{}
-    	if (check>0)
-    	return false;
-    }
 
-    	
-</script>
+<div id="fade" class="black_overlay"></div>								
+
 <div class="wrap" id="floater">
 	<div class="event-desc-container" id="floater">
-		<div class="event-title">Junoon</div>
+		<div class="event-title">Junoon ( Solo Dance )</div>
 		<div class="event-text">
 			<div class="event-caption">
-				"Some people learn to dance but others are born to"...Talent doesn't remain hidden for long ..And if this talent drives your
+				<span style="color:rgb(250,100,50);">Some people learn to dance but others are born to"...</span><br>Talent doesn't remain hidden for long ..And if this talent drives your
 				passion for dance , this is the chance for you to swagger your skills and mesmerise the world with your hellacious moves...
 				<br>
 				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
@@ -434,11 +229,7 @@ session_start();
 
 						<li>Participants will be judged based on originality, choreography, execution and entertainment value.</li>
 
-						<li>Variety of dance positions, dance movements, and/or combinations as appropriate to the specific. </li>
-
-						<li>Difficulty of dance movements and/or combinations from one dance position or alignment to 
-
-						<li>Uniqueness or originality of dance movements and/or combinations from one dance position or dance one alignment to another, to include presentation of dance position continuity of dance movements and/or combinations to either interpret dance theme and music, or to demonstrate dance control.</li> 
+						<li>Variety of dance positions, dance movements, and/or combinations as appropriate to the specific. Difficulty of dance movements and/or combinations from one dance position or alignment to uniqueness or originality of dance movements and/or combinations from one dance position or dance one alignment to another, to include presentation of dance position continuity of dance movements and/or combinations to either interpret dance theme and music, or to demonstrate dance control.</li> 
 
 						<li>Participants must report 2 hours prior to the start of the event.</li>
 
@@ -458,80 +249,78 @@ session_start();
 		 			</ul> -->
 			</div>
 		</div>
+		<?php
+				if(!isset($_SESSION['junoon1']))
+				{
+					?>
+				<form method="post"
+		         <?php
+				if(!isset($_SESSION['user_id']))
+				{
+				?>
+		        action="#/register" 
+		        <?php
+				}
+				else { ?>action="partials/register_duet.php"<?php } ?>>
+						<input type="hidden" name="participants" value="1"/>
+						<input type="hidden" name="event_name" value="junoon"/>
+		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+		        </form>
+		<?php
+				}
+				else
+				{ ?>
+					<div class="registered-div" id="floater"><p>REGISTERED</p></div>
+				<?php }
+				?>
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>		
 	<div>
-<?php
-if(!isset($_SESSION['junoon1']))
-{
-	?>
-			<label><input type="radio" name="colorRadio" value="single"> Single</label>
-            <?php
-}
-else
-		{
-			echo "Registered as single performer";
-		}
-			if(!isset($_SESSION['junoon2']))
-			{
-			?>
-        	<label><input type="radio" name="colorRadio" value="duet"> Duet</label>
-<?php
-}
-else
-		{
-			echo "Registered for a duet";
-		}
-?>
+	<!--<a style="color:white;text-decoration:none" href = "javascript:void(0)" onclick = "showLight1('junoon')">REGISTER</a>-->
+	
+	
 
-        	<?php
-		if(!isset($_SESSION['junoon1']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_duet.php"<?php } ?> id="single">
-        	<input type="hidden" name="event_name" value="junoon"/>
-            <input type="hidden" name="participants" value="1"/>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-        	</form>
-<?php
-		}
-		
-		?>
-			<?php
-		if(!isset($_SESSION['junoon2']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_duet.php"<?php } ?> id="duet">
-        <input type="hidden" name="event_name" value="junoon"/>
-        <input type="hidden" name="participants" value="2"/>
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 1.." name="name1">
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 1.." name="name2">
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Contact.." name="contact">
-			
-			<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-              </form>
-<?php
-		}
-		
-		?>
-	</div>						
+	</div>     
 </div>
+
+
+<script type="text/javascript">
+	$('#error6').hide();
+	$('#error7').hide();
+	$('#error8').hide();
+	
+	
+		function checkInput(event)
+	{
+
+	}
+
+    	function validateForm1()
+    	{
+    $('#error6').hide();
+	$('#error7').hide();
+	$('#error8').hide();
+	
+    	var checker=0;
+    	var title5 = $("#name1").val();
+    	if (title5=="" || title5==null) { $('#error6').show();checker=checker+1;} else	{}
+    	
+    	
+    	var title6 = $("#name2").val();
+    	if (title6=="" || title6==null) { $('#error7').show();checker=checker+1;} else{}
+    	var title7 = $("#contactno1").val();
+    	if (title7=="" || title7==null) { $('#error8').show();checker=checker+1;} else{}
+    	if (checker>0)
+    	return false;
+    }
+
+    	
+</script>
+
+
+
 <script type="text/javascript">
 $("#single").hide();
 $("#duet").hide();
@@ -552,7 +341,7 @@ $('input[type="radio"]').click(function(){
 
 <div class="wrap">
 	<div class="event-desc-container">
-		<div class="event-title">Saaz</div>
+		<div class="event-title">Saaz ( Solo/Duet Singing)</div>
 		<div class="event-text">
 			<div class="event-caption">
 				Sometimes, a single heavenly voice is enough to open the floodgates of emotions. This is a chance to solely win the hearts of all by making the crowd swoon by your unbelievably melodious voice.
@@ -566,7 +355,7 @@ $('input[type="radio"]').click(function(){
 
 						<li>Songs should be in Hindi or English language only.</li>
 
-						<li>There is no restriction on no. of students participating from any institution.</li>
+						<li>There is no restriction on number of students participating from any institution.</li>
 
 						<li>Participants will be penalized for exceeding the specified time limits on terms agreed by the judges.</li>
 
@@ -598,105 +387,22 @@ $('input[type="radio"]').click(function(){
 					</ul>
 			</div>
 		</div>
+		<button class="register-button" onclick = "showLight1('saaz')">REGISTER</button>
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>	
-	<div>
-<?php
-if(!isset($_SESSION['saaz1']))
-{
-	?>
-			<label><input type="radio" name="colorRadio" value="single"> Single</label>
-            <?php
-}
-else
-		{
-			echo "Registered as single performer";
-		}
-if(!isset($_SESSION['saaz2']))
-{
-			?>
-        	<label><input type="radio" name="colorRadio" value="duet"> Duet</label>
-            <?php
-}
-else
-{
-			echo "Registered for duet";
-}
+	
 		
-?>
-
-        	<?php
-		if(!isset($_SESSION['saaz1']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_duet.php"<?php } ?> id="single1">
-        <input type="hidden" name="event_name" value="saaz"/>
-        <input type="hidden" name="participants" value="1"/>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-        	</form>
-<?php
-		}
-		
-		?>
-			<?php
-		if(!isset($_SESSION['saaz2']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_duet.php"<?php } ?> id="duet1">
-        <input type="hidden" name="event_name" value="saaz"/>
-        <input type="hidden" name="participants" value="2"/>
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 1.." name="name1">
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 1.." name="name2">
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Contact.." name="contact">
-			
-			<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-              </form>
-<?php
-		}
-		
-		?>
-	</div>		
 </div>
 
-<script type="text/javascript">
-$("#single1").hide();
-$("#duet1").hide();
 
-$('input[type="radio"]').click(function(){
-            if($(this).attr("value")=="single"){
-                $("#duet1").hide();
-                $("#single1").show();
-            }
-            if($(this).attr("value")=="duet"){
-                $("#single1").hide();
-                $("#duet1").show();
-            }
-            
-        });
-
-</script>
 	<div class="wrap" id="floater">
 	<div class="event-desc-container" id="floater">
 		<div class="event-title">Titan</div>
 		<div class="event-text">
 			<div class="event-caption">
-				One-of-a-kind event where one can witness the ultimate showdown challenging the human strength and endurance to the limits unknown.And leave Darwin's "survival of the fittest" to decide the one who earns the glory of being called the "Titan" - the strongest of all ....
+				One-of-a-kind event where one can witness the ultimate showdown challenging the human strength and endurance to the limits unknown and Darwin's "survival of the fittest" will decide the one who earns the glory of being called the "Titan" - the strongest of all ....
 				<br>
 				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
 			</div>
@@ -711,7 +417,7 @@ $('input[type="radio"]').click(function(){
 
 						<li>Weights 56Kg log, 70Kg barrel, 80Kg barrel and 150Kg duck/farmer’s walk</li> 
 
-						<li>Athletes will load the log and the barrels on a table 20meters from the starting point and duck/farmer’s walk for the same distance, all within a time limit of 75 seconds. Athlete are not allowed to roll or drag the objects.</li> 
+						<li>Athletes will load the log and the barrels on a table 20 meters from the starting point and perform duck/farmer’s walk for the same distance, all within a time limit of 75 seconds. Athletes are not allowed to roll or drag the objects.</li> 
 
 						<li>If completed, time will be noted, otherwise the number of objects carried successfully plus the distance of last object tried will be noted.</li>
 				</ul>
@@ -723,13 +429,13 @@ $('input[type="radio"]').click(function(){
 
 						<li>Time limit : 75secs</li> 
 
-						<li>Athletes will lift the all the loaded barbells from the ground to overhead up till their arms are extended within a time limit of 75 seconds. Athletes can use any weightlifting style: clean & jerk, clean & press, snatch.</li> 
+						<li>Athletes will lift all the loaded barbells from the ground to overhead up till their arms are extended within a time limit of 75 seconds. Athletes can use any weightlifting style: clean & jerk, clean & press, snatch.</li> 
 
 						<li>If completed, time will be noted, otherwise the heaviest weight lifted overhead will be noted.</li> 
 
 				</ul>
 
-				<span class="event-subtitle" style="color:rgb(250,100,50);">(c) Yoke Walking ( Last Mam Walking ) :</span>
+				<span class="event-subtitle" style="color:rgb(250,100,50);">(c) Yoke Walking ( Last Man Walking ) :</span>
 				
 				<ul>
 						<li>Starting weight 200Kg</li>
@@ -740,7 +446,7 @@ $('input[type="radio"]').click(function(){
 
 						<li>Time limit 45 secs for each attempt </li>
 
-						<li>Athletes will attempt Yoke walk, with their selected weights, for a distance of 20 meters within time limit of 45 seconds. Athletes can increase their next attempts only by a multiple of 10Kg. </li>
+						<li>Athletes will attempt Yoke walk, with their selected weights, for a distance of 20 meters within time limit of 45 seconds. Athletes can increase the weights only by a multiple of 10Kg in their next attempt. </li>
 
 						<li>Weight and distance of the heaviest Yoke walk will be noted.</li>
 
@@ -755,7 +461,7 @@ $('input[type="radio"]').click(function(){
 
 						<li>Time limit : 60secs for each attempt</li>
 
-						<li>Athletes will attempt Deadlift with their selected weights. Athletes can increase their next attempts only by a multiple of 5Kg.</li>
+						<li>Athletes will attempt Deadlift with their selected weights. Athletes can increase the weights only by a multiple of 5Kg in their next attempt.</li>
 
 						<li>Heaviest successful Deadlift will be noted.</li>
 
@@ -779,13 +485,13 @@ $('input[type="radio"]').click(function(){
 					<ul>	
 						<li>Entries are welcome 2 hours prior to the start of the competition.</li>
 
-						<li>Athletes will be given half an hour to get used to the equipment and get warmed up.</li>
+						<li>Athletes will be given 30 minutes to get used to the equipment and get warmed up.</li>
 
 						<li>No lifting costumes will be allowed.</li> 
 
 						<li>Gear allowed – lifting belt, knee, elbow and wrist wraps.</li>
 
-						<li>If the number athletes registered are more than 5, then the first event, Medley, will act as a qualifying round, where top 5 athletes will compete in the later events. </li>
+						<li>If the number of athletes registered are more than 5, then the first event, Medley, will act as a qualifying round, where top 5 athletes will compete in the later events. </li>
 
 						<li>Before each attempt, athlete will be asked “are you ready”, if the athlete is ready, he shall answer with “yes” after which he will wait for the referee’s command “go”/whistle and the timer will start.</li>
 
@@ -807,35 +513,36 @@ $('input[type="radio"]').click(function(){
 		 			</ul> -->
 			</div>
 		</div>
+			<div>
+		    
+				<?php
+				if(!isset($_SESSION['titan']))
+				{
+					?>
+				<form method="post"
+		         <?php
+				if(!isset($_SESSION['user_id']))
+				{
+				?>
+		        action="#/register" 
+		        <?php
+				}
+				else { ?>action="partials/register_titan.php"<?php } ?>>
+		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+		        </form>
+		<?php
+				}
+				else
+				{ ?>
+					<div class="registered-div" id="floater"><p>REGISTERED</p></div>
+				<?php }
+				?>
+			</div>	
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>	
-	<div>
-    
-		<?php
-		if(!isset($_SESSION['titan']))
-		{
-			?>
-		<form method="post"
-         <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_titan.php"<?php } ?>>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;"/>
-        </form>
-<?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-	</div>							
+							
 </div>
 
 
@@ -890,11 +597,13 @@ function showing(e)
     e = $(e).parent().parent();
     e.animate({"width":"100%"},500,function(){
 		e.find('.event-close').show();
+		e.find('.register-button').show();
 		e.find('.event-text').fadeIn(200);
 	});
 	e.find('.event-text').hide();
 	e.find('.event-description').show();
 	e.find('.event-register').hide();
+	e.find('.register-button').hide();
 }
 
 function closing(e)
@@ -904,10 +613,12 @@ function closing(e)
     e = $(e).parent().parent();
 	e.animate({"width":"70%"},500,function(){
 			e.find('.event-register').show();
+			e.find('.register-button').show();
 			e.find('.event-text').fadeIn(200);
 	});
 	e.find('.event-text').hide();
 	e.find('.event-close').hide();
+	e.find('.register-button').hide();
 	e.find('.event-description').hide();
 }
 </script>
@@ -968,37 +679,41 @@ function closing(e)
 
 					</div>
 				</div>
+						<div>
+				        
+
+
+				        <?php
+						if(!isset($_SESSION['conclave']))
+						{
+							?>
+						<form method="post" <?php
+						if(!isset($_SESSION['user_id']))
+						{
+						?>
+				        action="#/register" 
+				        <?php
+						}
+						else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
+				        		<input type="hidden" id="event_name" name="event_name" value="conclave"/>
+		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+				        		
+				                
+				        </form>
+				        <?php
+						}
+						else
+						{ ?>
+							<div class="registered-div"><p>REGISTERED</p></div>
+						<?php }
+						?>
+
+					</div>		
 				<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 				<button class="event-close" onclick="closing(event)" >CLOSE</button>
 			</div>
 		<div class="event-image"><img src="images/events/z.jpg"></div>	
-		<div>
-        
-        <?php
-		if(!isset($_SESSION['conclave']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_literary.php"<?php } ?>id="single1">
-        		<input type="hidden" name="event_name" value="conclave"/>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-                
-        </form>
-        <?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-
-	</div>							
+							
 	</div>
 								
 
@@ -1056,35 +771,35 @@ function closing(e)
 				</ul> -->
 			</div>
 		</div>
+		<div>
+	    <?php
+			if(!isset($_SESSION['eureka']))
+			{
+				?>
+			<form method="post" <?php
+			if(!isset($_SESSION['user_id']))
+			{
+			?>
+		action="#/register"         
+		<?php
+			}
+			else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
+	        		<input type="hidden" id="event_name" name="event_name" value="eureka"/>
+	        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+	        </form>
+	        <?php
+			}
+			else
+			{ ?>
+				<div class="registered-div" id="floater"><p>REGISTERED</p></div>
+			<?php }
+			?>
+
+		</div>		
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>
-	<div>
-    <?php
-		if(!isset($_SESSION['eureka']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-	action="#/register"         
-	<?php
-		}
-		else { ?>action="partials/register_literary.php"<?php } ?>id="single1">
-        		<input type="hidden" name="event_name" value="eureka"/>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-        </form>
-        <?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-
-	</div>								
+	<div class="event-image"><img src="images/events/z.jpg"></div>						
 </div>
 
 
@@ -1119,35 +834,36 @@ function closing(e)
 					</ul> -->
 			</div>
 		</div>
+			<div>
+		    <?php
+				if(!isset($_SESSION['blind_painting']))
+				{
+					?>
+				<form method="post" <?php
+				if(!isset($_SESSION['user_id']))
+				{
+				?>
+		        action="#/register" 
+		        <?php
+				}
+				else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
+		        		<input type="hidden" id="event_name" name="event_name" value="blind_painting"/>
+		        		<button type="submit" value="REGISTER" class="register-button" >REGISTER</button>
+		        </form>
+		        <?php
+				}
+				else
+				{ ?>
+				<div class="registered-div"><p>REGISTERED</p></div>
+				<?php }
+				?>
+
+			</div>
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>
-	<div>
-    <?php
-		if(!isset($_SESSION['blind_painting']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_literary.php"<?php } ?>id="single1">
-        		<input type="hidden" name="event_name" value="blind_painting"/>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-        </form>
-        <?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-
-	</div>								
+									
 </div>
 								
 
@@ -1183,34 +899,35 @@ function closing(e)
 				</ul> -->
 			</div>
 		</div>
+			<div>
+		    <?php
+				if(!isset($_SESSION['graffiti']))
+				{
+					?>
+				<form method="post" <?php
+				if(!isset($_SESSION['user_id']))
+				{
+				?>
+		        action="#/register"  
+		        <?php
+				}
+				else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
+		        		<input type="hidden" id="event_name" name="event_name" value="graffiti"/>
+		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+		        </form>
+				<?php
+				}
+				else
+				{ ?>
+				<div class="registered-div" id="floater"><p>REGISTERED</p></div>
+				<?php }
+				?>
+			</div>	
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>
-	<div>
-    <?php
-		if(!isset($_SESSION['graffiti']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register"  
-        <?php
-		}
-		else { ?>action="partials/register_literary.php"<?php } ?>id="single1">
-        		<input type="hidden" name="event_name" value="graffiti"/>
-        		<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-        </form>
-		<?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-	</div>								
+								
 </div>
 
 
@@ -1317,37 +1034,8 @@ function closing(e)
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
 	<div class="event-image"><img src="images/events/z.jpg"></div>								
-    <div>
-    <?php
-		if(!isset($_SESSION['dekode']))
-		{
-			?>
-		<form method="post" <?php
-		if(!isset($_SESSION['user_id']))
-		{
-		?>
-        action="#/register" 
-        <?php
-		}
-		else { ?>action="partials/register_dekode.php"<?php } ?>id="single1">
-        <input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Team Name.." name="team_name">
-        		<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 1.." name="name1">
-			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 2.." name="name2">
-            <input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:3em;border:2px solid white;" placeholder="Name of Participant 3.." name="name3">
-			
-			<input type="submit" value="REGISTER" id="rajbhai" style="width:8em;height:3em;background-color:rgba(0,0,0,0.0);border:2px solid white;margin-top:2em;">
-                
-        </form>
-        <?php
-		}
-		else
-		{
-			echo "Registered";
-		}
-		?>
-    </div>
+   
 </div>
-
 							    
  </div>
 
@@ -1358,6 +1046,63 @@ function closing(e)
 						<button class="r-close-button">
 							GO BACK
 						</button>
+						<button class="r-close-button">
+					GO BACK
+		</button>
+
+		<div class="wrap">
+		<div class="event-desc-container">
+			<div class="event-title">Zigmatics</div>
+			<div class="event-text">
+				<div class="event-caption">
+					<span style="color:rgb(250,100,50)">Math turns meth</span><br>
+				</div>
+				<div class="event-description">
+				    
+				</div>
+			</div>
+			<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+			<button class="event-close" onclick="closing(event)" >CLOSE</button>
+		</div>
+		<div class="event-image"><img src="images/events/zigmatics.jpg"></div>								
+</div>
+								
+
+<div class="wrap" id="floater">
+	<div class="event-desc-container" id="floater">
+		<div class="event-title">Z-hunt</div>
+		<div class="event-text">
+			<div class="event-caption">
+				<span style="color:rgb(250,100,50)">"You have missed the most important thing ,  I am "Captain" Jack Sparrow " <br> "And yes, I am a pirate!!"</span> 
+				<br>
+				Have you ever wondered what it feels to be a pirate .If yes, no worries then ,savy!! The time has come for you to unleash the pirate in you.
+				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+			</div>
+			<div class="event-description">
+			<br>
+			   	Zeitgeist welcomes you to Z-hunt where you can experience the same thrill and adventure without having moved an inch !! Z-hunt is 
+			   	an online treasure hunt where you will have to surf the sea of Google to get through the levels which will lead you to the 
+			   	ultimate treasure.
+				<br><br>It's a one of a kind event where what matters the most is your lust and Google is the only lifeline.
+				So, Are you ready for this fascinating voyage into the world of pirates ??
+				<!--<span style="color:rgb(250,100,50)">
+					For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.-->
+				<!-- <span class="event-subtitle">Prizes</span>
+				<ul>
+					<li>Goodies and Coupons</li>
+				</ul> -->
+				<!-- <span class="event-subtitle">Registration Fees :</span>
+				<ul>
+					<li>Registration Fees: 20/- per participant</li>
+				</ul> -->
+			</div>
+		</div>
+		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
+	</div>
+	<div class="event-image"><img src="images/events/z-hunt.jpg"></div>								
+   
+</div>
 	    
 								
   </div>
@@ -1440,9 +1185,321 @@ function closing(e)
 	
 	
 	
+<div id="light1" class="white_content">
+	<div id="fade1" class="black_overlay">
+        <button class="event-register-close" onclick = "document.getElementById('light1').style.display='none';">CLOSE</button>
+<?php
+if(!isset($_SESSION['saaz1']))
+{
+	?>
+			<label><input style="margin-left:0;height:20px;width20px;" type="radio" name="colorRadio" value="single"> Single&nbsp;&nbsp;&nbsp;&nbsp;<br></label>
+            <?php
+}
+else
+		{
+			echo "<span style='color:red'>Registered as single performer</span><br>";
+		}
+if(!isset($_SESSION['saaz2']))
+{
+			?>
+        	<label><input style="height:20px;width20px;" type="radio" name="colorRadio" value="duet"> Duet<br></label>
+            <?php
+}
+else
+{
+			echo "<span style='color:red'>Registered for duet</span><br>";
+}
+		
+?>
+
+        	<?php
+		if(!isset($_SESSION['saaz1']))
+		{
+			?>
+		<form method="post" <?php
+		if(!isset($_SESSION['user_id']))
+		{
+		?>
+        action="#/register" 
+        <?php
+		}
+		else { ?>action="partials/register_duet.php"<?php } ?> id="single1">
+        <input type="hidden" id="event_name" name="event_name" value="saaz"/>
+        <input type="hidden" name="participants" value="1"/>
+        <div class="register-input-container">
+		<button type="submit" value="REGISTER" class="register-button" style="margin-left:12%;margin-top:2em;">REGISTER</button>
+		</div>
+        </form>
+<?php
+		}
+		
+		?>
+			<?php
+		if(!isset($_SESSION['saaz2']))
+		{
+			?>
+		<form method="post" <?php
+		if(!isset($_SESSION['user_id']))
+		{
+		?>
+        action="#/register" 
+        <?php
+		}
+		else { ?>action="partials/register_duet.php"<?php } ?> id="duet1" onsubmit="return validateForm1();">
+        <input type="hidden" id="event_name" name="event_name" value="saaz"/>
+        <input type="hidden" name="participants" value="2"/>
+			<div class="register-input-container">
+			<input class="register-input" placeholder="Name of Participant 1.." name="name1" id="name1">
+			<div id="error6" style="color:red;">Enter Name of Participant 1</div>
+			</div>
+			<div class="register-input-container">
+			<input class="register-input" placeholder="Name of Participant 1.." name="name2" id="name2">
+			<div id="error7" style="color:red;">Enter Name of Participant 1</div>
+			</div>
+			<div class="register-input-container">
+			<input class="register-input" placeholder="Contact.." name="contact" id="contactno1" onkeypress="checkInput(event)">
+			<div id="error8" style="color:red;">Enter your Contact</div>
+			</div>
+			<div class="register-input-container">
+			<button type="submit" value="REGISTER" class="register-button" style="margin-left:12%;margin-top:2em;">REGISTER</button>
+			</div>
+        </form>
+<?php
+		}
+		
+		?>
+
+		<br>
+            
+	</div>
+</div>	
+
+<script type="text/javascript">
+$("#single1").hide();
+$("#duet1").hide();
+
+$('input[type="radio"]').click(function(){
+            if($(this).attr("value")=="single"){
+                $("#duet1").hide();
+                $("#single1").show();
+            }
+            if($(this).attr("value")=="duet"){
+                $("#single1").hide();
+                $("#duet1").show();
+            }
+            
+        });
+
+</script>
 	
+	<div id="light" class="white_content"><p style="color:red;"></p> 
+        <div id="fade" class="black_overlay">
+        <button class="event-register-close" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">CLOSE</button>
+                        <br>
+                         <?php
+			if(!isset($_SESSION['torque']) || !isset($_SESSION['tarang']))
+		{
+			?>
+		<form method="post" <?php
+		if(!isset($_SESSION['user_id']))
+		{
+		?>
+        action="#/register" 
+        <?php
+		}
+		else { ?>action="partials/register_team.php"<?php } ?> onsubmit="return validateForm();">
+					<div class="register-input-container">
+					<input class="register-input" name="team_name" id="team_name" placeholder="Group Name..">
+					<div id="error1" class="register-error"style="color:red;">Enter your Group Name</div>
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="Group Lead.." name="leader_name" id="leader_name">
+					<div id="error2" class="register-error">Enter your Group Leader</div>
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="Contact.." name="contact" id="contactno" onkeypress="checkInput(event)">
+					<div id="error3" class="register-error">Enter your Contact</div>
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="Size of group.." name="team_size" id="team_size" onkeypress="checkInput(event)">
+					<div id="error4" class="register-error">Enter your Group Size</div>
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="College.." name="college_name" id="college_name">
+					<div id="error5" class="register-error">Enter your College Name</div>
+					</div>
+					<input type="hidden" id="event_name" name="event_name" value="torque"/>
+					<div class="register-input-container">
+					<button type="submit" value="REGISTER" class="register-button" style="margin-left:12%;margin-top:2em;">REGISTER</button>
+					</div>
+		    </form>			
+            <?php
+		}
+		else
+		{
+			echo "<span style='color:red'>Registered</span>";
+		}
+		?>
+            <br>
+		   	</div>
+		</div>
+
+   
+   
+<style type="text/css">
 	
+	.black_overlay{
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.0);
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+    }
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 15%;
+        left: 25%;
+      	right: 25%;
+      	min-width: 480px;
+        padding: 16px;
+        margin: 10px;
+       	/*border: 2px solid white;*/
+        background-color: rgba(0,0,0,0.9);
+        z-index:1002;
+        overflow: auto;
+    }
+    .register-error
+    {
+    	color: red;
+    }
+    .register-input
+    {
+    	position: relative;
+    	width: 50%;
+    	height: 3em;
+    	margin-top: 1em;
+    	background-color: rgba(0,0,0,0.0);
+    	border: 2px solid white;
+    }
+    .register-input-container
+    {
+    	position: relative;
+    	width: 65%;
+    	margin-left: 35%;
+    	text-align: left;
+    }
+    .black_overlay1{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.0);
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+    }
+    .white_content1 {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+      	right: 25%;
+      	min-width: 480px;
+        padding: 16px;
+        margin: 10px;
+       	/*border: 2px solid white;*/
+        background-color: rgba(0,0,0,0.9);
+        z-index:1002;
+        overflow: auto;
+    }
+</style>
+
     
 	
+	<script type="text/javascript">
+	$('#error1').hide();
+	$('#error2').hide();
+	$('#error3').hide();
+	$('#error4').hide();
+	$('#error5').hide();
 	
+
+    	function validateForm()
+    	{
+    $('#error1').hide();
+	$('#error2').hide();
+	$('#error3').hide();
+	$('#error4').hide();
+	$('#error5').hide();
+	
+    	var check=0;
+    	var title = $("#team_name").val();
+    	if (title=="" || title==null) { $('#error1').show();check=check+1;} else	{}
+    	
+    	
+    	var title1 = $("#leader_name").val();
+    	if (title1=="" || title1==null) { $('#error2').show();check=check+1;} else{}
+    	var title2 = $("#contactno").val();
+    	if (title2=="" || title2==null) { $('#error3').show();check=check+1;} else{}
+    	var title3 = $("#team_size").val();
+    	if (title3=="" || title3==null) { $('#error4').show();check=check+1;} else{}
+    	var title4 = $("#college_name").val();
+    	if (title4=="" || title4==null) { $('#error5').show();check=check+1;} else{}
+    	if (check>0)
+    	return false;
+    }
+
+
+    function checkInput(evt)
+{
+    //only alpha-numeric characters
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    if(key===8){return;}
+    if(key===37){return;}
+    if(key===38){return;}
+    if(key===39){return;}
+    if(key===40){return;}
+    if(key===46){return;}
+    if(key===9){return;}
+       if(key===32){return;}
+    key = String.fromCharCode(key);
+    var regex = /[0-9]|\./;
+    if( !regex.test(key) ) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+
+
+}
+
+    function showLight(s)
+    {
+    	$('#error1').hide();
+		$('#error2').hide();
+		$('#error3').hide();
+		$('#error4').hide();
+		$('#error5').hide();
+    	$("#light").find('#event_name').val(s);
+    	document.getElementById('light').style.display='block';
+    	document.getElementById('fade').style.display='block';
+    }
+    function showLight1(s)
+    {
+    	$('#error6').hide();
+		$('#error7').hide();
+		$('#error8').hide();
+    	$("#light1").find('#event_name').val(s);
+    	document.getElementById('light1').style.display='block';
+    	document.getElementById('fade1').style.display='block';
+    }
+</script>
 	

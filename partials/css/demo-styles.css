@@ -70,7 +70,7 @@
   display: none;
 }
 
-.event-close, .event-register
+.event-close, .event-register, .register-button
 {
   cursor: pointer;
   border:2px solid white;
@@ -80,24 +80,66 @@
   float:left;
   position:relative;
   bottom: 0;
+  margin: 3px;
+}
+.registered-div
+{
+  border:2px solid white;
+  width:8em;
+  height:35px;
+  background-color:rgba(0,0,0,0.0);
+  float:left;
+  position:relative;
+  bottom: 0;
+  margin: 3px;
 }
 .r-close-button
 {
   cursor: pointer;
   position: absolute;
   top: -70px;
-  right: 0em;
+  left: 0em;
   border:2px solid white;
   width:8em;
   height:3em;
   background-color:rgba(0,0,0,0.0);
 }
- .r-close-button:hover
+
+.event-register-close
+{
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  width:8em;
+  height:35px;
+  background-color:rgba(0,0,0,0.0);
+  border:2px solid white;
+}
+
+.registered-div:hover
+{
+  background-color: rgb(50,200,50);
+  border: none;
+}
+
+.registered-div p
+{
+  margin-top: 5px;
+}
+
+.registered-div:hover p
+{
+  margin-top: 7px;
+}
+
+
+ .r-close-button:hover, .event-register-close:hover
  {
   background-color: rgb(100,150,250);
   border: none;
  }
-.event-close:hover, .event-register:hover
+.event-close:hover, .event-register:hover, .register-button:hover
 {
   background-color: rgb(255,111,56);
   border: none;

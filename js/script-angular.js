@@ -56,7 +56,7 @@ else
 		when
 		('/events',
 		{
-			templateUrl : "partials/events.html",
+			templateUrl : "partials/events.php",
 			controller : "eventController"
 		}).
 		when
