@@ -20,7 +20,7 @@ session_start();
 			<div class="event-caption">
 				Send your photographs along with your name, your college name and a writeup at <span style="color:rgb(250,100,50)">mrandmsz@zeitgeist.org.in</span> of not more than 100 words describing why you should be hailed as Mr/Ms Zeitgeist.
 				<br>
-				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> 
 			</div>
 			<div class="event-description">
 				<br>
@@ -66,7 +66,7 @@ session_start();
 			<div class="event-caption">
 				An unprecedented platform where the top-notch bands from every part of the country compete for the ultimate glory. Be prepared to hold your hands high as they jam up their electrifying chords and rolls to numb your senses ... <span style="color:rgb(250,100,50);">BUT IN THE END NOTHING ELSE MATTERS ..</span>
 				<br>
-				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 23000!</strong>
 			</div>
 			<div class="event-description">
 				<br><span class="event-subtitle">Rules :</span><br>
@@ -120,7 +120,7 @@ session_start();
 				Zeitgeist brings you the manifestation of synchronization, coordination and spirit of unity in a spanking new avatar "TARANG" where colleges from across country come up with unique styles of dancing maintaining a perfect harmony between eastern and western dance forms...And we are pretty sure that this event will compel you to be on your toes and ride the Gala wave... 
 
 				<br>
-				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 18000!</strong>
 			</div>
 			<div class="event-description">
 			<br><span class="event-subtitle">Rules :</span><br>
@@ -200,7 +200,7 @@ session_start();
 				<span style="color:rgb(250,100,50);">Some people learn to dance but others are born to"...</span><br>Talent doesn't remain hidden for long ..And if this talent drives your
 				passion for dance , this is the chance for you to swagger your skills and mesmerise the world with your hellacious moves...
 				<br>
-				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 3000!</strong> 
 			</div>
 			<div class="event-description">
 				<br><span class="event-subtitle">Rules :</span>
@@ -346,7 +346,8 @@ $('input[type="radio"]').click(function(){
 			<div class="event-caption">
 				Sometimes, a single heavenly voice is enough to open the floodgates of emotions. This is a chance to solely win the hearts of all by making the crowd swoon by your unbelievably melodious voice.
 				<br>
-				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+				Solo : <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 3000!</strong><br>
+                                Duet : <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 4000!</strong>
 			</div>
 			<div class="event-description">
 				<br><span class="event-subtitle">Rules :</span>
@@ -404,7 +405,7 @@ $('input[type="radio"]').click(function(){
 			<div class="event-caption">
 				One-of-a-kind event where one can witness the ultimate showdown challenging the human strength and endurance to the limits unknown and Darwin's "survival of the fittest" will decide the one who earns the glory of being called the "Titan" - the strongest of all ....
 				<br>
-				<!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 8000!</strong> 
 			</div>
 			<div class="event-description">
 				<br><span class="event-subtitle">Events :</span><br><br>
@@ -1046,19 +1047,26 @@ function closing(e)
 						<button class="r-close-button">
 							GO BACK
 						</button>
-						<button class="r-close-button">
-					GO BACK
-		</button>
+						
 
 		<div class="wrap">
 		<div class="event-desc-container">
 			<div class="event-title">Zigmatics</div>
 			<div class="event-text">
 				<div class="event-caption">
-					<span style="color:rgb(250,100,50)">Math turns meth</span><br>
+					For the first time in forever, Zeitgeist presents 'Zigmatics', an online Math contest, which is going to puzzle you with a kind of math you cannot even imagine!<br>
 				</div>
 				<div class="event-description">
-				    
+				        Zigmatics is a platform where you can have a one-to-one brain clash with the brilliant minds all over India. It is all set to blend your mind with its perplexingly knotty problems           where you will need to emanate the mathematician inside you to get through them.<br><br>
+
+                                      If you believe, you have the grey cells of a mathematician, then this event surely awaits you with a golden opportunity to nurture your talent and take it leaps and bounds ahead...<br>
+                         <span style="color:rgb(250,100,50)">.... and believe us Dr Ramanujan will be so proud !!!<br><br></span>
+
+<span style="color:rgb(250,100,50)">The Math-a-Marathon will unfold at 8 PM on September, the 27th .</span>
+<br><br>
+<a href="http://zeitgeist.org.in/Zigmatics" target="_blank">Go to Event Page</a><br><br>
+
+For any queries regarding the event , drop an email at support@zeitgeist.org.in
 				</div>
 			</div>
 			<button class="event-register" onclick="showing(event)" >SEE MORE</button>
@@ -1084,7 +1092,14 @@ function closing(e)
 			   	an online treasure hunt where you will have to surf the sea of Google to get through the levels which will lead you to the 
 			   	ultimate treasure.
 				<br><br>It's a one of a kind event where what matters the most is your lust and Google is the only lifeline.
-				So, Are you ready for this fascinating voyage into the world of pirates ??
+				So, Are you ready for this fascinating voyage into the world of pirates ??<br><br>
+
+                                <span style="color:rgb(250,100,50)">The Hunt will begin at 8 PM on September, the 29th .</span>
+<br><br>
+<a href="http://zhunt.zeitgeist.org.in" target="_blank">Go to Event Page</a><br><br>
+
+For any queries regarding the event , drop an email at support@zeitgeist.org.in
+                                
 				<!--<span style="color:rgb(250,100,50)">
 					For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.-->
 				<!-- <span class="event-subtitle">Prizes</span>
@@ -1139,9 +1154,9 @@ function closing(e)
          <div><p class="icon-arrow-right">Click Here To View!</p></div>
           <div><p>Arts/Literary Events</p></div>
         </li>
-        <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="">
+        <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="category4">
           <div><p>Online Events</p></div>
-          <div><p>Coming Soon!</p></div>
+          <div><p>Click Here To View!</p></div>
         </li>
         <!--Tiles with a 3D effect should have the following structure:
             1) a container inside the tile with class of .faces
@@ -1253,7 +1268,7 @@ else
 			<div id="error6" style="color:red;">Enter Name of Participant 1</div>
 			</div>
 			<div class="register-input-container">
-			<input class="register-input" placeholder="Name of Participant 1.." name="name2" id="name2">
+			<input class="register-input" placeholder="Name of Participant 2.." name="name2" id="name2">
 			<div id="error7" style="color:red;">Enter Name of Participant 1</div>
 			</div>
 			<div class="register-input-container">
