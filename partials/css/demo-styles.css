@@ -1,7 +1,7 @@
 .demo-wrapper {
   padding: 2em .5em;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
 }
 
@@ -31,6 +31,13 @@
 #floater
 {
   float: right;
+  right: 115px;
+  left: auto;
+}
+
+#floater .event-close, #floater .event-register
+{
+  right: 0px;
 }
 
 .event-caption, .event-description
@@ -48,7 +55,7 @@
 .event-description
 {
   display: none;
-  padding: 0 20px 10px 10px;
+  padding: 0 20px 50px 10px;
 }
 
 .event-caption
@@ -75,18 +82,31 @@
   text-decoration: none;
   color: white;
 }
-
+.reg-button
+{
+  float:left;
+  position:relative;
+}
 .event-close, .event-register, .register-button, .reg-button
 {
   cursor: pointer;
   border:2px solid white;
-  width:8em;
+  width: 112px;
   height:35px;
   background-color:rgba(0,0,0,0.0);
-  float:left;
-  position:relative;
   bottom: 0;
   margin: 3px;
+}
+.event-close, .event-register
+{
+  position: absolute;
+  left: 0;
+}
+
+.register-button
+{
+  position: absolute;
+  left: 115px;
 }
 .registered-div
 {
@@ -175,7 +195,7 @@
 
 .event-desc-container
 {
-  position: relative;
+  /*position: relative;*/
   width: 70%;
   float:left;
   height: 100%;
@@ -402,7 +422,7 @@
 }
 
 .clearfix {
-  *zoom: 1
+  *zoom: 1;
 }
 
 .demo-wrapper ul {
@@ -542,7 +562,7 @@ top: 4em;
   font-weight: 300;
 }
 .page-content{
-  overflow-y:auto;
+  /*overflow-y:auto;*/
   max-height:100%;
   font-size:.6em;
   padding:.6em;

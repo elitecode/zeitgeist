@@ -100,7 +100,7 @@ session_start();
 			{
 		?>
 		 		<button class="register-button" id="floater">
-		 			<a href = "#/register">Register</a>
+		 			<a href = "#/register">REGISTER</a>
 		 		</button>
 		<?php
 			}
@@ -115,7 +115,7 @@ session_start();
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>	
+	<div class="event-image"><img src="images/events/torque.jpg"></div>	
 	<div>
 	                         
 	
@@ -195,8 +195,8 @@ session_start();
 			else if(!isset($_SESSION['email']))
 			{
 		?>
-		 		<button class="register-button" id="floater">
-		 			<a href = "#/register">Register</a>
+		 		<button class="register-button">
+		 			<a href = "#/register">REGISTER</a>
 		 		</button>
 		<?php 
 			}
@@ -210,7 +210,7 @@ session_start();
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>
+	<div class="event-image"><img src="images/events/tarang.jpg"></div>
 
 
 							
@@ -277,15 +277,17 @@ session_start();
 			</div>
 		</div>
 		<?php
-				if(!isset($_SESSION['junoon1']))
+				if((!isset($_SESSION['email']))||(isset($_SESSION['email']) && !isset($_SESSION['junoon1'])))
 				{
 					?>
 				<form method="post"
 		         <?php
-				if(!isset($_SESSION['user_id']))
+				if((!isset($_SESSION['email'])) || !isset($_SESSION['user_id']))
 				{
 				?>
-		        action="#/register" 
+		        action="#/register">
+			        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+		        </form>
 		        <?php
 				}
 				else { ?><?php } ?>>
@@ -295,7 +297,7 @@ session_start();
 		        </form>
 		<?php
 				}
-				else
+				else if(isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 				{ ?>
 					<div class="registered-div" id="floater"><p>REGISTERED</p></div>
 				<?php }
@@ -303,7 +305,7 @@ session_start();
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>		
+	<div class="event-image"><img src="images/events/junoon.jpg"></div>		
 	<div>
 	<!--<a style="color:white;text-decoration:none" href = "javascript:void(0)" onclick = "showLight1('junoon')">REGISTER</a>-->
 	
@@ -544,15 +546,17 @@ $('input[type="radio"]').click(function(){
 			<div>
 		    
 				<?php
-				if(!isset($_SESSION['titan']))
+				if((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSION['titan'])))
 				{
 					?>
 				<form method="post"
 		         <?php
-				if(!isset($_SESSION['user_id']))
+				if(!isset($_SESSION['email']) || !isset($_SESSION['user_id']))
 				{
 				?>
-		        action="#/register" 
+		        action="#/register"> 
+		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+		        </form>
 		        <?php
 				}
 				else { ?><?php } ?>>
@@ -812,7 +816,7 @@ function closing(e)
 						{
 						?>
 				        	action="#/register">
-		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+		        				<button type="submit" value="REGISTER" id='floater' class="register-button">REGISTER</button>
 						</form>
 				        <?php
 						}
@@ -949,7 +953,7 @@ function closing(e)
 						{
 						?>
 				        	action="#/register">
-		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+		        				<button type="submit" value="REGISTER" id='floater' class="register-button">REGISTER</button>
 						</form>
 				        <?php
 						}
@@ -1159,7 +1163,7 @@ For any queries regarding the event , drop an email at support@zeitgeist.org.in
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z-hunt.jpg"></div>								
+	<div class="event-image"><img src="images/events/zhunt.jpg"></div>								
    
 </div>
 	    
