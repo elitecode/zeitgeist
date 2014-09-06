@@ -70,7 +70,13 @@
   display: none;
 }
 
-.event-close, .event-register, .register-button
+.register-button a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.event-close, .event-register, .register-button, .reg-button
 {
   cursor: pointer;
   border:2px solid white;
@@ -139,7 +145,7 @@
   background-color: rgb(100,150,250);
   border: none;
  }
-.event-close:hover, .event-register:hover, .register-button:hover
+.event-close:hover, .event-register:hover, .register-button:hover, .reg-button:hover
 {
   background-color: rgb(255,111,56);
   border: none;

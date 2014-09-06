@@ -48,7 +48,7 @@ function add_color()
 	var src = $(this).attr('src');
 	src = src.split(".");
 	src = src[0]+'-color.png';
-	console.log(src);
+//	console.log(src);
 	$(this).attr('src',src);
 }
 
@@ -56,9 +56,9 @@ function remove_color()
 {
 	var src = $(this).attr('src');
 	src = src.split("-color");
-	console.log(src);
+//	console.log(src);
 	src = src[0] + '.png';
-	console.log(src);
+//	console.log(src);
 	$(this).attr('src',src);
 
 }
