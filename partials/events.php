@@ -835,7 +835,7 @@ function closing(e)
 						else { ?>
 								id="singleone">
 				        		<input type="hidden" id="event_name" name="event_name" value="eureka"/>
-		        				<button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+		        				<button type="submit" value="REGISTER" id="floater" class="reg-button">REGISTER</button>
 				        </form>
 
 						<?php } ?>
@@ -843,7 +843,7 @@ function closing(e)
 						}
 						else
 						{ ?>
-							<div class="registered-div"><p>REGISTERED</p></div>
+							<div id="floater" class="registered-div"><p>REGISTERED</p></div>
 						<?php }
 						?>
 		</div>		
@@ -972,7 +972,7 @@ function closing(e)
 						else { ?>
 								id="singleone">
 				        		<input type="hidden" id="event_name" name="event_name" value="graffiti"/>
-		        				<button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+		        				<button type="submit" value="REGISTER" id="floater" class="reg-button">REGISTER</button>
 				        </form>
 
 						<?php } ?>
@@ -980,7 +980,7 @@ function closing(e)
 						}
 						else
 						{ ?>
-							<div class="registered-div"><p>REGISTERED</p></div>
+							<div id="floater" class="registered-div"><p>REGISTERED</p></div>
 						<?php }
 						?>
 			</div>	

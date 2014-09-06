@@ -82,11 +82,7 @@
   text-decoration: none;
   color: white;
 }
-.reg-button
-{
-  float:left;
-  position:relative;
-}
+
 .event-close, .event-register, .register-button, .reg-button, .registered-div
 {
   /*cursor: pointer;*/
@@ -103,7 +99,7 @@
   left: 0;
 }
 
-.register-button, .registered-div
+.register-button, .registered-div, .reg-button
 {
   position: absolute;
   left: 115px;
