@@ -87,9 +87,9 @@
   float:left;
   position:relative;
 }
-.event-close, .event-register, .register-button, .reg-button
+.event-close, .event-register, .register-button, .reg-button, .registered-div
 {
-  cursor: pointer;
+  /*cursor: pointer;*/
   border:2px solid white;
   width: 112px;
   height:35px;
@@ -103,22 +103,12 @@
   left: 0;
 }
 
-.register-button
+.register-button, .registered-div
 {
   position: absolute;
   left: 115px;
 }
-.registered-div
-{
-  border:2px solid white;
-  width:8em;
-  height:35px;
-  background-color:rgba(0,0,0,0.0);
-  float:left;
-  position:relative;
-  bottom: 0;
-  margin: 3px;
-}
+
 .r-close-button
 {
   cursor: pointer;

@@ -638,11 +638,13 @@ function showing(e)
     e.animate({"width":"100%"},500,function(){
 		e.find('.event-close').show();
 		e.find('.register-button').show();
+		e.find('.registered-div').show();
 		e.find('.event-text').fadeIn(200);
 	});
 	e.find('.event-text').hide();
 	e.find('.event-description').show();
 	e.find('.event-register').hide();
+	e.find('.registered-div').hide();
 	e.find('.register-button').hide();
 }
 
@@ -654,11 +656,13 @@ function closing(e)
 	e.animate({"width":"70%"},500,function(){
 			e.find('.event-register').show();
 			e.find('.register-button').show();
+			e.find('.registered-div').show();
 			e.find('.event-text').fadeIn(200);
 	});
 	e.find('.event-text').hide();
 	e.find('.event-close').hide();
 	e.find('.register-button').hide();
+	e.find('.registered-div').hide();
 	e.find('.event-description').hide();
 }
 </script>
@@ -1464,6 +1468,12 @@ $('input[type="radio"]').click(function(){
     	margin-left: 35%;
     	text-align: left;
     }
+	.register-input-container .register-button
+	{
+		left: auto;
+		position: relative;
+	}
+
     .black_overlay1{
         display: none;
         position: absolute;
