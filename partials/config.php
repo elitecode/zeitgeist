@@ -1,2 +1,2 @@
 <?php
-$connect = mysqli_connect("localhost","register","register","zeitgeist");?>
+$connect = mysqli_connect("localhost","root","9415809779","zeitgeist");?>

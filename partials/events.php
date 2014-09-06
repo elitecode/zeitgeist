@@ -4,7 +4,7 @@ session_start();
 ?>
 <link rel="stylesheet" href="partials/css/demo-styles.css" />
   <!--<script src="partials/js/modernizr-1.5.min.js"></script>-->	
-  
+<script type="text/javascript" src = "partials/js/aj.js"></script>  
   <div class="demo-wrapper">
 <!-- classnames for the pages should include: 1) type of page 2) page name-->
   
@@ -90,14 +90,28 @@ session_start();
 			</div>
 		</div>
 		<?php
-		if(!isset($_SESSION['torque']))
-			{?>
-		 <button class="register-button" id="floater" onclick = "showLight('torque')">REGISTER</button>
-		<?php }
-		else
-		{ ?>
-			<div class="registered-div" id="floater" ><p>REGISTERED</p></div>
-		<?php } ?>
+			if(isset($_SESSION['email']) && !isset($_SESSION['torque']))
+			{
+		?>
+		 		<button class="register-button" id="floater" onclick = "showLight('torque')">REGISTER</button>
+		<?php 
+			}
+			else if(!isset($_SESSION['email']))
+			{
+		?>
+		 		<button class="register-button" id="floater">
+		 			<a href = "#/register">Register</a>
+		 		</button>
+		<?php
+			}
+			else if(isset($_SESSION['email']) && isset($_SESSION['torque']))
+			{ 
+		?>
+				<div class="registered-div" id="floater" ><p>REGISTERED</p></div>
+		<?php 
+			} 
+		?>
+
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
@@ -172,14 +186,27 @@ session_start();
 
 		
 		<?php
-		if(!isset($_SESSION['tarang']))
-			{?>
-		<button class="register-button" onclick = "showLight('tarang')">REGISTER</button>
-		<?php }
-		else
-		{ ?>
-			<div class="registered-div"><p>REGISTERED</p></div>
-		<?php } ?>
+			if(isset($_SESSION['email']) && !isset($_SESSION['tarang']))
+			{
+		?>
+				<button class="register-button" onclick = "showLight('tarang')">REGISTER</button>
+		<?php 
+			}
+			else if(!isset($_SESSION['email']))
+			{
+		?>
+		 		<button class="register-button" id="floater">
+		 			<a href = "#/register">Register</a>
+		 		</button>
+		<?php 
+			}
+			else if(isset($_SESSION['email']) && isset($_SESSION['tarang']))
+			{
+		?>
+				<div class="registered-div"><p>REGISTERED</p></div>
+		<?php 
+			} 
+		?>
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
@@ -261,10 +288,10 @@ session_start();
 		        action="#/register" 
 		        <?php
 				}
-				else { ?>action="partials/register_duet.php"<?php } ?>>
-						<input type="hidden" name="participants" value="1"/>
-						<input type="hidden" name="event_name" value="junoon"/>
-		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+				else { ?><?php } ?>>
+						<input type="hidden" id = "participants" name="participants" value="1"/>
+						<input type="hidden" id = "event_name" name="event_name" value="junoon"/>
+		        		<button type="submit" value="REGISTER" class="register-button junoon-button" id="floater" >REGISTER</button>
 		        </form>
 		<?php
 				}
@@ -528,8 +555,8 @@ $('input[type="radio"]').click(function(){
 		        action="#/register" 
 		        <?php
 				}
-				else { ?>action="partials/register_titan.php"<?php } ?>>
-		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
+				else { ?><?php } ?>>
+		        		<button type="submit" value="REGISTER" class="register-button titan-button" id="floater" >REGISTER</button>
 		        </form>
 		<?php
 				}
@@ -688,19 +715,22 @@ function closing(e)
 						if(!isset($_SESSION['conclave']))
 						{
 							?>
-						<form method="post" <?php
+						<form method="post" class="literary-form" <?php
 						if(!isset($_SESSION['user_id']))
 						{
 						?>
-				        action="#/register" 
+				        	action="#/register">
+		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+						</form>
 				        <?php
 						}
-						else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
+						else { ?>
+								id="singleone">
 				        		<input type="hidden" id="event_name" name="event_name" value="conclave"/>
-		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
-				        		
-				                
+		        				<button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
 				        </form>
+
+						<?php } ?>
 				        <?php
 						}
 						else
@@ -773,29 +803,33 @@ function closing(e)
 			</div>
 		</div>
 		<div>
-	    <?php
-			if(!isset($_SESSION['eureka']))
-			{
-				?>
-			<form method="post" <?php
-			if(!isset($_SESSION['user_id']))
-			{
-			?>
-		action="#/register"         
-		<?php
-			}
-			else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
-	        		<input type="hidden" id="event_name" name="event_name" value="eureka"/>
-	        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
-	        </form>
-	        <?php
-			}
-			else
-			{ ?>
-				<div class="registered-div" id="floater"><p>REGISTERED</p></div>
-			<?php }
-			?>
+				        <?php
+						if(!isset($_SESSION['eureka']))
+						{
+							?>
+						<form method="post" class="literary-form" <?php
+						if(!isset($_SESSION['user_id']))
+						{
+						?>
+				        	action="#/register">
+		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+						</form>
+				        <?php
+						}
+						else { ?>
+								id="singleone">
+				        		<input type="hidden" id="event_name" name="event_name" value="eureka"/>
+		        				<button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+				        </form>
 
+						<?php } ?>
+				        <?php
+						}
+						else
+						{ ?>
+							<div class="registered-div"><p>REGISTERED</p></div>
+						<?php }
+						?>
 		</div>		
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
@@ -836,28 +870,33 @@ function closing(e)
 			</div>
 		</div>
 			<div>
-		    <?php
-				if(!isset($_SESSION['blind_painting']))
-				{
-					?>
-				<form method="post" <?php
-				if(!isset($_SESSION['user_id']))
-				{
-				?>
-		        action="#/register" 
-		        <?php
-				}
-				else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
-		        		<input type="hidden" id="event_name" name="event_name" value="blind_painting"/>
-		        		<button type="submit" value="REGISTER" class="register-button" >REGISTER</button>
-		        </form>
-		        <?php
-				}
-				else
-				{ ?>
-				<div class="registered-div"><p>REGISTERED</p></div>
-				<?php }
-				?>
+				        <?php
+						if(!isset($_SESSION['blind_painting']))
+						{
+							?>
+						<form method="post" class="literary-form" <?php
+						if(!isset($_SESSION['user_id']))
+						{
+						?>
+				        	action="#/register">
+		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+						</form>
+				        <?php
+						}
+						else { ?>
+								id="singleone">
+				        		<input type="hidden" id="event_name" name="event_name" value="blind_painting"/>
+		        				<button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+				        </form>
+
+						<?php } ?>
+				        <?php
+						}
+						else
+						{ ?>
+							<div class="registered-div"><p>REGISTERED</p></div>
+						<?php }
+						?>
 
 			</div>
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
@@ -901,28 +940,33 @@ function closing(e)
 			</div>
 		</div>
 			<div>
-		    <?php
-				if(!isset($_SESSION['graffiti']))
-				{
-					?>
-				<form method="post" <?php
-				if(!isset($_SESSION['user_id']))
-				{
-				?>
-		        action="#/register"  
-		        <?php
-				}
-				else { ?>action="partials/register_literary.php"<?php } ?>id="singleone">
-		        		<input type="hidden" id="event_name" name="event_name" value="graffiti"/>
-		        		<button type="submit" value="REGISTER" class="register-button" id="floater" >REGISTER</button>
-		        </form>
-				<?php
-				}
-				else
-				{ ?>
-				<div class="registered-div" id="floater"><p>REGISTERED</p></div>
-				<?php }
-				?>
+				        <?php
+						if(!isset($_SESSION['graffiti']))
+						{
+							?>
+						<form method="post" class="literary-form" <?php
+						if(!isset($_SESSION['user_id']))
+						{
+						?>
+				        	action="#/register">
+		        				<button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+						</form>
+				        <?php
+						}
+						else { ?>
+								id="singleone">
+				        		<input type="hidden" id="event_name" name="event_name" value="graffiti"/>
+		        				<button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+				        </form>
+
+						<?php } ?>
+				        <?php
+						}
+						else
+						{ ?>
+							<div class="registered-div"><p>REGISTERED</p></div>
+						<?php }
+						?>
 			</div>	
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
