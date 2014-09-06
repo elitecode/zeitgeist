@@ -290,10 +290,14 @@ session_start();
 		        </form>
 		        <?php
 				}
-				else { ?><?php } ?>>
+				else { ?>
+					> <!--closing form tag-->
 						<input type="hidden" id = "participants" name="participants" value="1"/>
 						<input type="hidden" id = "event_name" name="event_name" value="junoon"/>
 		        		<button type="submit" value="REGISTER" class="register-button junoon-button" id="floater" >REGISTER</button>
+		        <?php
+		        	} 
+		        ?>
 		        </form>
 		<?php
 				}
@@ -559,9 +563,13 @@ $('input[type="radio"]').click(function(){
 		        </form>
 		        <?php
 				}
-				else { ?><?php } ?>>
+				else { ?>
+				>
 		        		<button type="submit" value="REGISTER" class="register-button titan-button" id="floater" >REGISTER</button>
 		        </form>
+				<?php 
+					} 
+				?>
 		<?php
 				}
 				else
