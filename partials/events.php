@@ -570,7 +570,7 @@ $('input[type="radio"]').click(function(){
 				<?php 
 					} 
 				?>
-		<?php
+				<?php
 				}
 				else
 				{ ?>
