@@ -23,21 +23,24 @@ $contact = $result['contact'];
 $college_name = $result['college_name'];
 $team_name = $_POST['team_name'];
 $email = $result['email'];
+$event_name = $_POST['event_name'];
 if(strlen($name) == 0 || strlen($team_name) == 0)
 {
+	//echo "Fields are not complete<br/>";
 	header('Location:../#/events');
 }
 else
 {
-	$query = "SELECT max(dekode_event_id) AS max FROM dekode_event;";
+	$query = "SELECT max(technical_event_id) AS max FROM technical_events;";
 	$result = mysqli_query($connect,$query);
 	$result = mysqli_fetch_array($result);
-	$dekode_event_id = $result['max'] + 1;
-	$query = "INSERT INTO dekode_event(dekode_event_id,user_id,name,name2,name3,team_name,college_name,contact,email) values($dekode_event_id,$user_id,'$name','$name2','$name3','$team_name','$college_name','$contact','$email');";
+	$technical_event_id = $result['max'] + 1;
+	$query = "INSERT INTO technical_events(technical_event_id,user_id,name,name2,name3,team_name,college_name,contact,email,event_name) values($technical_event_id,$user_id,'$name','$name2','$name3','$team_name','$college_name','$contact','$email','$event_name');";
 	if($result = mysqli_query($connect,$query))
 	{
-		$_SESSION['dekode'] = 1;
+		$_SESSION[$event_name] = 1;
 	}
+//	echo"choo khokhar";
 	header('Location:../#/events');
 }
 ?>
