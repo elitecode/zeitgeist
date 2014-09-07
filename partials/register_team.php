@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
 <?php
 ob_start();
 session_start();
-?>
-</head>
-
-<body>
-<?php
 $event_name = $_POST['event_name'];
 $user_id = $_SESSION['user_id'];
 $team_name = $_POST['team_name'];
@@ -23,7 +13,6 @@ $email = $_SESSION['email'];
 $error = "";
 if($team_name === "" || $leader_name === "" || $contact === "" || $college_name === "" || $team_size === "")
 {
-	echo "Fields are not complete<br/>";
 	header('Location:../#/events');
 }
 else
@@ -32,7 +21,6 @@ else
 	$result = mysqli_query($connect,$query);
 	$result = mysqli_fetch_array($result);
 	$team_events_id = $result['max'] + 1;
-	echo $team_events_id;
 	$query = "INSERT INTO team_events(team_events_id,user_id,event_name,team_name,team_size,contact,college_name,leader_name,email) values($team_events_id,$user_id,'$event_name','$team_name',$team_size,'$contact','$college_name','$leader_name','$email');";
 	if($result = mysqli_query($connect,$query))
 	{
@@ -41,5 +29,3 @@ else
 	header('Location:../#/events');
 }
 ?>
-</body>
-</html>

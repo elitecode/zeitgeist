@@ -1,17 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Register Duet</title>
 <?php
 ob_start();
 session_start();
-?>
-
-</head>
-
-<body>
-<?php
 $event_name = $_POST['event_name'];
 $user_id = $_SESSION['user_id'];
 $participants = $_POST['participants'];
@@ -46,19 +35,15 @@ $result = mysqli_fetch_array($result);
 $duet_events_id = $result['max'] + 1;
 if(strlen($error) > 0)
 {
-	echo "Correct the following error<br/>".$error;
 	header('Location:../#/events');
 }
 else
 {
 	$query = "INSERT INTO duet_events(duet_events_id,user_id,event_name,name1,name2,participants,contact,email) values($duet_events_id,$user_id,'$event_name','$name1','$name2',$participants,'$contact','$email');";
-if($result = mysqli_query($connect,$query))
-{
-	$_SESSION[$event_name.$participants] = 1;
-}
-header('Location:../#/events');
+	if($result = mysqli_query($connect,$query))
+	{
+			$_SESSION[$event_name.$participants] = 1;
+	}
+	header('Location:../#/events');
 }
 ?>
-</body>
-</body>
-</html>
