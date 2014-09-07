@@ -448,7 +448,7 @@ $('input[type="radio"]').click(function(){
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>	
+	<div class="event-image"><img src="images/events/saaz.jpg"></div>	
 	
 		
 </div>
@@ -702,7 +702,7 @@ $('input[type="radio"]').click(function(){
 		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" onclick="closing(event)" >CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>	
+	<div class="event-image"><img src="images/events/smackthat.jpg"></div>	
 	
 		
 </div>
@@ -771,7 +771,7 @@ $('input[type="radio"]').click(function(){
 		<button class="event-register" onclick="showing(event)" id="floater">SEE MORE </button>
 		<button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
 	</div>
-	<div class="event-image"><img src="images/events/z.jpg"></div>	
+	<div class="event-image"><img src="images/events/yatharth.jpg"></div>	
 	
 		
 </div>

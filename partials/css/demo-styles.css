@@ -108,6 +108,7 @@
 .r-close-button
 {
   cursor: pointer;
+  color: white;
   position: absolute;
   top: -70px;
   left: 0em;
