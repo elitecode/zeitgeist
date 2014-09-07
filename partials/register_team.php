@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
 <?php
 ob_start();
 session_start();
-?>
-</head>
-
-<body>
-<?php
 $event_name = $_POST['event_name'];
 $user_id = $_SESSION['user_id'];
 $team_name = $_POST['team_name'];
@@ -39,5 +29,3 @@ else
 	header('Location:../#/events');
 }
 ?>
-</body>
-</html>

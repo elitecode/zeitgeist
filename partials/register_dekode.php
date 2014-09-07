@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Register Dekode</title>
 <?php
 ob_start();
 session_start();
-?>
-</head>
-
-<body>
-<?php
 $user_id = $_SESSION['user_id'];
 include('config.php');
 $query = "SELECT * from user where user_id=$user_id;";
@@ -41,6 +31,3 @@ else
 	header('Location:../#/events');
 }
 ?>
-
-</body>
-</html>

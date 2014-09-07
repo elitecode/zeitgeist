@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Literary Events Registration</title>
 <?php
 ob_start();
 session_start();
-?>
-</head>
-
-<body>
-<?php
 $event_name = $_POST['event_name'];
 $user_id = $_SESSION['user_id'];
 include('config.php');
@@ -33,5 +23,3 @@ if($result = mysqli_query($connect,$query))
 }
 header('Location:../#/events');
 ?>
-</body>
-</html>
