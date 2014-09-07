@@ -349,6 +349,29 @@ session_start();
     	return false;
     }
 
+     $('#error9').hide();
+	$('#error10').hide();
+	$('#error11').hide();
+
+    	function validateForm2()
+    	{
+    $('#error9').hide();
+	$('#error10').hide();
+	$('#error11').hide();
+	
+    	var checker=0;
+    	var title5 = $("#name1d").val();
+    	if (title5=="" || title5==null) { $('#error9').show();checker=checker+1;} else	{}
+    	
+    	
+    	var title6 = $("#name2d").val();
+    	if (title6=="" || title6==null) { $('#error10').show();checker=checker+1;} else{}
+    	var title7 = $("#contactno1d").val();
+    	if (title7=="" || title7==null) { $('#error11').show();checker=checker+1;} else{}
+    	if (checker>0)
+    	return false;
+    }
+
     	
 </script>
 
@@ -570,7 +593,7 @@ $('input[type="radio"]').click(function(){
 				<?php 
 					} 
 				?>
-				<?php
+		<?php
 				}
 				else
 				{ ?>
@@ -585,9 +608,176 @@ $('input[type="radio"]').click(function(){
 							
 </div>
 
+<div class="wrap" >
+	<div class="event-desc-container">
+		<div class="event-title">Smack That ( Duet Dance )</div>
+		<div class="event-text">
+			<div class="event-caption">
+				Do you have the confidence and talent to mesmerise the world by your moves? Well then, this is the place to showcase your skills and win it all.
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 4500!</strong>
+			</div>
+			<div class="event-description">
+				<br><span class="event-subtitle">Rules :</span>
+					<ul>
+						<li>Any number of teams from a college can participate.</li>
+						
+						<li>Participation for Smack That is open to all students.</li>
+						
+						<li>Maximum 6 dancers per team.</li>
+						
+						<li>The duration of the performance should be between 5-10 minutes.</li>
+						
+						<li>Negative marking for exceeding the TIME LIMIT.</li>
+						
+						<li>Teams must bring 2 CD’s containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
+
+						<li>The dance floor area must be in the same condition after the performances as before.</li>
+
+						<li>No props will be provided.</li>
+
+						<li>Size of the stage will be 35ft*20ft.</li>
+
+						<li>Teams may use props if they want, for which they should take prior permission from the Coordinator.(Negative marking if not informed before)</li>
+						
+						<li>Participant should show the freestyle of Street Dance.</li>
+						
+						<li>Power movements, acrobatics, etc. are admissible, but they should not dominate.</li>
+						
+						<li>Remember the main thing: DANCE under MUSIC Hip-Hop!</li>
+						
+						<li>Dancers are not restricted from performing any move but they must be aware that it is their own responsibility to ensure that they do not perform dangerous moves that could injure themselves or others. Coordinators have the right to bring in safety restrictions.</li>
+						
+						<li>Teams will be judged based on originality, choreography, execution and entertainment value.</li>
+							<ul>
+								<li>Variety of dance positions, dance movements, and/or combinations as appropriate to the specific dance.</li>
+
+								<li>Difficulty of dance movements and/or combinations from one dance position or alignment to another.</li>
+
+								<li>Uniqueness or originality of dance movements and/or combinations from one dance position or alignment to another, to include presentation of dance position.</li>
+
+								<li>Continuity of dance movements and/or combinations to either interpret dance theme and music, or to demonstrate dance control.</li>
+
+								<li>Coordinated appearance appropriate to Country/Western competition attire; posture, grooming, and use of costume as it complements the contestants and their dance routine.</li>
+							</ul></li>
+						<li>Lighting of candles, matches or cigarettes on stage is not allowed and will result in disqualification.</li>
+						
+						<li>In case of situations which have been not described in rules, decision taken by judges will be final.</li>
+						
+						<li>Participants must report 2 hours prior to the start of the event.</li>
+						
+						<li>An elimination round may be held depending on the number of participants.</li>
+						
+						<li>Non Compliance of any of the contest rules & regulation shall immediately disqualify the participants.</li>
 
 
-			
+
+
+
+					</ul>
+			</div>
+		</div>
+
+		<?php
+			if(isset($_SESSION['email']) && !isset($_SESSION['smack2']))
+			{
+		?>
+				<button class="register-button" onclick = "showLight2('smack')">REGISTER</button>
+		<?php 
+			}
+			else if(!isset($_SESSION['email']))
+			{
+		?>
+		 		<button class="register-button">
+		 			<a href = "#/register">REGISTER</a>
+		 		</button>
+		<?php 
+			}
+			else if(isset($_SESSION['email']) && isset($_SESSION['smack2']))
+			{
+		?>
+				<div class="registered-div"><p>REGISTERED</p></div>
+		<?php 
+			} 
+		?>
+		<button class="event-register" onclick="showing(event)" >SEE MORE</button>
+		<button class="event-close" onclick="closing(event)" >CLOSE</button>
+	</div>
+	<div class="event-image"><img src="images/events/z.jpg"></div>	
+	
+		
+</div>
+
+
+<div class="wrap" id="floater">
+	<div class="event-desc-container" id="floater">
+		<div class="event-title">Yatharth ( Street Play )</div>
+		<div class="event-text">
+			<div class="event-caption">
+				What can be a better place than the streets to spread awareness among the 'junta' about social issues in a matter which is purely satirical and rhetorical. Streets, a place where 'Real Eyes, realize, real lies'.<br>
+				<strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 16000!</strong>
+			</div>
+			<div class="event-description">
+				<br><span class="event-subtitle">Rules :</span>
+					<ul>
+						<li>Any number of teams from a college can participate.</li>
+
+						<li>Participation for Yatharth is open to all students.</li>
+						
+						<li>Each team shall consist of 12-20 members.</li>
+						
+						<li>Each team will be given 15-25 minutes for its performance. The next 2 minutes will be penalised (negative marking). The play will be disqualified if it exceeds 27 minutes.</li>
+						
+						<li>No technical support such as mic and musical systems will be provided.</li>
+						
+						<li>Participants can use their own “dhol, chimta, dhapli” (no other instrument is permitted).</li>
+						
+						<li>No prop except chunni and lathi is allowed.</li>
+						
+						<li>Play will be done during day time in an open ground, where an area of around 40ft*40ft will be provided.</li>
+						
+						<li>Only descent satire is allowed. Vulgarity and bitter insinuations will not be entertained.</li>
+						
+						<li>All rules of street play are applicable.</li>
+						
+						<li>In all cases, the decision of the judges and organizers will be irrefutable.</li>
+						
+						<li>All the participating teams should report to the event co-ordinator atleast 2 hours before the start of the event.</li>
+					</ul>
+			</div>
+		</div>
+
+		<?php
+			if(isset($_SESSION['email']) && !isset($_SESSION['yatharth']))
+			{
+		?>
+		 		<button class="register-button" id="floater" onclick = "showLight('yatharth')">REGISTER</button>
+		<?php 
+			}
+			else if(!isset($_SESSION['email']))
+			{
+		?>
+		 		<button class="register-button" id="floater">
+		 			<a href = "#/register">REGISTER</a>
+		 		</button>
+		<?php
+			}
+			else if(isset($_SESSION['email']) && isset($_SESSION['yatharth']))
+			{ 
+		?>
+				<div class="registered-div" id="floater" ><p>REGISTERED</p></div>
+		<?php 
+			} 
+		?>
+		<button class="event-register" onclick="showing(event)" id="floater">SEE MORE </button>
+		<button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
+	</div>
+	<div class="event-image"><img src="images/events/z.jpg"></div>	
+	
+		
+</div>
+
+
+		
 
 <style>
 .hover
@@ -1039,6 +1229,29 @@ function closing(e)
 						</ul> -->
 				</div>
 			</div>
+
+			<?php
+			if(isset($_SESSION['email']) && !isset($_SESSION['timelining']))
+			{
+			?>
+				<button class="register-button" onclick = "showLight3('timelining')">REGISTER</button>
+			<?php 
+			}
+			else if(!isset($_SESSION['email']))
+			{
+			?>
+		 		<button class="register-button">
+		 			<a href = "#/register">REGISTER</a>
+		 		</button>
+			<?php 
+			}
+			else if(isset($_SESSION['email']) && isset($_SESSION['timelining']))
+			{
+			?>
+				<div class="registered-div"><p>REGISTERED</p></div>
+			<?php 
+			} 
+			?>
 			<button class="event-register" onclick="showing(event)" >SEE MORE</button>
 			<button class="event-close" onclick="closing(event)" >CLOSE</button>
 		</div>
@@ -1091,6 +1304,28 @@ function closing(e)
 				</ul> -->
 			</div>
 		</div>
+		<?php
+			if(isset($_SESSION['email']) && !isset($_SESSION['dekode']))
+			{
+		?>
+		 		<button class="register-button" id="floater" onclick = "showLight3('dekode')">REGISTER</button>
+		<?php 
+			}
+			else if(!isset($_SESSION['email']))
+			{
+		?>
+		 		<button class="register-button" id="floater">
+		 			<a href = "#/register">REGISTER</a>
+		 		</button>
+		<?php
+			}
+			else if(isset($_SESSION['email']) && isset($_SESSION['dekode']))
+			{ 
+		?>
+				<div class="registered-div" id="floater" ><p>REGISTERED</p></div>
+		<?php 
+			} 
+		?>
 		<button class="event-register" id="floater" onclick="showing(event)" >SEE MORE</button>
 		<button class="event-close" id="floater" onclick="closing(event)" >CLOSE</button>
 	</div>
@@ -1117,7 +1352,7 @@ function closing(e)
 					For the first time in forever, Zeitgeist presents 'Zigmatics', an online Math contest, which is going to puzzle you with a kind of math you cannot even imagine!<br>
 				</div>
 				<div class="event-description">
-				        Zigmatics is a platform where you can have a one-to-one brain clash with the brilliant minds all over India. It is all set to blend your mind with its perplexingly knotty problems           where you will need to emanate the mathematician inside you to get through them.<br><br>
+				        Zigmatics is all set to blend your mind with its perplexingly knotty problems where you will need to emanate the mathematician inside you to get through them. It is a platform where you can have a one-to-one brain clash with the brilliant minds all over India. <br><br>
 
                                       If you believe, you have the grey cells of a mathematician, then this event surely awaits you with a golden opportunity to nurture your talent and take it leaps and bounds ahead...<br>
                          <span style="color:rgb(250,100,50)">.... and believe us Dr Ramanujan will be so proud !!!<br><br></span>
@@ -1329,7 +1564,7 @@ else
 			</div>
 			<div class="register-input-container">
 			<input class="register-input" placeholder="Name of Participant 2.." name="name2" id="name2">
-			<div id="error7" style="color:red;">Enter Name of Participant 1</div>
+			<div id="error7" style="color:red;">Enter Name of Participant 2</div>
 			</div>
 			<div class="register-input-container">
 			<input class="register-input" placeholder="Contact.." name="contact" id="contactno1" onkeypress="checkInput(event)">
@@ -1348,6 +1583,51 @@ else
             
 	</div>
 </div>	
+
+
+<div id="light2" class="white_content">
+	<div id="fade2" class="black_overlay">
+        <button class="event-register-close" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'">CLOSE</button>
+        <?php
+		if(!isset($_SESSION['smack2']))
+		{
+			?>
+		<form method="post" <?php
+		if(!isset($_SESSION['user_id']))
+		{
+		?>
+        action="#/register" 
+        <?php
+		}
+		else { ?>action="partials/register_duet.php"<?php } ?> onsubmit="return validateForm2();">
+        <input type="hidden" id="event_name" name="event_name" value="smack"/>
+        <input type="hidden" name="participants" value="2"/>
+			<div class="register-input-container">
+			<input class="register-input" placeholder="Name of Participant 1.." name="name1" id="name1d">
+			<div id="error9" style="color:red;">Enter Name of Participant 1</div>
+			</div>
+			<div class="register-input-container">
+			<input class="register-input" placeholder="Name of Participant 2.." name="name2" id="name2d">
+			<div id="error10" style="color:red;">Enter Name of Participant 2</div>
+			</div>
+			<div class="register-input-container">
+			<input class="register-input" placeholder="Contact.." name="contact" id="contactno1d" onkeypress="checkInput(event)">
+			<div id="error11" style="color:red;">Enter your Contact</div>
+			</div>
+			<div class="register-input-container">
+			<button type="submit" value="REGISTER" class="register-button" style="margin-left:12%;margin-top:2em;">REGISTER</button>
+			</div>
+        </form>
+		<?php
+		}
+		
+		?>
+
+		<br>
+            
+	</div>
+</div>	
+
 
 <script type="text/javascript">
 $("#single1").hide();
@@ -1372,7 +1652,7 @@ $('input[type="radio"]').click(function(){
         <button class="event-register-close" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">CLOSE</button>
                         <br>
                          <?php
-			if(!isset($_SESSION['torque']) || !isset($_SESSION['tarang']))
+			if(!isset($_SESSION['torque']) || !isset($_SESSION['tarang'])  || !isset($_SESSION['yatharth']))
 		{
 			?>
 		<form method="post" <?php
@@ -1417,8 +1697,54 @@ $('input[type="radio"]').click(function(){
 		?>
             <br>
 		   	</div>
-		</div>
+</div>
 
+<div id="light3" class="white_content"><p style="color:red;"></p> 
+        <div id="fade3" class="black_overlay">
+        <button class="event-register-close" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade3').style.display='none'">CLOSE</button>
+                        <br>
+                         <?php
+			if(!isset($_SESSION['dekode']) || !isset($_SESSION['timelining']))
+		{
+			?>
+		<form method="post" <?php
+		if(!isset($_SESSION['user_id']))
+		{
+		?>
+        action="#/register" 
+        <?php
+		}
+		else { ?>action="partials/register_technical.php"<?php } ?> onsubmit="return validateForm4();">
+					<div class="register-input-container">
+					<input class="register-input" name="name1" id="namer1" placeholder="Name of Participant1..">
+					<div id="error11" class="register-error"style="color:red;">Enter name of participant 1</div>
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="Name of Participant2.." name="name2" id="namer2">
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="Name of Participant3.." name="name3" id="namer3">
+					</div>
+					<div class="register-input-container">
+					<input class="register-input" placeholder="Team Name.." name="team_name" id="team_namer">
+					<div id="error44" class="register-error">Enter your Team Name</div>
+					</div>
+					<input type="hidden" id="event_name" name="event_name" value="dekode"/>
+					<div class="register-input-container">
+					<button type="submit" value="REGISTER" class="register-button" style="margin-left:12%;margin-top:2em;">REGISTER</button>
+					</div>
+		    </form>			
+            <?php
+		}
+		else
+		{
+			echo "<span style='color:red'>Registered</span>";
+		}
+		?>
+            <br>
+		</div>
+</div>
+   
    
    
 <style type="text/css">
@@ -1539,6 +1865,29 @@ $('input[type="radio"]').click(function(){
     }
 
 
+    $('#error11').hide();
+	$('#error44').hide();
+	
+
+    	function validateForm4()
+    	{
+    $('#error11').hide();
+	$('#error44').hide();
+	
+	
+    	var check=0;
+    	var title = $("#namer1").val();
+    	if (title=="" || title==null) { $('#error11').show();check=check+1;} else	{}
+    	
+    	
+    	
+    	var title4 = $("#team_namer").val();
+    	if (title4=="" || title4==null) { $('#error44').show();check=check+1;} else{}
+    	if (check>0)
+    	return false;
+    }
+
+
     function checkInput(evt)
 {
     //only alpha-numeric characters
@@ -1581,6 +1930,23 @@ $('input[type="radio"]').click(function(){
     	$("#light1").find('#event_name').val(s);
     	document.getElementById('light1').style.display='block';
     	document.getElementById('fade1').style.display='block';
+    }
+    function showLight2(s)
+    {
+    	$('#error9').hide();
+		$('#error10').hide();
+		$('#error11').hide();
+    	$("#light2").find('#event_name').val(s);
+    	document.getElementById('light2').style.display='block';
+    	document.getElementById('fade2').style.display='block';
+    }
+    function showLight3(s)
+    {
+    	$('#error11').hide();
+		$('#error44').hide();
+		$("#light3").find('#event_name').val(s);
+    	document.getElementById('light3').style.display='block';
+    	document.getElementById('fade3').style.display='block';
     }
 </script>
 	
