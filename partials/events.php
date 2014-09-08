@@ -752,7 +752,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
 
         <div class="wrap" id="floater">
             <div class="event-desc-container" id="floater">
-                <div class="event-title">Yatharth ( Street Play )</div>
+                <div class="event-title">Nukkad Natak ( Street Play )</div>
                 <div class="event-text">
                     <div class="event-caption">
                         What can be a better place than the streets to spread awareness among the 'junta' about social issues in a matter which is purely satirical and rhetorical. Streets, a place where 'Real Eyes, realize, real lies'.
@@ -764,7 +764,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
                         <ul>
                             <li>Any number of teams from a college can participate.</li>
 
-                            <li>Participation for Yatharth is open to all students.</li>
+                            <li>Participation for Nukkad Natak is open to all students.</li>
 
                             <li>Each team shall consist of 12-20 members.</li>
 
@@ -791,9 +791,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
 
                 <?php
 
-if (isset($_SESSION['email']) && !isset($_SESSION['yatharth']))
+if (isset($_SESSION['email']) && !isset($_SESSION['nukkad']))
 { ?>
-                <button class="register-button" id="floater" onclick="showLight('yatharth')">REGISTER</button>
+                <button class="register-button" id="floater" onclick="showLight('nukkad')">REGISTER</button>
                 <?php
 }
 else
@@ -805,7 +805,7 @@ if (!isset($_SESSION['email']))
                 <?php
 }
 else
-if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
+if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
 { ?>
                 <div class="registered-div" id="floater">
                     <p>REGISTERED</p>
@@ -816,7 +816,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
                 <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/yatharth.jpg">
+                <img src="images/events/z.jpg">
             </div>
 
 
