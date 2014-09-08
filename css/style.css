@@ -552,7 +552,7 @@ a img
 	/*for IE*/
 	-pie-background:  rgba(200, 54, 54, 0.5);
     behavior: url(PIE.htc);
-    width: 70%;
+    /*width: 70%;*/
     margin-top: 2em;
 }
 
