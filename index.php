@@ -192,7 +192,7 @@
     </div>
     <div class='music-player'>
       <!-- <div id="title"></div> -->
-      <audio id="audio-player" src="music/1.ogg" preload="auto" controls="controls" loop></audio>
+      <audio id="audio-player" src="music/mix.ogg" preload="auto" controls="controls" loop></audio>
     </div>
     </span>
     <script src="js/bootstrap.min.js"></script>
