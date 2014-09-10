@@ -1,7 +1,8 @@
 
 var news = [
 	
-	"Mr. and Ms. Zeitgeist has begun. Prizes Worth Rs. 15000! Check Events page for more Information.",
+	"Event Registrations are open. Prizes worth 2 Lakh to be won!",
+	"Last Date for submission and counting likes for Mr and Ms Zeitgesit is 27 September.",
 	"Zeitgeist 2014 | 9th - 11th October",
 ];
 
@@ -28,7 +29,7 @@ $(document).ready(function(){
 
 		$('#news').text(news[i]);
 		i = i + 1;
-	},2000);
+	},4000);
 
 	$(".nav-image").mouseover(add_color);	//refer to the add function below
 
