@@ -1322,13 +1322,13 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
                 <div class="event-title">DeKode</div>
                 <div class="event-text">
                     <div class="event-caption">
-                        If you are someone who loves solving murder mysteries, reading a detective novel or solving cryptograms then DeKode is an event for you. DeKode, a cryptic puzzle based contest, is a platform to promote, showcase and reward your logical and lateral thinking abilities.
+                        If you are someone who loves solving murder mysteries, reading a detective novel or solving cryptograms then DeKode is an event for you. 
                         <br />
                         <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
                     </div>
                     <div class="event-description">
                         <br /><span class="event-subtitle">Introduction :</span>
-                        <br />If you are someone who loves solving murder mysteries, reading a detective novel or solving cryptograms then DeKode is an event for you. DeKode, a cryptic puzzle based contest, is a platform to promote, showcase and reward your logical and lateral thinking abilities. Decrypting ciphers was an invaluable source of military intelligence throughout the World War II. The event draws analogy from this cryptic war, where deciphering countries' messages was a major focus area and played a vital role in deciding the outcome of the war.
+                        <br />DeKode, a cryptic puzzle based contest, is a platform to promote, showcase and reward your logical and lateral thinking abilities. Decrypting ciphers was an invaluable source of military intelligence throughout the World War II. The event draws analogy from this cryptic war, where deciphering countries' messages was a major focus area and played a vital role in deciding the outcome of the war.
                         <br />
                         <br /><span class="event-subtitle">Rules :</span>
                         <ul>
@@ -1481,7 +1481,78 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
             </div>
 
         </div>
+        <div class="wrap">
+                    <div class="event-desc-container">
+                        <div class="event-title">AlgoXtreme</div>
+                        <div class="event-text">
+                            <div class="event-caption">
+                                Wanna have some fun with programming ? If yes , then this is the place to be.
+                                <br />This year , Zeitgeist is back to revive the geek in you with its ultra challenging coding contest  <span style="color:rgb(250,100,50)">"AlgoXtreme"</span>. 
+                                <br /><strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 6000 + 10 HackerEarth T-Shirts!</strong>
+                            </div>
+                            <div class="event-description">
+                               <br />If you think, your programmer-self has the ability to rule the world of programming then it's nothing better than now.<br><br>Register yourself for the event and you will know programming was never much fun than at Zetigeist.
 
+                                Prizes:<br /><br />
+
+                                First Prize Worth <span style="color:rgb(250,100,50)">Rs. 3000.</span>
+                                <br />Second Prize Worth <span style="color:rgb(250,100,50)">Rs. 2000.</span>
+                                <br />Third Prize Worth <span style="color:rgb(250,100,50)">Rs. 1000.</span>
+                                <br /><br />Also<span style="color:rgb(250,100,50)"> HackerEarth T-Shirts</span> to top 10 participants.
+
+                                <!--<span style="color:rgb(250,100,50)">
+                            For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.-->
+                                <!-- <span class="event-subtitle">Prizes</span>
+                        <ul>
+                            <li>Goodies and Coupons</li>
+                        </ul> -->
+                                <!-- <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 20/- per participant</li>
+                        </ul> -->
+                            </div>
+                        </div>
+
+                         <?php
+
+                            if (!isset($_SESSION['algo']))
+                        { ?>
+                                <form method="post" class="literary-form" <?php
+                            if (!isset($_SESSION['user_id']))
+                        { ?>
+                                action="#/register">
+                                <button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+                                </form>
+                        <?php
+                        }
+                        else
+                        { ?> id="singleone">
+                                <input type="hidden" id="event_name" name="event_name" value="algo" />
+                                <button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+                                </form>
+
+                        <?php
+                        } ?>
+                        <?php
+                        }
+                        else
+                        { ?>
+                                <div class="registered-div">
+                                    <p>REGISTERED</p>
+                                </div>
+                        <?php
+                        } ?>
+                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                        <button class="event-close" onclick="closing(event)">CLOSE</button>
+                    </div>
+                    <div class="event-image">
+                        <img src="images/events/algo.jpg">
+                    </div>
+
+                </div>
+
+
+            </div>
 
     </div>
 
