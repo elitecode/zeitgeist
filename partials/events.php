@@ -1416,7 +1416,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                     </div>
                     <div class="event-description">
                         Zigmatics is all set to blend your mind with its perplexingly knotty problems where you will need to emanate the mathematician inside you to get through them. It is a platform where you can have a one-to-one brain clash with the brilliant minds all over India.
-                        <br />
+                        <br /><span style="color:rgb(250,100,50)">...and Math turns Meth here!</span>
                         <br />If you believe, you have the grey cells of a mathematician, then this event surely awaits you with a golden opportunity to nurture your talent and take it leaps and bounds ahead...
                         <br />
                         <span style="color:rgb(250,100,50)">.... and believe us Dr Ramanujan will be so proud !!!<br /><br /></span>
@@ -1493,7 +1493,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                             <div class="event-description">
                                <br />If you think, your programmer-self has the ability to rule the world of programming then it's nothing better than now.<br><br>Register yourself for the event and you will know programming was never much fun than at Zetigeist.
 
-                                Prizes:<br /><br />
+                                <br /><br />
+                                The event will begin on 28th September at 9PM.<br /><br />
+
+                                Prizes:<br />
 
                                 First Prize Worth <span style="color:rgb(250,100,50)">Rs. 3000.</span>
                                 <br />Second Prize Worth <span style="color:rgb(250,100,50)">Rs. 2000.</span>
