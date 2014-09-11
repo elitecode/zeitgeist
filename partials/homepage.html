@@ -1,7 +1,19 @@
 <center data-scroll-reveal-container>
-
+<!--
+<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face" id = "homepage-logo-box">
+    <img src = "" id = "homepage-logo">
+  </div>
+  <div class="back face center">
+    <img src = "images/events/falak.jpg">
+  </div>
+</div>
+</div>
+-->
 <div class = "row" id = "homepage-logo-box">
 	<img src = "" id = "homepage-logo">
+  <img src = "images/events/falak.jpg" id="falak">
 </div>
 <!-- news will be displayed here. Refer script.js  line #2 to change news -->
 <div id = "updates"> 
@@ -11,4 +23,56 @@
 	</span>
 </div>
 
+
 </center>
+<script type="text/javascript">
+        jQuery("#falak").hide();
+        jQuery("#homepage-logo-box").mouseenter(function() {
+            jQuery("#homepage-logo").hide();
+            jQuery("#falak").fadeIn();
+
+        });
+
+        jQuery("#homepage-logo-box").mouseleave(function() {
+            jQuery("#falak").hide();
+            jQuery("#homepage-logo").fadeIn();
+        });
+</script>
+<style>
+#falak
+{
+  margin-top: 5em;
+  padding-bottom: 1.2em;
+}
+</style>
+<!--
+<style>
+#f1_container {
+  margin: 10px auto;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateX(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateX(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+}
+</style>-->
