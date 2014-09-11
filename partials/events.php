@@ -1157,7 +1157,7 @@ else
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/blindpainting.jpg">
             </div>
 
         </div>
