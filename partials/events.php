@@ -623,6 +623,7 @@ if ((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSI
 	}
 	else
 	{ ?>>
+                    <input type="hidden" id="event_name" name="event_name" value="titan" />
                     <button type="submit" value="REGISTER" class="register-button titan-button" id="floater">REGISTER</button>
                     </form>
                     <?php
@@ -1307,7 +1308,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
                     <p>REGISTERED</p>
                 </div>
                 <?php
-} ?>
+} ?>        
                 <button class="event-register" onclick="showing(event)">SEE MORE</button>
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
@@ -1340,16 +1341,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
 
                             <li>All the participants will be contacted shortly after they register for the event and will be provided with some basic preparatory material.</li>
 
-                            <li>The decision of the judges and the organizers shall be final and abiding Contestants will be judged for the following skills:
-                                <ul>
-                                    <li>Inductive reasoning</li>
-
-                                    <li>Deductive reasoning</li>
-
-                                    <li>General Knowledge</li>
-
-                                    <li>Lateral thinking</li>
-                                </ul>
+                            <li>The decision of the judges and the organizers shall be final and abiding.</li>
                         </ul>
                         <span style="color:rgb(250,100,50)">
 					For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
@@ -1416,7 +1408,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                     </div>
                     <div class="event-description">
                         Zigmatics is all set to blend your mind with its perplexingly knotty problems where you will need to emanate the mathematician inside you to get through them. It is a platform where you can have a one-to-one brain clash with the brilliant minds all over India.
-                        <br />
+                        <br /><span style="color:rgb(250,100,50)">...and Math turns Meth here!</span>
                         <br />If you believe, you have the grey cells of a mathematician, then this event surely awaits you with a golden opportunity to nurture your talent and take it leaps and bounds ahead...
                         <br />
                         <span style="color:rgb(250,100,50)">.... and believe us Dr Ramanujan will be so proud !!!<br /><br /></span>
@@ -1493,7 +1485,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                             <div class="event-description">
                                <br />If you think, your programmer-self has the ability to rule the world of programming then it's nothing better than now.<br><br>Register yourself for the event and you will know programming was never much fun than at Zetigeist.
 
-                                Prizes:<br /><br />
+                                <br /><br />
+                                The event will begin on 28th September at 9PM.<br /><br />
+
+                                Prizes:<br />
 
                                 First Prize Worth <span style="color:rgb(250,100,50)">Rs. 3000.</span>
                                 <br />Second Prize Worth <span style="color:rgb(250,100,50)">Rs. 2000.</span>

@@ -49,17 +49,19 @@ else
 				$participants = $result['participants'];
 				$_SESSION[$event_name.$participants] = 1;
 			}
-			$query = "SELECT titan_event_id FROM titan_event WHERE email='$email';";
+			$query = "SELECT single_event_id,event_name FROM single_event WHERE email='$email';";
 			$res = mysqli_query($connect,$query);
-			if(mysqli_num_rows($res) == 1)
+			while($result = mysqli_fetch_array($res))
 			{
-				$_SESSION['titan' ] =1;
+				$event_name = $result['event_name'];
+				$_SESSION[$event_name] = 1;
 			}
-			$query = "SELECT dekode_event_id FROM dekode_event WHERE email='$email';";
+			$query = "SELECT technical_event_id,event_name FROM technical_events WHERE email='$email';";
 			$res = mysqli_query($connect,$query);
-			if(mysqli_num_rows($res) == 1)
+			while($result = mysqli_fetch_array($res))
 			{
-				$_SESSION['dekode' ] =1;
+				$event_name = $result['event_name'];
+				$_SESSION[$event_name] = 1;
 			}
 			//echo "Access granted";
 			header('Location:../index.php');
