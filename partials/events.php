@@ -30,11 +30,11 @@ session_start(); ?>
                         <div class="event-subtitle">Offline Selection :</div>
                         A candidate willing to participate in the competition can do so by registering himself/herself on-the-spot. The registration fee for the event is <span style="color:rgb(250,100,50)">Rs. 300/-</span>. After registration he/she will have to clear a set of rounds to reach the final/semi-final round to compete with those selected online. A maximum of <span style="color:rgb(250,100,50)">6 candidates (3 boys and 3 girls)</span> will be selected from the offline entry.
                         <br />
-                        <br />If the number of boys and girls who turn up on the day of event are unequal, weÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ll have a semi-final round to <span style="color:rgb(250,100,50)">equal the number of girls and boys</span> qualifying for the next round. In such a case the number of qualifying participants will depend on the number of the boys/girls, whichever is smaller. For e.g. if 4 girls and 5 boys turn up at the event then a total of 8 participants (4 boys and 4 girls) will be shortlisted for the final rounds.
+                        <br />If the number of boys and girls who turn up on the day of event are unequal, we'll have a semi-final round to <span style="color:rgb(250,100,50)">equal the number of girls and boys</span> qualifying for the next round. In such a case the number of qualifying participants will depend on the number of the boys/girls, whichever is smaller. For e.g. if 4 girls and 5 boys turn up at the event then a total of 8 participants (4 boys and 4 girls) will be shortlisted for the final rounds.
                         <br />
                         <ol>
                             <li>In case if the number of participants is 10 or less than 10 and are equal, these will automatically qualify for the final rounds.</li>
-                            <li>In case if more than 10 participants turn up, then weÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ll have a semi-final round to select a total of 10 candidates (5 girls and 5 boys).</li>
+                            <li>In case if more than 10 participants turn up, then we'll have a semi-final round to select a total of 10 candidates (5 girls and 5 boys).</li>
                             <li>The finalists will then compete to win the title of Mr. and Miss Zeitgeist 2014.</li>
                             <li>The tentative dates for the semifinal and final rounds are <span style="color:rgb(250,100,50)">10th October</span> and <span style="color:rgb(250,100,50)">11th October</span> respectively.</li>
                         </ol>
@@ -50,7 +50,7 @@ session_start(); ?>
                         <ol>
                             <li>Best Attire:<span style="color:rgb(250,100,50)">*</span>Pairs would be formed among the short-listed participants to judge the body language, sense of dressing and personality.</li>
                             <li>Talent Round:Each participant will have to showcase his/her talent on stage. Each participant will be given a maximum of 2 minutes to display his/her talent.</li>
-                            <li>Questionnaire:The last roundÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ Each participant will be asked a question by the judges. He/she gets two minute to think and to answer.</li>
+                            <li>Questionnaire:The last round : Each participant will be asked a question by the judges. He/she gets two minute to think and to answer.</li>
                         </ol>
                         <span class="event-subtitle">Result</span>:
                         <br />The result will be based on the total sum of points obtained in the all the three rounds .
@@ -91,17 +91,17 @@ session_start(); ?>
                             <li>An elimination round may be held depending on the number of participants.</li>
                             <li>Drum kit will be provided to the participants.</li>
                         </ul>
-                        <br />
-                        <!-- <span class="event-subtitle">Prizes :</span><br />
-				<ul>
-					<li>Winner : 15000/-</li>
-					<li>Runner-up : 10000/-</li>
-				</ul> -->
-                        <br />
-                        <!-- <span class="event-subtitle">Registration :</span><br />
-				<ul>
-					<li>Registration Fees: 1500/- per team</li>
-				</ul> -->
+                        <br /><br />
+                        <!--<span class="event-subtitle">Prizes :</span><br />
+				        <ul>
+					       <li>Winner : 15000/-</li>
+					       <li>Runner-up : 10000/-</li>
+				        </ul> 
+                        <br />-->
+                        <span class="event-subtitle">Registration :</span><br />
+				        <ul>
+					       <li>Registration Fees: 1000/- per team</li>
+				        </ul> 
                     </div>
                 </div>
                 <?php
@@ -167,7 +167,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
 
                             <li>Teams have to apply through their respective colleges.</li>
 
-                            <li>Teams must bring 2 CDÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
+                            <li>Teams must bring 2 CDs containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
 
                             <li>No props will be provided.</li>
 
@@ -195,10 +195,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
 
 					<li>Runner-up : 10000/-</li>
 				</ul> -->
-                        <!-- <span class="event-subtitle">Registration :</span>
-				<ul>
-					<li>Registration Fees : 1500/- per team</li>
-				</ul> -->
+                        <span class="event-subtitle">Registration :</span>
+				        <ul>
+					       <li>Registration Fees : 1000/- per team</li>
+				        </ul> 
                     </div>
                 </div>
 
@@ -261,7 +261,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
 
                             <li>Negative marking for exceeding the TIME LIMIT.</li>
 
-                            <li>Participant must bring 2 CDÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
+                            <li>Participant must bring 2 CDs containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
 
                             <li>The dance floor area must be in the same condition after the performances as before.</li>
 
@@ -294,7 +294,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
 						<li>Winner : 3000/-</li>
 
 		 				<li>Runner-up : 1500/-</li>
-		 			</ul> -->
+                    </ul>-->
+                            <span class="event-subtitle">Registration :</span>
+                            <ul>
+                                <li>Registration Fees : 150/-</li>
+                            </ul>  
                     </div>
                 </div>
                 <?php
@@ -475,6 +479,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
                                     </li>
                                 </ol>
                         </ul>
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Solo : 150/-</li>
+                           <li>Duet : 300/- per team</li>
+                        </ul> 
                     </div>
                 </div>
                 <button class="register-button" onclick="showLight1('saaz')">REGISTER</button>
@@ -605,6 +614,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 
 		 				<li>Runner-up : 1500/-</li>
 		 			</ul> -->
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 200/- </li>
+                        </ul> 
                     </div>
                 </div>
                 <div>
@@ -714,6 +727,10 @@ else
 
 
                         </ul>
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 300/- per team</li>
+                        </ul> 
                     </div>
                 </div>
 
@@ -787,6 +804,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
 
                             <li>All the participating teams should report to the event co-ordinator atleast 2 hours before the start of the event.</li>
                         </ul>
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 1000/- per team</li>
+                        </ul> 
                     </div>
                 </div>
 
@@ -1163,78 +1184,7 @@ else
         </div>
 
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
-                <div class="event-title">Graffiti</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        Do you love spreading your messages, ideas or knowledge by scribbling them on a wall in the funkiest way possible? If yes, what can be a better way to express your love than creating masterpieces in the form of graffiti. Just ideate and paint.
-                        <br />
-                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
-                    </div>
-                    <div class="event-description">
-                        <br /><span class="event-subtitle">Rules :</span>
-                        <ul>
-                            <li>Only individual participation allowed.</li>
-
-                            <li>Time allowed is 1hour.</li>
-
-                            <li>Participant will have to draw graffiti on 10x10 cm paper.</li>
-
-                            <li>All the materials required will be provided.</li>
-
-                            <li>Participants will have to use their imagination and no external sources will be allowed.</li>
-                        </ul>
-                        <!-- <span class="event-subtitle">Prizes</span>
-				<ul>
-					<li>Goodies and Coupons</li>
-				</ul> -->
-                        <!-- <span class="event-subtitle">Registration Fees :</span>
-				<ul>
-					<li>Registration Fees: 20/- per participant</li>
-				</ul> -->
-                    </div>
-                </div>
-                <div>
-                    <?php
-
-if (!isset($_SESSION['graffiti']))
-{ ?>
-                    <form method="post" class="literary-form" <?php
-	if (!isset($_SESSION['user_id']))
-	{ ?>
-                        action="#/register">
-                        <button type="submit" value="REGISTER" id='floater' class="register-button">REGISTER</button>
-                    </form>
-                    <?php
-	}
-	else
-	{ ?>id="singleone">
-                    <input type="hidden" id="event_name" name="event_name" value="graffiti" />
-                    <button type="submit" value="REGISTER" id="floater" class="reg-button">REGISTER</button>
-                    </form>
-
-                    <?php
-	} ?>
-                    <?php
-}
-else
-{ ?>
-                    <div id="floater" class="registered-div">
-                        <p>REGISTERED</p>
-                    </div>
-                    <?php
-} ?>
-                </div>
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/z.jpg">
-            </div>
-
-        </div>
-
+        
 
 
     </div>
@@ -1479,7 +1429,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                         <div class="event-text">
                             <div class="event-caption">
                                 Wanna have some fun with programming ? If yes , then this is the place to be.
-                                <br />This year , Zeitgeist is back to revive the geek in you with its ultra challenging coding contest  <span style="color:rgb(250,100,50)">"AlgoXtreme"</span>. 
+                                <br />This year , Zeitgeist is back to revive the geek in you with its ultra challenging coding contest  <span style="color:rgb(250,100,50)">"AlgoXtreme" ( Powered by HackerEarth )</span>. 
                                 <br /><strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 6000 + 10 HackerEarth T-Shirts!</strong>
                             </div>
                             <div class="event-description">
@@ -1487,6 +1437,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
 
                                 <br /><br />
                                 The event will begin on 28th September at 9PM.<br /><br />
+
+                                <a href="http://www.hackerearth.com/algoxtreme/" target="_blank">Go to Event Page</a><br><br>
 
                                 Prizes:<br />
 
