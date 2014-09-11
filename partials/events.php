@@ -623,6 +623,7 @@ if ((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSI
 	}
 	else
 	{ ?>>
+                    <input type="hidden" id="event_name" name="event_name" value="titan" />
                     <button type="submit" value="REGISTER" class="register-button titan-button" id="floater">REGISTER</button>
                     </form>
                     <?php
@@ -1307,7 +1308,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
                     <p>REGISTERED</p>
                 </div>
                 <?php
-} ?>
+} ?>        
                 <button class="event-register" onclick="showing(event)">SEE MORE</button>
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
@@ -1340,16 +1341,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
 
                             <li>All the participants will be contacted shortly after they register for the event and will be provided with some basic preparatory material.</li>
 
-                            <li>The decision of the judges and the organizers shall be final and abiding Contestants will be judged for the following skills:
-                                <ul>
-                                    <li>Inductive reasoning</li>
-
-                                    <li>Deductive reasoning</li>
-
-                                    <li>General Knowledge</li>
-
-                                    <li>Lateral thinking</li>
-                                </ul>
+                            <li>The decision of the judges and the organizers shall be final and abiding.</li>
                         </ul>
                         <span style="color:rgb(250,100,50)">
 					For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.

@@ -63,8 +63,12 @@ $(".titan-button").click(function(event){
 	var r = confirm("Register for this event?");
 	if(r)
 	{
+		var event_name = $(this).parent().find("#event_name").val();
 		$.ajax({
-			url : "partials/register_titan.php",
+			url : "partials/register_single.php",
+			data : 	{
+						"event_name" : event_name
+					},
 			method : "POST"
 		}).
 		success(function(){
@@ -78,3 +82,5 @@ $(".titan-button").click(function(event){
 		//not registering
 	}
 });
+
+
