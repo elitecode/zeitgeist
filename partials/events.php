@@ -66,7 +66,7 @@ session_start(); ?>
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/mrnmsz.jpg">
+                <img src="images/events/MrandMsZ.jpg">
             </div>
         </div>
 
@@ -92,12 +92,12 @@ session_start(); ?>
                             <li>Drum kit will be provided to the participants.</li>
                         </ul>
                         <br /><br />
-                        <!--<span class="event-subtitle">Prizes :</span><br />
+                        <span class="event-subtitle">Prizes :</span><br />
 				        <ul>
 					       <li>Winner : 15000/-</li>
-					       <li>Runner-up : 10000/-</li>
+					       <li>Runner-up : 8000/-</li>
 				        </ul> 
-                        <br />-->
+                        <br />
                         <span class="event-subtitle">Registration :</span><br />
 				        <ul>
 					       <li>Registration Fees: 1000/- per team</li>
@@ -189,12 +189,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
 
                             <li>Non Compliance of any of the contest rules & regulation shall immediately disqualify the participants and use of costume as it complements the contestants and their dance routine.</li>
                         </ul>
-                        <!-- <span class="event-subtitle">Prizes :</span>
-		 		<ul>
-					<li>Winner : 15000/-</li>
+                        <span class="event-subtitle">Prizes :</span>
+		 		        <ul>
+        					<li>Winner : 12000/-</li>
 
-					<li>Runner-up : 10000/-</li>
-				</ul> -->
+        					<li>Runner-up : 6000/-</li>
+				        </ul> 
                         <span class="event-subtitle">Registration :</span>
 				        <ul>
 					       <li>Registration Fees : 1000/- per team</li>
@@ -289,12 +289,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
 
                             <li>Non Compliance of any of the contest rules & regulation shall immediately disqualify the participants.</li>
                         </ul>
-                        <!-- <span class="event-subtitle">Prizes :</span>
-					<ul>
-						<li>Winner : 3000/-</li>
+                        <span class="event-subtitle">Prizes :</span>
+					   <ul>
+						  <li>Winner : 2000/-</li>
 
-		 				<li>Runner-up : 1500/-</li>
-                    </ul>-->
+		 				  <li>Runner-up : 1000/-</li>
+                        </ul>
                             <span class="event-subtitle">Registration :</span>
                             <ul>
                                 <li>Registration Fees : 150/-</li>
@@ -479,6 +479,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
                                     </li>
                                 </ol>
                         </ul>
+
                         <span class="event-subtitle">Registration :</span>
                         <ul>
                            <li>Solo : 150/-</li>
@@ -505,7 +506,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
                     <div class="event-caption">
                         One-of-a-kind event where one can witness the ultimate showdown challenging the human strength and endurance to the limits unknown and Darwin's "survival of the fittest" will decide the one who earns the glory of being called the "Titan" - the strongest of all ....
                         <br />
-                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 8000!</strong> 
+                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 5000!</strong> 
                     </div>
                     <div class="event-description">
                         <br /><span class="event-subtitle">Events :</span>
@@ -592,28 +593,28 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 
                             <li>No lifting costumes will be allowed.</li>
 
-                            <li>Gear allowed ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ lifting belt, knee, elbow and wrist wraps.</li>
+                            <li>Gear allowed : lifting belt, knee, elbow and wrist wraps.</li>
 
                             <li>If the number of athletes registered are more than 5, then the first event, Medley, will act as a qualifying round, where top 5 athletes will compete in the later events.</li>
 
-                            <li>Before each attempt, athlete will be asked ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œare you readyÃƒÂ¢Ã¢â€šÂ¬Ã‚Â, if the athlete is ready, he shall answer with ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œyesÃƒÂ¢Ã¢â€šÂ¬Ã‚Â after which he will wait for the refereeÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s command ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œgoÃƒÂ¢Ã¢â€šÂ¬Ã‚Â/whistle and the timer will start.</li>
+                            <li>Before each attempt, athlete will be asked : are you ready?, if the athlete is ready, he shall answer with : yes, after which he will wait for the referee's command : go! and whistle and the timer will start.</li>
 
                             <li>Decision of the referee will be final.</li>
 
                             <li>For each event athletes will be given points according to their finish. If 5 athletes are competing in an event, 1st gets 5 points, 2nd gets 4 points, 3rd gets 3 points and so on.</li>
 
-                            <li>Athlete with maximum points in the ends will be TitanÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢14.</li>
+                            <li>Athlete with maximum points in the ends will be Titan'14.</li>
 
                             <li>We expect brotherhood and healthy competition.</li>
 
 
                         </ul>
-                        <!-- <span class="event-subtitle">Prizes :</span>
-					<ul>
-						<li>Winner : 3000/-</li>
-
-		 				<li>Runner-up : 1500/-</li>
-		 			</ul> -->
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 5000/-</li>
+                           
+                        </ul> 
+                        <br />
                         <span class="event-subtitle">Registration :</span>
                         <ul>
                            <li>Registration Fees : 200/- </li>
@@ -655,7 +656,7 @@ else
                 <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/TITAN.jpg">
             </div>
 
         </div>
@@ -727,6 +728,12 @@ else
 
 
                         </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 3000/-</li>
+                           <li>Runner-up : 1500/-</li>
+                        </ul> 
+                        <br />
                         <span class="event-subtitle">Registration :</span>
                         <ul>
                            <li>Registration Fees : 300/- per team</li>
@@ -804,6 +811,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
 
                             <li>All the participating teams should report to the event co-ordinator atleast 2 hours before the start of the event.</li>
                         </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 10000/-</li>
+                           <li>Runner-up : 6000/-</li>
+                        </ul> 
+                        <br />
                         <span class="event-subtitle">Registration :</span>
                         <ul>
                            <li>Registration Fees : 1000/- per team</li>
@@ -843,6 +856,174 @@ if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
 
 
         </div>
+         <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Yatharth ( Stage Play )</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        What can be a better place than the streets to spread awareness among the 'junta' about social issues in a matter which is purely satirical and rhetorical. Streets, a place where 'Real Eyes, realize, real lies'.
+                        <br />
+                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 12000!</strong>
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Plays should be no less than 10 minutes and no longer than 25 minutes. Plays not within time limit will have deductions on a point system as follows: 1 (one) point for every minute over or under the time limit.</li>
+                            
+                            <li>Please furnish the judge with a copy of the play.</li>
+                            
+                            <li>Each team must furnish their own props. Tact and taste should be used in selecting clothes, costumes, props, scenery, and etcetera.</li>
+
+                            <li>Curtains should not be pulled closed once the play has begun. If the curtain is closed the play must be finished. Use lighting effects, a narrator, or some other method to achieve scene changes.</li>
+
+                            <li>Team entering a play in the competition will furnish their own stagehands.</li>
+
+                            <li>A waiting area in the corridor leading north from the stage entry area will be designated for each competing team to assemble at. When a play is finished they will have 5 minutes to vacate the stage. The next cast will then have 5 minutes to prepare the stage. For example: play ends at 9:40, stage cleared by 9:45 , next play starts at 9:50.</li>
+                         
+                            <li>Groups will be verbally critiqued by judges giving comments to group members and directors during the 5 minutes allowed for the next play's set­up (see above).</li>
+       
+                            <li>One first place, second place and third place winner will be selected. Numbers on critique sheets range from 5 as high (excellent) to 1 as low (weak, needs improvement).</li>
+
+                            <li>Doors into the auditorium will be closed for the duration of each play so as not to cause distractions with entry and exit. Casts waiting to perform or who have performed are strongly encouraged to attend the other performances.</li>
+
+                            <li>Team may enter more than one play as they wish. Individuals may be in no more than four total performances in the Drama .</li>
+
+                            <li>If you will be using sound track, you have to provide one person who will be instructing to playthe sound track. You have to bring that sound track in pen­drive.</li>
+
+                            <li>You will be provided mic .Chairs and tables can be provided if asked in advance.</li>
+
+                            <li>Decision of judge/panel of judges will be final and will not be subject to change in any case.</li>
+                        </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 8000/-</li>
+                           <li>Runner-up : 4000/-</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 800/- per team</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <?php
+
+if (isset($_SESSION['email']) && !isset($_SESSION['yatharth']))
+{ ?>
+                <button class="register-button" onclick="showLight('yatharth')">REGISTER</button>
+                <?php
+}
+else
+if (!isset($_SESSION['email']))
+{ ?>
+                <button class="register-button" >
+                    <a href="#/register">REGISTER</a>
+                </button>
+                <?php
+}
+else
+if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
+{ ?>
+                <div class="registered-div">
+                    <p>REGISTERED</p>
+                </div>
+                <?php
+} ?>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/yatharth.jpg">
+            </div>
+
+
+        </div>
+        <div class="wrap" id="floater">
+            <div class="event-desc-container" id="floater">
+                <div class="event-title">Lashkara (Feel The Fashion )</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        The time has come for you to step aside and choose the path untrodden , unleash the glamour in you, and show the world that conventions are not your cup of tea. And Zeitgeist gives you a golden opportunity to realise your ravishing dreams here at <strong style="color:rgb(250,100,50)">"Lashkara"</strong>. <br />
+                       <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 16000!</strong>-->
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Fashion Show Competition is open only to college students.</li>
+
+                            <li>The maximum number of models allowed per team is 26, exclusive of the designer and choreographer. Every team will be allowed 15 min to showcase all their models (empty stage to empty stage).</li>
+
+                            <li>Crossover teams can be formed between students of at most 2 colleges, all having valid college ID cards for the current year. No branding on clothes. Sponsors of colleges will be given announcements only.</li>
+
+                            <li>Team can take help of people outside the college such as designers, choreographers, make­up artists, but these professionals will not be considered to be a part of the team and will not be eligible for the Best Designer or Best Choreographer.</li>
+
+                            <li>Vulgarity of any kind would lead to disqualification from the event. Hence, if the team feels that any stunt or costume design can be deemed as vulgar, it is strongly advised to consult the organizers than performing it directly on stage. The decision of the organizers will be final in case of any disputes arising due to this.</li>
+
+                            <li>The decision of the Event Coordinator will be final and binding on all.</li>
+
+                            <li>Teams are suggested to inform the organizers of any kind of props they are planning to use. We might consider any special request of extra prop based on its feasibility and availability.</li>
+
+                            <li>The teams are required to bring in their own music in the form of wav format on CDs (teams are required to give 2 copies on 2 separate CDs) and hand over to the organizers at least 6 hours before the event commences. The organizers will be providing the audio equipment to play the music. Teams will be penalized for exceeding the given time limit.</li>
+
+                        </ul>
+                        <span class="event-subtitle">Round 1 : </span>
+                         <ul>   
+                            <li>Every Team is required to showcase a theme for max 5 minutes on the main Open Air Stage.</li>
+                            
+                            <li>Teams will be short­listed on the basis of Music, Theme, Choreography, and Apparel Design.</li> 
+                            
+                            <li>The number of teams to be short­listed will be 8.</li>
+                        </ul>
+                         <span class="event-subtitle">Finals : </span>
+                        <ul>   
+                            <li>Maximum time limit for this round is 10 min.</li> 
+                            <li>The same theme can be continued from the last round in case teams have prepared just one theme for the competition. </li>
+                            <li>Short­listed Teams have to show case their next theme/themes in this allotted time.</li>
+                        </ul>
+                        <!--<span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 1000/- per team</li>
+                        </ul>--> 
+                    </div>
+                </div>
+
+                <?php
+
+if (isset($_SESSION['email']) && !isset($_SESSION['lashkara']))
+{ ?>
+                <button class="register-button" id="floater" onclick="showLight('lashkara')">REGISTER</button>
+                <?php
+}
+else
+if (!isset($_SESSION['email']))
+{ ?>
+                <button class="register-button" id="floater">
+                    <a href="#/register">REGISTER</a>
+                </button>
+                <?php
+}
+else
+if (isset($_SESSION['email']) && isset($_SESSION['lashkara']))
+{ ?>
+                <div class="registered-div" id="floater">
+                    <p>REGISTERED</p>
+                </div>
+                <?php
+} ?>
+                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 
 
 
@@ -915,7 +1096,6 @@ if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
                 e.find('.event-description').hide();
             }
         </script>
-    </div>
 
 
 
@@ -1184,10 +1364,261 @@ else
         </div>
 
 
+
+        <div class="wrap" id="floater">
+            <div class="event-desc-container" id="floater">
+                <div class="event-title">Viruddh ( Hindi Debate )</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        Any language particular to a country is its uniqueness and "Hindi" is a language which is unique to us.One can express oneself truly only in a language that one has heard since birth.
+                        
+                        This year again, Zeitgeist presents <strong style="color:rgb(250,100,50)">"Virudh"</strong>, the Hindi debate competition where opinions, ideas and wits behind the words will collide in the most fascinating and appealing way.
+                        <br />
+                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Any number of participants are allowed from a college.</li>
+
+                            <li>Around 10 participants per batch (individual participant entries).</li>
+
+                            <li>Flexible time limit.</li>
+
+                            <li>Inappropriate (abusive) language will lead to disqualification.</li>
+
+                            <li>In all cases, the decision of the judges will be irrefutable.</li>
+
+                            <li></li>
+
+                            <li>Following are the judging criteria:
+                                <ul>
+                                    <li>Content: Awareness and Knowledge of the topic.</li>
+
+                                    <li>Language: Only Hindi Language is allowed. However, English words that are most common can be used.</li>
+
+                                    <li>Counter arguments: Valid interjections and satisfactory answers to the opponentÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s questions.</li>
+
+                                    <li>Presentation style: Ways to present ideas, argument and thoughts with good examples.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- <span class="event-subtitle">Prizes :</span>
+                <ul>
+                    <li>Winner : 1000/-</li>
+
+                    <li>Runner-up : 500/-</li>
+                </ul> -->
+                        <!-- <span class="event-subtitle">Registration Fees :</span>
+                <ul>
+                    <li>Registration Fees: 50 per Participant</li>
+                </ul>    -->
+
+                    </div>
+                </div>
+                <div>
+
+
+
+                    <?php
+
+if (!isset($_SESSION['viruddh']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="viruddh" />
+                    <button type="submit" value="REGISTER" class="reg-button" id="floater">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div" id="floater">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>
+
+                </div>
+                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
+
+               <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Rangoli</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        <strong style="color:rgb(250,100,50)">"Art is a collaboration between God and the artist"</strong> especially when it comes to making one of the purest form of folk arts i.e. "Rangoli".Rangoli is art of the common yet very unique. So this time at Zetigeist , be ready to witness the divine feeling of making <strong style="color:rgb(250,100,50)">"Rangoli"</strong><br />
+                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>If the entries exceed a particular figure, prelims will be held. Each team will be provided with A4 sheets, the teams have to present their design on the sheets.</li>
+
+                            <li>Team consisting up to 3 members allowed. </li>
+
+                            <li>Participant will be provided with colours.</li>
+
+                            <li>The design should be done on 50*50 cm area.</li>
+
+                            <li>Time for competition – maximum 3 hours only.</li>
+
+                            <li>Participants should not use Internet or other resources.</li>
+                        </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 1500/-</li>
+                           <li>Runner-up : 1000/-</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration fees: 100/- per participant</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <?php
+
+if (!isset($_SESSION['rangoli']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="rangoli" />
+                    <button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>
+
+                </div>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
+
+
+
+        <div class="wrap" id="floater">
+            <div class="event-desc-container" id="floater">
+                <div class="event-title">Sketching</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        If you have a knack of bringing out your imagination making use of just pencil, graphite or charcoal, this is your chance to showcase your strokes and prove the world that it is not the colors but sheer ingenuity that powers a masterpiece.<br />
+                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Only individual participation allowed.</li>
+
+                            <li>Participants will be provided with sheets and other required stuffs.</li>
+
+                            <li>Participants can bring their own stuff if they want.</li>
+
+                            <li>Time for competition – maximum 3 hours only.</li>
+
+                            <li>Participants can bring their model for sketching.</li>
+                        </ul>
+                       <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 1000/-</li>
+                           <li>Runner-up : 500/-</li>
+                        </ul> 
+                        <br />
+                </ul> -->
+                        <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 50 per Participant</li>
+                          </ul> 
+
+                    </div>
+                </div>
+                <div>
+
+
+
+                    <?php
+
+if (!isset($_SESSION['sketching']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="sketching" />
+                    <button type="submit" value="REGISTER" class="reg-button" id="floater">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div" id="floater">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>
+
+                </div>
+                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
+
         
-
-
-    </div>
+   </div>
 
 
 
@@ -1263,7 +1694,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/timelining_small.jpg">
             </div>
         </div>
 
@@ -1332,7 +1763,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                 <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/dekode.png">
             </div>
 
         </div>
@@ -1347,38 +1778,100 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
             GO BACK
         </button>
 
-
         <div class="wrap">
-            <div class="event-desc-container">
-                <div class="event-title">Zigmatics</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        For the first time in forever, Zeitgeist presents 'Zigmatics', an online Math contest, which is going to puzzle you with a kind of math you cannot even imagine!
-                        <br />
-                    </div>
-                    <div class="event-description">
-                        Zigmatics is all set to blend your mind with its perplexingly knotty problems where you will need to emanate the mathematician inside you to get through them. It is a platform where you can have a one-to-one brain clash with the brilliant minds all over India.
-                        <br /><span style="color:rgb(250,100,50)">...and Math turns Meth here!</span>
-                        <br />If you believe, you have the grey cells of a mathematician, then this event surely awaits you with a golden opportunity to nurture your talent and take it leaps and bounds ahead...
-                        <br />
-                        <span style="color:rgb(250,100,50)">.... and believe us Dr Ramanujan will be so proud !!!<br /><br /></span>
+                    <div class="event-desc-container">
+                        <div class="event-title">AlgoXtreme</div>
+                        <div class="event-text">
+                            <div class="event-caption">
+                                Wanna have some fun with programming ? If yes , then this is the place to be.
+                                <br />This year , Zeitgeist is back to revive the geek in you with its ultra challenging coding contest  <span style="color:rgb(250,100,50)">"AlgoXtreme" ( Powered by HackerEarth )</span>. 
+                                <br /><strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 6000 + 10 HackerEarth T-Shirts!</strong>
+                            </div>
+                            <div class="event-description">
+                               <br />If you think, your programmer-self has the ability to rule the world of programming then it's nothing better than now. Register yourself for the event and you will know programming was never much fun than at Zetigeist.
+                                <br /><br />The event will begin on 28th September at 9PM.<br /><br />
 
-                        <span style="color:rgb(250,100,50)">The Math-a-Marathon will unfold at 8 PM on September, the 27th .</span>
-                        <br />
-                        <br />
-                        <a href="http://zeitgeist.org.in/Zigmatics" target="_blank">Go to Event Page</a>
-                        <br />
-                        <br />For any queries regarding the event , drop an email at support@zeitgeist.org.in
+                                <a href="http://www.hackerearth.com/algoxtreme/" target="_blank">Go to Event Page</a>
+                                <br /><br /><span class="event-subtitle">Rules :</span>
+                                <ul>
+                                    <li>To be eligible for prizes you have to register here. Only those candidates who have registered here will be eligible to avail the Prizes.
+                                    
+                                    <li>For the programming questions in the contest, you need to choose one language from the given list and attempt.</li>
+
+                                    <li>You can submit solution for a programming problem as many times as you want as there is no time penalty on wrong submissions.</li>
+
+                                    <li>There is partial score for solving a problem partially.</li>
+
+                                    <li>All inputs for the programming problem are from STDIN and output to STDOUT.</li>
+
+                                    <li>To understand more about the judge environment, time limits, etc. you can read the <a href="http://www.hackerearth.com/docs/judge/" target="_blank">FAQ</a> here.</li>
+
+                                    <li>Programming questions have a 'Compile and Test' option where you can run your solution against sample test cases, before submitting.</li>
+                                </ul>
+                                <br />
+                                
+
+                                <span class="event-subtitle">Prizes :</span>
+                                <ul>
+                                    <li>First Prize Worth <span style="color:rgb(250,100,50)">Rs. 3000.</span></li>
+                                    
+                                    <li>Second Prize Worth <span style="color:rgb(250,100,50)">Rs. 2000.</span></li>
+                                    
+                                    <li>Third Prize Worth <span style="color:rgb(250,100,50)">Rs. 1000.</span></li>
+                                    
+                                    <li>Also<span style="color:rgb(250,100,50)"> HackerEarth T-Shirts</span> to top 10 participants.</li>
+                                </ul>
+                                
+                                <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
+                                <!-- <span class="event-subtitle">Prizes</span>
+                        <ul>
+                            <li>Goodies and Coupons</li>
+                        </ul> -->
+                                <!-- <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 20/- per participant</li>
+                        </ul> -->
+                            </div>
+                        </div>
+
+                                          <?php
+
+if (!isset($_SESSION['algo']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="algo" />
+                    <button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div">
+                        <p>REGISTERED</p>
                     </div>
+                    <?php
+} ?>
+                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                        <button class="event-close" onclick="closing(event)">CLOSE</button>
+                    </div>
+                    <div class="event-image">
+                        <img src="images/events/algo.jpg">
+                    </div>
+
                 </div>
-                <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/zigmatics.jpg">
-            </div>
-        </div>
-
+        
 
         <div class="wrap" id="floater">
             <div class="event-desc-container" id="floater">
@@ -1423,32 +1916,82 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
             </div>
 
         </div>
-        <div class="wrap">
-                    <div class="event-desc-container">
-                        <div class="event-title">AlgoXtreme</div>
-                        <div class="event-text">
-                            <div class="event-caption">
-                                Wanna have some fun with programming ? If yes , then this is the place to be.
-                                <br />This year , Zeitgeist is back to revive the geek in you with its ultra challenging coding contest  <span style="color:rgb(250,100,50)">"AlgoXtreme" ( Powered by HackerEarth )</span>. 
-                                <br /><strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 6000 + 10 HackerEarth T-Shirts!</strong>
-                            </div>
-                            <div class="event-description">
-                               <br />If you think, your programmer-self has the ability to rule the world of programming then it's nothing better than now.<br><br>Register yourself for the event and you will know programming was never much fun than at Zetigeist.
+            
 
-                                <br /><br />
-                                The event will begin on 28th September at 9PM.<br /><br />
+            <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Zigmatics</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        For the first time in forever, Zeitgeist presents 'Zigmatics', an online Math contest, which is going to puzzle you with a kind of math you cannot even imagine!
+                        <br /><span style="color:rgb(250,100,50)">And Yes,Math turns Meth here!</span>
+                    </div>
+                    <div class="event-description">
+                        Zigmatics is all set to blend your mind with its perplexingly knotty problems where you will need to emanate the mathematician inside you to get through them. It is a platform where you can have a one-to-one brain clash with the brilliant minds all over India.
+                        <br />
+                        <br />If you believe, you have the grey cells of a mathematician, then this event surely awaits you with a golden opportunity to nurture your talent and take it leaps and bounds ahead...
+                        <br />
+                        <span style="color:rgb(250,100,50)">.... and believe us Dr Ramanujan will be so proud !!!<br /><br /></span>
 
-                                <a href="http://www.hackerearth.com/algoxtreme/" target="_blank">Go to Event Page</a><br><br>
+                        <span style="color:rgb(250,100,50)">The Math-a-Marathon will unfold at 8 PM on September, the 27th .</span>
+                        <br />
+                        <br />
+                        <a href="http://zeitgeist.org.in/Zigmatics" target="_blank">Go to Event Page</a>
+                        <br />
+                        <br />For any queries regarding the event , drop an email at support@zeitgeist.org.in
+                    </div>
+                </div>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/zigmatics.jpg">
+            </div>
+        </div>
 
-                                Prizes:<br />
 
-                                First Prize Worth <span style="color:rgb(250,100,50)">Rs. 3000.</span>
-                                <br />Second Prize Worth <span style="color:rgb(250,100,50)">Rs. 2000.</span>
-                                <br />Third Prize Worth <span style="color:rgb(250,100,50)">Rs. 1000.</span>
-                                <br /><br />Also<span style="color:rgb(250,100,50)"> HackerEarth T-Shirts</span> to top 10 participants.
+                <div class="wrap" id="floater">
+            <div class="event-desc-container" id="floater">
+                <div class="event-title">Code-o-mania</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        Hackers, a grand feast awaits! Limit your moves on the mouth-watering starters as they are followed by some extremely juicy and cruchy algorithm problems. Happy hogging, hackers.
+                        <br /><strong style="color:rgb(250,100,50)">- Powered by HackerRank</strong>
+                         <br /><br /><strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 7500! </strong>
+                    </div>
+                   <div class="event-description">
+                                The event will begin on 7th October at 9PM.<br /><br />
 
-                                <!--<span style="color:rgb(250,100,50)">
-                            For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.-->
+                                <a href="https://www.hackerrank.com/codeomania" target="_blank">Go to Event Page</a>
+                                <br /><br /><span class="event-subtitle">Rules :</span>
+                                <ul>
+                                    <li>To be eligible for prizes you have to register here. Only those candidates who have registered here will be eligible to avail the Prizes.</li>
+                                    
+                                    <li>This is an individual event.</li>
+                                    
+                                    <li>Please refrain from discussing strategy during the contest.</li>
+                                    
+                                    <li>Any case of code plagiarism will result in disqualification of both the users from the contest. </li>
+                                    
+                                    <li>There is partial score for solving a problem partially.</li>
+                                    
+                                    <li>You can code directly on HackerRank's interface. HackerRank supports 20 major languages. You can have a look at the <a href="https://www.hackerrank.com/environment" target="_blank">environment</a> in which HackerRank run your code.</li>
+                                </ul>
+                                <br />
+    
+
+                                <span class="event-subtitle">Prizes :</span>
+                                <ul>
+                                    <li>First Prize Worth <span style="color:rgb(250,100,50)">Rs. 4000.</span></li>
+                                    
+                                    <li>Second Prize Worth <span style="color:rgb(250,100,50)">Rs. 2000.</span></li>
+                                    
+                                    <li>Third Prize Worth <span style="color:rgb(250,100,50)">Rs. 1500.</span></li>
+                                    
+                                    <li>Also<span style="color:rgb(250,100,50)"> HackerRank T-Shirts</span> to top 3 participants.</li>
+                                </ul>
+                                
+                                <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
                                 <!-- <span class="event-subtitle">Prizes</span>
                         <ul>
                             <li>Goodies and Coupons</li>
@@ -1458,48 +2001,48 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                             <li>Registration Fees: 20/- per participant</li>
                         </ul> -->
                             </div>
-                        </div>
-
-                         <?php
-
-                            if (!isset($_SESSION['algo']))
-                        { ?>
-                                <form method="post" class="literary-form" <?php
-                            if (!isset($_SESSION['user_id']))
-                        { ?>
-                                action="#/register">
-                                <button type="submit" value="REGISTER" class="register-button">REGISTER</button>
-                                </form>
-                        <?php
-                        }
-                        else
-                        { ?> id="singleone">
-                                <input type="hidden" id="event_name" name="event_name" value="algo" />
-                                <button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
-                                </form>
-
-                        <?php
-                        } ?>
-                        <?php
-                        }
-                        else
-                        { ?>
-                                <div class="registered-div">
-                                    <p>REGISTERED</p>
-                                </div>
-                        <?php
-                        } ?>
-                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                        <button class="event-close" onclick="closing(event)">CLOSE</button>
-                    </div>
-                    <div class="event-image">
-                        <img src="images/events/algo.jpg">
-                    </div>
-
                 </div>
+                                         <?php
+
+if (!isset($_SESSION['codomania']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="codomania" />
+                    <button type="submit" value="REGISTER" class="reg-button" id="floater">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div" id="floater">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>                
+                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/codeomania.jpg">
+            </div>
+
+        </div>
 
 
             </div>
+            
 
     </div>
 
@@ -1516,8 +2059,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                         <p style="font-size:2em;">Cultural Events</p>
                     </div>
                     <div>
-                        <p style="font-size:2em;">Participate in
-                            <br />Mr. and Ms. Zeitgeist</p>
+                        <p style="font-size:2em;">Click Here To View!</p>
                     </div>
                 </li>
                 <!--<li class="tile tile-big tile tile-1 slideTextRight" data-page-type="r-page" data-page-name ="">
@@ -1758,7 +2300,7 @@ if (!isset($_SESSION['smack2']))
         <br />
         <?php
 
-if (!isset($_SESSION['torque']) || !isset($_SESSION['tarang']) || !isset($_SESSION['yatharth']))
+if (!isset($_SESSION['torque']) || !isset($_SESSION['tarang']) || !isset($_SESSION['yatharth']) || !isset($_SESSION['nukkad']) || !isset($_SESSION['lashkara']))
 { ?>
         <form method="post" <?php
 	if (!isset($_SESSION['user_id']))

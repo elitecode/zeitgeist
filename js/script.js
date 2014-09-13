@@ -1,9 +1,7 @@
 
 var news = [
 	
-	"Event Registrations are open. Prizes worth 2 Lakh to be won!",
-	"Last Date for submission and counting likes for Mr and Ms Zeitgesit is 27 September.",
-	"Zeitgeist 2014 | 9th - 11th October",
+	"Fashion Show - Lashkara going to be held at Zeitgeist'14, Registrations are now open!",
 ];
 
 $(window).load(function(){
