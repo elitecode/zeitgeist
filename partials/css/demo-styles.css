@@ -28,16 +28,16 @@
     display:list-item;
 }
 
-#floater
+.floater
 {
-  float: right;
-  right: 115px;
-  left: auto;
+  float: right !important;
+  right: 115px !important;
+  left: auto !important;
 }
 
-#floater .event-close, #floater .event-register
+.floater .event-close, .floater .event-register
 {
-  right: 0px;
+  right: 0px !important;
 }
 
 .event-caption, .event-description

@@ -12,8 +12,92 @@ session_start(); ?>
         <button class="r-close-button">
             GO BACK
         </button>
-        <div class="wrap">
-            <div class="event-desc-container">
+<!-- __________________________________________________________________________________________________________________ -->
+
+                <div class="wrap">
+                    <div class="event-desc-container">
+                        <div class="event-title">Lashkara (Feel The Fashion )</div>
+                        <div class="event-text">
+                            <div class="event-caption">
+                                The time has come for you to step aside and choose the path untrodden , unleash the glamour in you, and show the world that conventions are not your cup of tea. And Zeitgeist gives you a golden opportunity to realise your ravishing dreams here at <strong style="color:rgb(250,100,50)">"Lashkara"</strong>. <br />
+                               <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 16000!</strong>-->
+                            </div>
+                            <div class="event-description">
+                                <br /><span class="event-subtitle">Rules :</span>
+                                <ul>
+                                    <li>Fashion Show Competition is open only to college students.</li>
+
+                                    <li>The maximum number of models allowed per team is 26, exclusive of the designer and choreographer. Every team will be allowed 15 min to showcase all their models (empty stage to empty stage).</li>
+
+                                    <li>Crossover teams can be formed between students of at most 2 colleges, all having valid college ID cards for the current year. No branding on clothes. Sponsors of colleges will be given announcements only.</li>
+
+                                    <li>Team can take help of people outside the college such as designers, choreographers, make­up artists, but these professionals will not be considered to be a part of the team and will not be eligible for the Best Designer or Best Choreographer.</li>
+
+                                    <li>Vulgarity of any kind would lead to disqualification from the event. Hence, if the team feels that any stunt or costume design can be deemed as vulgar, it is strongly advised to consult the organizers than performing it directly on stage. The decision of the organizers will be final in case of any disputes arising due to this.</li>
+
+                                    <li>The decision of the Event Coordinator will be final and binding on all.</li>
+
+                                    <li>Teams are suggested to inform the organizers of any kind of props they are planning to use. We might consider any special request of extra prop based on its feasibility and availability.</li>
+
+                                    <li>The teams are required to bring in their own music in the form of wav format on CDs (teams are required to give 2 copies on 2 separate CDs) and hand over to the organizers at least 6 hours before the event commences. The organizers will be providing the audio equipment to play the music. Teams will be penalized for exceeding the given time limit.</li>
+
+                                </ul>
+                                <span class="event-subtitle">Round 1 : </span>
+                                 <ul>   
+                                    <li>Every Team is required to showcase a theme for max 5 minutes on the main Open Air Stage.</li>
+                                    
+                                    <li>Teams will be short­listed on the basis of Music, Theme, Choreography, and Apparel Design.</li> 
+                                    
+                                    <li>The number of teams to be short­listed will be 8.</li>
+                                </ul>
+                                 <span class="event-subtitle">Finals : </span>
+                                <ul>   
+                                    <li>Maximum time limit for this round is 10 min.</li> 
+                                    <li>The same theme can be continued from the last round in case teams have prepared just one theme for the competition. </li>
+                                    <li>Short­listed Teams have to show case their next theme/themes in this allotted time.</li>
+                                </ul>
+                                <!--<span class="event-subtitle">Registration :</span>
+                                <ul>
+                                   <li>Registration Fees : 1000/- per team</li>
+                                </ul>--> 
+                            </div>
+                        </div>
+
+                        <?php
+
+        if (isset($_SESSION['email']) && !isset($_SESSION['lashkara']))
+        { ?>
+                        <button class="register-button" onclick="showLight('lashkara')">REGISTER</button>
+                        <?php
+        }
+        else
+        if (!isset($_SESSION['email']))
+        { ?>
+                        <button class="register-button">
+                            <a href="#/register">REGISTER</a>
+                        </button>
+                        <?php
+        }
+        else
+        if (isset($_SESSION['email']) && isset($_SESSION['lashkara']))
+        { ?>
+                        <div class="registered-div">
+                            <p>REGISTERED</p>
+                        </div>
+                        <?php
+        } ?>
+                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                        <button class="event-close" onclick="closing(event)">CLOSE</button>
+                    </div>
+                    <div class="event-image">
+                        <img src="images/events/z.jpg">
+                    </div>
+                </div>
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Mr. and Ms. Zeitgeist</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -24,7 +108,7 @@ session_start(); ?>
                     <div class="event-description">
                         <br />
                         <div class="event-subtitle">Online Selection :</div>
-                        A total of <span style="color:rgb(250,100,50)">14 candidates (7 boys and 7 girls)</span> will be selected based on the likes on their photographs posted on zeitgeistÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s facebook page. Those who have been selected online will be exempted of the registration fee and will get direct entry to the final/semi-final round of the event, that is to be held during Zeitgeist 2014.
+                        A total of <span style="color:rgb(250,100,50)">14 candidates (7 boys and 7 girls)</span> will be selected based on the likes on their photographs posted on zeitgeist's facebook page. Those who have been selected online will be exempted of the registration fee and will get direct entry to the final/semi-final round of the event, that is to be held during Zeitgeist 2014.
                         <br />
                         <br />
                         <div class="event-subtitle">Offline Selection :</div>
@@ -62,17 +146,18 @@ session_start(); ?>
                         If you have any further queries related to this event, mail your queries at support@zeitgeist.org.in.
                     </div>
                 </div>
-                <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/MrandMsZ.jpg">
+                <img src="images/events/mrandms.jpg">
             </div>
         </div>
 
+<!-- __________________________________________________________________________________________________________________ -->
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+        <div class="wrap">
+            <div class="event-desc-container">
                 <div class="event-title">Torque ( War Of Bands )</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -108,13 +193,13 @@ session_start(); ?>
 
 if (isset($_SESSION['email']) && !isset($_SESSION['torque']))
 { ?>
-                <button class="register-button" id="floater" onclick="showLight('torque')">REGISTER</button>
+                <button class="register-button" onclick="showLight('torque')">REGISTER</button>
                 <?php
 }
 else
 if (!isset($_SESSION['email']))
 { ?>
-                <button class="register-button" id="floater">
+                <button class="register-button">
                     <a href="#/register">REGISTER</a>
                 </button>
                 <?php
@@ -122,14 +207,14 @@ if (!isset($_SESSION['email']))
 else
 if (isset($_SESSION['email']) && isset($_SESSION['torque']))
 { ?>
-                <div class="registered-div" id="floater">
+                <div class="registered-div floater">
                     <p>REGISTERED</p>
                 </div>
                 <?php
 } ?>
 
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/torque.jpg">
@@ -140,10 +225,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
             </div>
         </div>
 
+<!-- __________________________________________________________________________________________________________________ -->
 
 
-        <div class="wrap">
-            <div class="event-desc-container">
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Tarang ( Group Dance )</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -207,13 +293,13 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
 
 if (isset($_SESSION['email']) && !isset($_SESSION['tarang']))
 { ?>
-                <button class="register-button" onclick="showLight('tarang')">REGISTER</button>
+                <button  class="floater register-button" onclick="showLight('tarang')">REGISTER</button>
                 <?php
 }
 else
 if (!isset($_SESSION['email']))
 { ?>
-                <button class="register-button">
+                <button  class="floater register-button">
                     <a href="#/register">REGISTER</a>
                 </button>
                 <?php
@@ -221,13 +307,13 @@ if (!isset($_SESSION['email']))
 else
 if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
 { ?>
-                <div class="registered-div">
+                <div class="registered-div floater">
                     <p>REGISTERED</p>
                 </div>
                 <?php
 } ?>
-                <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/tarang.jpg">
@@ -239,9 +325,124 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
 
 
         <div id="fade" class="black_overlay"></div>
+<!-- __________________________________________________________________________________________________________________ -->
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+<div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Smack That ( Freestyle )</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        Do you have the confidence and talent to mesmerise the world by your moves? Well then, this is the place to showcase your skills and win it all.
+                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 4500!</strong>
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Any number of teams from a college can participate.</li>
+
+                            <li>Participation for Smack That is open to all students.</li>
+
+                            <li>Maximum 6 dancers per team.</li>
+
+                            <li>The duration of the performance should be between 5-10 minutes.</li>
+
+                            <li>Negative marking for exceeding the TIME LIMIT.</li>
+
+                            <li>Teams must bring 2 CDs containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
+
+                            <li>The dance floor area must be in the same condition after the performances as before.</li>
+
+                            <li>No props will be provided.</li>
+
+                            <li>Size of the stage will be 35ft*20ft.</li>
+
+                            <li>Teams may use props if they want, for which they should take prior permission from the Coordinator.(Negative marking if not informed before)</li>
+
+                            <li>Participant should show the freestyle of Street Dance.</li>
+
+                            <li>Power movements, acrobatics, etc. are admissible, but they should not dominate.</li>
+
+                            <li>Remember the main thing: DANCE under MUSIC Hip-Hop!</li>
+
+                            <li>Dancers are not restricted from performing any move but they must be aware that it is their own responsibility to ensure that they do not perform dangerous moves that could injure themselves or others. Coordinators have the right to bring in safety restrictions.</li>
+
+                            <li>Teams will be judged based on originality, choreography, execution and entertainment value.</li>
+                            <ul>
+                                <li>Variety of dance positions, dance movements, and/or combinations as appropriate to the specific dance.</li>
+
+                                <li>Difficulty of dance movements and/or combinations from one dance position or alignment to another.</li>
+
+                                <li>Uniqueness or originality of dance movements and/or combinations from one dance position or alignment to another, to include presentation of dance position.</li>
+
+                                <li>Continuity of dance movements and/or combinations to either interpret dance theme and music, or to demonstrate dance control.</li>
+
+                                <li>Coordinated appearance appropriate to Country/Western competition attire; posture, grooming, and use of costume as it complements the contestants and their dance routine.</li>
+                            </ul>
+                            </li>
+                            <li>Lighting of candles, matches or cigarettes on stage is not allowed and will result in disqualification.</li>
+
+                            <li>In case of situations which have been not described in rules, decision taken by judges will be final.</li>
+
+                            <li>Participants must report 2 hours prior to the start of the event.</li>
+
+                            <li>An elimination round may be held depending on the number of participants.</li>
+
+                            <li>Non Compliance of any of the contest rules & regulation shall immediately disqualify the participants.</li>
+
+
+
+
+
+                        </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 3000/-</li>
+                           <li>Runner-up : 1500/-</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 300/- per team</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <?php
+
+if (isset($_SESSION['email']) && !isset($_SESSION['smack2']))
+{ ?>
+                <button class="register-button" onclick="showLight2('smack')">REGISTER</button>
+                <?php
+}
+else
+if (!isset($_SESSION['email']))
+{ ?>
+                <button class="register-button">
+                    <a href="#/register">REGISTER</a>
+                </button>
+                <?php
+}
+else
+if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
+{ ?>
+                <div class="registered-div">
+                    <p>REGISTERED</p>
+                </div>
+                <?php
+} ?>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/smackthat.jpg">
+            </div>
+
+
+        </div>
+<!-- __________________________________________________________________________________________________________________ -->
+
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Junoon ( Solo Dance )</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -309,7 +510,7 @@ if ((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSI
 	if ((!isset($_SESSION['email'])) || !isset($_SESSION['user_id']))
 	{ ?>
                     action="#/register">
-                    <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                    <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
                 </form>
                 <?php
 	}
@@ -318,7 +519,7 @@ if ((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSI
                 <!--closing form tag-->
                 <input type="hidden" id="participants" name="participants" value="1" />
                 <input type="hidden" id="event_name" name="event_name" value="junoon" />
-                <button type="submit" value="REGISTER" class="register-button junoon-button" id="floater">REGISTER</button>
+                <button type="submit" value="REGISTER" class="register-button junoon-button floater">REGISTER</button>
                 <?php
 	} ?>
                 </form>
@@ -327,13 +528,13 @@ if ((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSI
 else
 if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 { ?>
-                <div class="registered-div" id="floater">
+                <div class="registered-div floater">
                     <p>REGISTERED</p>
                 </div>
                 <?php
 } ?>
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/junoon.jpg">
@@ -431,6 +632,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 
             });
         </script>
+<!-- __________________________________________________________________________________________________________________ -->
 
         <div class="wrap">
             <div class="event-desc-container">
@@ -497,10 +699,182 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 
 
         </div>
+<!-- __________________________________________________________________________________________________________________ -->
 
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
+                <div class="event-title">Nukkad Natak ( Street Play )</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        What can be a better place than the streets to spread awareness among the 'junta' about social issues in a matter which is purely satirical and rhetorical. Streets, a place where 'Real Eyes, realize, real lies'.
+                        <br />
+                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 16000!</strong>
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Any number of teams from a college can participate.</li>
+
+                            <li>Participation for Nukkad Natak is open to all students.</li>
+
+                            <li>Each team shall consist of 12-20 members.</li>
+
+                            <li>Each team will be given 15-25 minutes for its performance. The next 2 minutes will be penalised (negative marking). The play will be disqualified if it exceeds 27 minutes.</li>
+
+                            <li>No technical support such as mic and musical systems will be provided.</li>
+
+                            <li>Participants can use their own "dhol, chimta and dhapli" (no other instrument is permitted).</li>
+
+                            <li>No prop except chunni and lathi is allowed.</li>
+
+                            <li>Play will be done during day time in an open ground, where an area of around 40ft*40ft will be provided.</li>
+
+                            <li>Only descent satire is allowed. Vulgarity and bitter insinuations will not be entertained.</li>
+
+                            <li>All rules of street play are applicable.</li>
+
+                            <li>In all cases, the decision of the judges and organizers will be irrefutable.</li>
+
+                            <li>All the participating teams should report to the event co-ordinator atleast 2 hours before the start of the event.</li>
+                        </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 10000/-</li>
+                           <li>Runner-up : 6000/-</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 1000/- per team</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <?php
+
+if (isset($_SESSION['email']) && !isset($_SESSION['nukkad']))
+{ ?>
+                <button class="register-button floater" onclick="showLight('nukkad')">REGISTER</button>
+                <?php
+}
+else
+if (!isset($_SESSION['email']))
+{ ?>
+                <button class="register-button floater">
+                    <a href="#/register">REGISTER</a>
+                </button>
+                <?php
+}
+else
+if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
+{ ?>
+                <div class="registered-div floater">
+                    <p>REGISTERED</p>
+                </div>
+                <?php
+} ?>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+
+        </div>
+<!-- __________________________________________________________________________________________________________________ -->
+
+         <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Yatharth ( Stage Play )</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        "Life's a stage and we are mere actors in this play called life".
+                        Yatharth will dazzle you, will break you into tears and as effortlessely
+                        into laughter. It will bring with it the joy of live art and of living
+                        life the old way, the Real Way.
+                        <br />
+                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 12000!</strong>
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Plays should be no less than 10 minutes and no longer than 25 minutes. Plays not within time limit will have deductions on a point system as follows: 1 (one) point for every minute over or under the time limit.</li>
+                            
+                            <li>Please furnish the judge with a copy of the play.</li>
+                            
+                            <li>Each team must furnish their own props. Tact and taste should be used in selecting clothes, costumes, props, scenery, and etcetera.</li>
+
+                            <li>Curtains should not be pulled closed once the play has begun. If the curtain is closed the play must be finished. Use lighting effects, a narrator, or some other method to achieve scene changes.</li>
+
+                            <li>Team entering a play in the competition will furnish their own stagehands.</li>
+
+                            <li>A waiting area in the corridor leading north from the stage entry area will be designated for each competing team to assemble at. When a play is finished they will have 5 minutes to vacate the stage. The next cast will then have 5 minutes to prepare the stage. For example: play ends at 9:40, stage cleared by 9:45 , next play starts at 9:50.</li>
+                         
+                            <li>Groups will be verbally critiqued by judges giving comments to group members and directors during the 5 minutes allowed for the next play's set­up (see above).</li>
+       
+                            <li>One first place, second place and third place winner will be selected. Numbers on critique sheets range from 5 as high (excellent) to 1 as low (weak, needs improvement).</li>
+
+                            <li>Doors into the auditorium will be closed for the duration of each play so as not to cause distractions with entry and exit. Casts waiting to perform or who have performed are strongly encouraged to attend the other performances.</li>
+
+                            <li>Team may enter more than one play as they wish. Individuals may be in no more than four total performances in the Drama .</li>
+
+                            <li>If you will be using sound track, you have to provide one person who will be instructing to playthe sound track. You have to bring that sound track in pen­drive.</li>
+
+                            <li>You will be provided mic .Chairs and tables can be provided if asked in advance.</li>
+
+                            <li>Decision of judge/panel of judges will be final and will not be subject to change in any case.</li>
+                        </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 8000/-</li>
+                           <li>Runner-up : 4000/-</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 800/- per team</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <?php
+
+if (isset($_SESSION['email']) && !isset($_SESSION['yatharth']))
+{ ?>
+                <button class="register-button" onclick="showLight('yatharth')">REGISTER</button>
+                <?php
+}
+else
+if (!isset($_SESSION['email']))
+{ ?>
+                <button class="register-button" >
+                    <a href="#/register">REGISTER</a>
+                </button>
+                <?php
+}
+else
+if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
+{ ?>
+                <div class="registered-div">
+                    <p>REGISTERED</p>
+                </div>
+                <?php
+} ?>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/yatharth.jpg">
+            </div>
+
+
+        </div>
+<!-- __________________________________________________________________________________________________________________ -->
+
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Titan</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -519,7 +893,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 
                             <li>Time limit : 75secs</li>
 
-                            <li>Weights 56Kg log, 70Kg barrel, 80Kg barrel and 150Kg duck/farmerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s walk</li>
+                            <li>Weights 56Kg log, 70Kg barrel, 80Kg barrel and 150Kg duck/farmer's walk</li>
 
                             <li>Athletes will load the log and the barrels on a table 20 meters from the starting point and perform duck/farmerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s walk for the same distance, all within a time limit of 75 seconds. Athletes are not allowed to roll or drag the objects.</li>
 
@@ -628,401 +1002,42 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
 if ((!isset($_SESSION['email'])) || (isset($_SESSION['email']) && !isset($_SESSION['titan'])))
 { ?>
                     <form method="post" <?php
-	if (!isset($_SESSION['email']) || !isset($_SESSION['user_id']))
-	{ ?>
+    if (!isset($_SESSION['email']) || !isset($_SESSION['user_id']))
+    { ?>
                         action="#/register">
-                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                        <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
                     </form>
                     <?php
-	}
-	else
-	{ ?>>
+    }
+    else
+    { ?>>
                     <input type="hidden" id="event_name" name="event_name" value="titan" />
-                    <button type="submit" value="REGISTER" class="register-button titan-button" id="floater">REGISTER</button>
+                    <button type="submit" value="REGISTER" class="register-button titan-button floater">REGISTER</button>
                     </form>
                     <?php
-	} ?>
+    } ?>
                     <?php
 }
 else
 { ?>
-                    <div class="registered-div" id="floater">
+                    <div class="registered-div floater">
                         <p>REGISTERED</p>
                     </div>
                     <?php
 } ?>
                 </div>
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/TITAN.jpg">
+                <img src="images/events/titan.jpg">
             </div>
 
         </div>
+<!-- __________________________________________________________________________________________________________________ -->
 
-        <div class="wrap">
-            <div class="event-desc-container">
-                <div class="event-title">Smack That ( Duet Dance )</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        Do you have the confidence and talent to mesmerise the world by your moves? Well then, this is the place to showcase your skills and win it all.
-                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 4500!</strong>
-                    </div>
-                    <div class="event-description">
-                        <br /><span class="event-subtitle">Rules :</span>
-                        <ul>
-                            <li>Any number of teams from a college can participate.</li>
-
-                            <li>Participation for Smack That is open to all students.</li>
-
-                            <li>Maximum 6 dancers per team.</li>
-
-                            <li>The duration of the performance should be between 5-10 minutes.</li>
-
-                            <li>Negative marking for exceeding the TIME LIMIT.</li>
-
-                            <li>Teams must bring 2 CDÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s containing their sound track. 1 CD to be submitted to Coordinator, at the time of registration.</li>
-
-                            <li>The dance floor area must be in the same condition after the performances as before.</li>
-
-                            <li>No props will be provided.</li>
-
-                            <li>Size of the stage will be 35ft*20ft.</li>
-
-                            <li>Teams may use props if they want, for which they should take prior permission from the Coordinator.(Negative marking if not informed before)</li>
-
-                            <li>Participant should show the freestyle of Street Dance.</li>
-
-                            <li>Power movements, acrobatics, etc. are admissible, but they should not dominate.</li>
-
-                            <li>Remember the main thing: DANCE under MUSIC Hip-Hop!</li>
-
-                            <li>Dancers are not restricted from performing any move but they must be aware that it is their own responsibility to ensure that they do not perform dangerous moves that could injure themselves or others. Coordinators have the right to bring in safety restrictions.</li>
-
-                            <li>Teams will be judged based on originality, choreography, execution and entertainment value.</li>
-                            <ul>
-                                <li>Variety of dance positions, dance movements, and/or combinations as appropriate to the specific dance.</li>
-
-                                <li>Difficulty of dance movements and/or combinations from one dance position or alignment to another.</li>
-
-                                <li>Uniqueness or originality of dance movements and/or combinations from one dance position or alignment to another, to include presentation of dance position.</li>
-
-                                <li>Continuity of dance movements and/or combinations to either interpret dance theme and music, or to demonstrate dance control.</li>
-
-                                <li>Coordinated appearance appropriate to Country/Western competition attire; posture, grooming, and use of costume as it complements the contestants and their dance routine.</li>
-                            </ul>
-                            </li>
-                            <li>Lighting of candles, matches or cigarettes on stage is not allowed and will result in disqualification.</li>
-
-                            <li>In case of situations which have been not described in rules, decision taken by judges will be final.</li>
-
-                            <li>Participants must report 2 hours prior to the start of the event.</li>
-
-                            <li>An elimination round may be held depending on the number of participants.</li>
-
-                            <li>Non Compliance of any of the contest rules & regulation shall immediately disqualify the participants.</li>
-
-
-
-
-
-                        </ul>
-                        <span class="event-subtitle">Prizes :</span><br />
-                        <ul>
-                           <li>Winner : 3000/-</li>
-                           <li>Runner-up : 1500/-</li>
-                        </ul> 
-                        <br />
-                        <span class="event-subtitle">Registration :</span>
-                        <ul>
-                           <li>Registration Fees : 300/- per team</li>
-                        </ul> 
-                    </div>
-                </div>
-
-                <?php
-
-if (isset($_SESSION['email']) && !isset($_SESSION['smack2']))
-{ ?>
-                <button class="register-button" onclick="showLight2('smack')">REGISTER</button>
-                <?php
-}
-else
-if (!isset($_SESSION['email']))
-{ ?>
-                <button class="register-button">
-                    <a href="#/register">REGISTER</a>
-                </button>
-                <?php
-}
-else
-if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
-{ ?>
-                <div class="registered-div">
-                    <p>REGISTERED</p>
-                </div>
-                <?php
-} ?>
-                <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/smackthat.jpg">
-            </div>
-
-
-        </div>
-
-
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
-                <div class="event-title">Nukkad Natak ( Street Play )</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        What can be a better place than the streets to spread awareness among the 'junta' about social issues in a matter which is purely satirical and rhetorical. Streets, a place where 'Real Eyes, realize, real lies'.
-                        <br />
-                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 16000!</strong>
-                    </div>
-                    <div class="event-description">
-                        <br /><span class="event-subtitle">Rules :</span>
-                        <ul>
-                            <li>Any number of teams from a college can participate.</li>
-
-                            <li>Participation for Nukkad Natak is open to all students.</li>
-
-                            <li>Each team shall consist of 12-20 members.</li>
-
-                            <li>Each team will be given 15-25 minutes for its performance. The next 2 minutes will be penalised (negative marking). The play will be disqualified if it exceeds 27 minutes.</li>
-
-                            <li>No technical support such as mic and musical systems will be provided.</li>
-
-                            <li>Participants can use their own ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œdhol, chimta, dhapliÃƒÂ¢Ã¢â€šÂ¬Ã‚Â (no other instrument is permitted).</li>
-
-                            <li>No prop except chunni and lathi is allowed.</li>
-
-                            <li>Play will be done during day time in an open ground, where an area of around 40ft*40ft will be provided.</li>
-
-                            <li>Only descent satire is allowed. Vulgarity and bitter insinuations will not be entertained.</li>
-
-                            <li>All rules of street play are applicable.</li>
-
-                            <li>In all cases, the decision of the judges and organizers will be irrefutable.</li>
-
-                            <li>All the participating teams should report to the event co-ordinator atleast 2 hours before the start of the event.</li>
-                        </ul>
-                        <span class="event-subtitle">Prizes :</span><br />
-                        <ul>
-                           <li>Winner : 10000/-</li>
-                           <li>Runner-up : 6000/-</li>
-                        </ul> 
-                        <br />
-                        <span class="event-subtitle">Registration :</span>
-                        <ul>
-                           <li>Registration Fees : 1000/- per team</li>
-                        </ul> 
-                    </div>
-                </div>
-
-                <?php
-
-if (isset($_SESSION['email']) && !isset($_SESSION['nukkad']))
-{ ?>
-                <button class="register-button" id="floater" onclick="showLight('nukkad')">REGISTER</button>
-                <?php
-}
-else
-if (!isset($_SESSION['email']))
-{ ?>
-                <button class="register-button" id="floater">
-                    <a href="#/register">REGISTER</a>
-                </button>
-                <?php
-}
-else
-if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
-{ ?>
-                <div class="registered-div" id="floater">
-                    <p>REGISTERED</p>
-                </div>
-                <?php
-} ?>
-                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/z.jpg">
-            </div>
-
-
-        </div>
-         <div class="wrap">
-            <div class="event-desc-container">
-                <div class="event-title">Yatharth ( Stage Play )</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        What can be a better place than the streets to spread awareness among the 'junta' about social issues in a matter which is purely satirical and rhetorical. Streets, a place where 'Real Eyes, realize, real lies'.
-                        <br />
-                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 12000!</strong>
-                    </div>
-                    <div class="event-description">
-                        <br /><span class="event-subtitle">Rules :</span>
-                        <ul>
-                            <li>Plays should be no less than 10 minutes and no longer than 25 minutes. Plays not within time limit will have deductions on a point system as follows: 1 (one) point for every minute over or under the time limit.</li>
-                            
-                            <li>Please furnish the judge with a copy of the play.</li>
-                            
-                            <li>Each team must furnish their own props. Tact and taste should be used in selecting clothes, costumes, props, scenery, and etcetera.</li>
-
-                            <li>Curtains should not be pulled closed once the play has begun. If the curtain is closed the play must be finished. Use lighting effects, a narrator, or some other method to achieve scene changes.</li>
-
-                            <li>Team entering a play in the competition will furnish their own stagehands.</li>
-
-                            <li>A waiting area in the corridor leading north from the stage entry area will be designated for each competing team to assemble at. When a play is finished they will have 5 minutes to vacate the stage. The next cast will then have 5 minutes to prepare the stage. For example: play ends at 9:40, stage cleared by 9:45 , next play starts at 9:50.</li>
-                         
-                            <li>Groups will be verbally critiqued by judges giving comments to group members and directors during the 5 minutes allowed for the next play's set­up (see above).</li>
-       
-                            <li>One first place, second place and third place winner will be selected. Numbers on critique sheets range from 5 as high (excellent) to 1 as low (weak, needs improvement).</li>
-
-                            <li>Doors into the auditorium will be closed for the duration of each play so as not to cause distractions with entry and exit. Casts waiting to perform or who have performed are strongly encouraged to attend the other performances.</li>
-
-                            <li>Team may enter more than one play as they wish. Individuals may be in no more than four total performances in the Drama .</li>
-
-                            <li>If you will be using sound track, you have to provide one person who will be instructing to playthe sound track. You have to bring that sound track in pen­drive.</li>
-
-                            <li>You will be provided mic .Chairs and tables can be provided if asked in advance.</li>
-
-                            <li>Decision of judge/panel of judges will be final and will not be subject to change in any case.</li>
-                        </ul>
-                        <span class="event-subtitle">Prizes :</span><br />
-                        <ul>
-                           <li>Winner : 8000/-</li>
-                           <li>Runner-up : 4000/-</li>
-                        </ul> 
-                        <br />
-                        <span class="event-subtitle">Registration :</span>
-                        <ul>
-                           <li>Registration Fees : 800/- per team</li>
-                        </ul> 
-                    </div>
-                </div>
-
-                <?php
-
-if (isset($_SESSION['email']) && !isset($_SESSION['yatharth']))
-{ ?>
-                <button class="register-button" onclick="showLight('yatharth')">REGISTER</button>
-                <?php
-}
-else
-if (!isset($_SESSION['email']))
-{ ?>
-                <button class="register-button" >
-                    <a href="#/register">REGISTER</a>
-                </button>
-                <?php
-}
-else
-if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
-{ ?>
-                <div class="registered-div">
-                    <p>REGISTERED</p>
-                </div>
-                <?php
-} ?>
-                <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/yatharth.jpg">
-            </div>
-
-
-        </div>
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
-                <div class="event-title">Lashkara (Feel The Fashion )</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        The time has come for you to step aside and choose the path untrodden , unleash the glamour in you, and show the world that conventions are not your cup of tea. And Zeitgeist gives you a golden opportunity to realise your ravishing dreams here at <strong style="color:rgb(250,100,50)">"Lashkara"</strong>. <br />
-                       <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 16000!</strong>-->
-                    </div>
-                    <div class="event-description">
-                        <br /><span class="event-subtitle">Rules :</span>
-                        <ul>
-                            <li>Fashion Show Competition is open only to college students.</li>
-
-                            <li>The maximum number of models allowed per team is 26, exclusive of the designer and choreographer. Every team will be allowed 15 min to showcase all their models (empty stage to empty stage).</li>
-
-                            <li>Crossover teams can be formed between students of at most 2 colleges, all having valid college ID cards for the current year. No branding on clothes. Sponsors of colleges will be given announcements only.</li>
-
-                            <li>Team can take help of people outside the college such as designers, choreographers, make­up artists, but these professionals will not be considered to be a part of the team and will not be eligible for the Best Designer or Best Choreographer.</li>
-
-                            <li>Vulgarity of any kind would lead to disqualification from the event. Hence, if the team feels that any stunt or costume design can be deemed as vulgar, it is strongly advised to consult the organizers than performing it directly on stage. The decision of the organizers will be final in case of any disputes arising due to this.</li>
-
-                            <li>The decision of the Event Coordinator will be final and binding on all.</li>
-
-                            <li>Teams are suggested to inform the organizers of any kind of props they are planning to use. We might consider any special request of extra prop based on its feasibility and availability.</li>
-
-                            <li>The teams are required to bring in their own music in the form of wav format on CDs (teams are required to give 2 copies on 2 separate CDs) and hand over to the organizers at least 6 hours before the event commences. The organizers will be providing the audio equipment to play the music. Teams will be penalized for exceeding the given time limit.</li>
-
-                        </ul>
-                        <span class="event-subtitle">Round 1 : </span>
-                         <ul>   
-                            <li>Every Team is required to showcase a theme for max 5 minutes on the main Open Air Stage.</li>
-                            
-                            <li>Teams will be short­listed on the basis of Music, Theme, Choreography, and Apparel Design.</li> 
-                            
-                            <li>The number of teams to be short­listed will be 8.</li>
-                        </ul>
-                         <span class="event-subtitle">Finals : </span>
-                        <ul>   
-                            <li>Maximum time limit for this round is 10 min.</li> 
-                            <li>The same theme can be continued from the last round in case teams have prepared just one theme for the competition. </li>
-                            <li>Short­listed Teams have to show case their next theme/themes in this allotted time.</li>
-                        </ul>
-                        <!--<span class="event-subtitle">Registration :</span>
-                        <ul>
-                           <li>Registration Fees : 1000/- per team</li>
-                        </ul>--> 
-                    </div>
-                </div>
-
-                <?php
-
-if (isset($_SESSION['email']) && !isset($_SESSION['lashkara']))
-{ ?>
-                <button class="register-button" id="floater" onclick="showLight('lashkara')">REGISTER</button>
-                <?php
-}
-else
-if (!isset($_SESSION['email']))
-{ ?>
-                <button class="register-button" id="floater">
-                    <a href="#/register">REGISTER</a>
-                </button>
-                <?php
-}
-else
-if (isset($_SESSION['email']) && isset($_SESSION['lashkara']))
-{ ?>
-                <div class="registered-div" id="floater">
-                    <p>REGISTERED</p>
-                </div>
-                <?php
-} ?>
-                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/z.jpg">
-            </div>
-        </div>
-
-
-
-
-
+<!-- This non floater div is added just to enclose floater elements it in parent div. Feel free to replace it -->
+<div class="wrap"></div>
     </div>
 
 
@@ -1103,6 +1118,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['lashkara']))
         <button class="r-close-button">
             GO BACK
         </button>
+<!-- __________________________________________________________________________________________________________________ -->
 
         <div class="wrap">
             <div class="event-desc-container">
@@ -1195,10 +1211,11 @@ else
             </div>
 
         </div>
+<!-- __________________________________________________________________________________________________________________ -->
 
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Eureka</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -1260,14 +1277,14 @@ if (!isset($_SESSION['eureka']))
 	if (!isset($_SESSION['user_id']))
 	{ ?>
                         action="#/register">
-                        <button type="submit" value="REGISTER" id='floater' class="register-button">REGISTER</button>
+                        <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
                     </form>
                     <?php
 	}
 	else
 	{ ?>id="singleone">
                     <input type="hidden" id="event_name" name="event_name" value="eureka" />
-                    <button type="submit" value="REGISTER" id="floater" class="reg-button">REGISTER</button>
+                    <button type="submit" value="REGISTER" class="floater reg-button">REGISTER</button>
                     </form>
 
                     <?php
@@ -1276,20 +1293,21 @@ if (!isset($_SESSION['eureka']))
 }
 else
 { ?>
-                    <div id="floater" class="registered-div">
+                    <div class="floater registered-div">
                         <p>REGISTERED</p>
                     </div>
                     <?php
 } ?>
                 </div>
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/z.jpg">
             </div>
         </div>
 
+<!-- __________________________________________________________________________________________________________________ -->
 
 
         <div class="wrap">
@@ -1363,10 +1381,11 @@ else
 
         </div>
 
+<!-- __________________________________________________________________________________________________________________ -->
 
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Viruddh ( Hindi Debate )</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -1428,14 +1447,14 @@ if (!isset($_SESSION['viruddh']))
     if (!isset($_SESSION['user_id']))
     { ?>
                         action="#/register">
-                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                        <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
                     </form>
                     <?php
     }
     else
     { ?>id="singleone">
                     <input type="hidden" id="event_name" name="event_name" value="viruddh" />
-                    <button type="submit" value="REGISTER" class="reg-button" id="floater">REGISTER</button>
+                    <button type="submit" value="REGISTER" class="reg-button floater">REGISTER</button>
                     </form>
 
                     <?php
@@ -1444,21 +1463,22 @@ if (!isset($_SESSION['viruddh']))
 }
 else
 { ?>
-                    <div class="registered-div" id="floater">
+                    <div class="registered-div floater">
                         <p>REGISTERED</p>
                     </div>
                     <?php
 } ?>
 
                 </div>
-                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/z.jpg">
             </div>
 
         </div>
+<!-- __________________________________________________________________________________________________________________ -->
 
                <div class="wrap">
             <div class="event-desc-container">
@@ -1536,10 +1556,11 @@ else
 
         </div>
 
+<!-- __________________________________________________________________________________________________________________ -->
 
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Sketching</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -1585,14 +1606,14 @@ if (!isset($_SESSION['sketching']))
     if (!isset($_SESSION['user_id']))
     { ?>
                         action="#/register">
-                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                        <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
                     </form>
                     <?php
     }
     else
     { ?>id="singleone">
                     <input type="hidden" id="event_name" name="event_name" value="sketching" />
-                    <button type="submit" value="REGISTER" class="reg-button" id="floater">REGISTER</button>
+                    <button type="submit" value="REGISTER" class="reg-button floater">REGISTER</button>
                     </form>
 
                     <?php
@@ -1601,15 +1622,15 @@ if (!isset($_SESSION['sketching']))
 }
 else
 { ?>
-                    <div class="registered-div" id="floater">
+                    <div class="registered-div floater">
                         <p>REGISTERED</p>
                     </div>
                     <?php
 } ?>
 
                 </div>
-                <button class="event-register" onclick="showing(event)" id="floater">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)" id="floater">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/z.jpg">
@@ -1627,6 +1648,9 @@ else
         <button class="r-close-button">
             GO BACK
         </button>
+
+<!-- __________________________________________________________________________________________________________________ -->
+
 
         <div class="wrap">
             <div class="event-desc-container">
@@ -1694,13 +1718,15 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/timelining_small.jpg">
+                <img src="images/events/timelining.jpg">
             </div>
         </div>
 
+<!-- __________________________________________________________________________________________________________________ -->
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">DeKode</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -1740,13 +1766,13 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
 
 if (isset($_SESSION['email']) && !isset($_SESSION['dekode']))
 { ?>
-                <button class="register-button" id="floater" onclick="showLight3('dekode')">REGISTER</button>
+                <button class="register-button floater" onclick="showLight3('dekode')">REGISTER</button>
                 <?php
 }
 else
 if (!isset($_SESSION['email']))
 { ?>
-                <button class="register-button" id="floater">
+                <button class="register-button floater">
                     <a href="#/register">REGISTER</a>
                 </button>
                 <?php
@@ -1754,16 +1780,16 @@ if (!isset($_SESSION['email']))
 else
 if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
 { ?>
-                <div class="registered-div" id="floater">
+                <div class="registered-div floater">
                     <p>REGISTERED</p>
                 </div>
                 <?php
 } ?>
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/dekode.png">
+                <img src="images/events/dekode.jpg">
             </div>
 
         </div>
@@ -1777,6 +1803,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
         <button class="r-close-button">
             GO BACK
         </button>
+
+<!-- __________________________________________________________________________________________________________________ -->
+
 
         <div class="wrap">
                     <div class="event-desc-container">
@@ -1871,10 +1900,11 @@ else
                     </div>
 
                 </div>
+<!-- __________________________________________________________________________________________________________________ -->
         
 
-        <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+        <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Z-hunt</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -1908,8 +1938,8 @@ else
 				</ul> -->
                     </div>
                 </div>
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/zhunt.jpg">
@@ -1917,6 +1947,7 @@ else
 
         </div>
             
+<!-- __________________________________________________________________________________________________________________ -->
 
             <div class="wrap">
             <div class="event-desc-container">
@@ -1948,10 +1979,11 @@ else
                 <img src="images/events/zigmatics.jpg">
             </div>
         </div>
+<!-- __________________________________________________________________________________________________________________ -->
 
 
-                <div class="wrap" id="floater">
-            <div class="event-desc-container" id="floater">
+                <div class="wrap floater">
+            <div class="event-desc-container floater">
                 <div class="event-title">Code-o-mania</div>
                 <div class="event-text">
                     <div class="event-caption">
@@ -2010,14 +2042,14 @@ if (!isset($_SESSION['codomania']))
     if (!isset($_SESSION['user_id']))
     { ?>
                         action="#/register">
-                        <button type="submit" value="REGISTER" class="register-button" id="floater">REGISTER</button>
+                        <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
                     </form>
                     <?php
     }
     else
     { ?>id="singleone">
                     <input type="hidden" id="event_name" name="event_name" value="codomania" />
-                    <button type="submit" value="REGISTER" class="reg-button" id="floater">REGISTER</button>
+                    <button type="submit" value="REGISTER" class="reg-button floater">REGISTER</button>
                     </form>
 
                     <?php
@@ -2026,13 +2058,13 @@ if (!isset($_SESSION['codomania']))
 }
 else
 { ?>
-                    <div class="registered-div" id="floater">
+                    <div class="registered-div floater">
                         <p>REGISTERED</p>
                     </div>
                     <?php
 } ?>                
-                <button class="event-register" id="floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" id="floater" onclick="closing(event)">CLOSE</button>
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
                 <img src="images/events/codeomania.jpg">
