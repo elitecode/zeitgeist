@@ -458,12 +458,55 @@ a img
 
 /*styling for homepage*/
 
+.homepage-promo
+{
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+#star-falak
+{
+	display: inline-block;
+	width:500px;
+	height: 300px;
+	background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+	background-image: url("../images/home/falak1.png");
+	transition: all 0.5s ease-in-out;
+}
+
+#star-lashkara
+{
+	display: inline-block;
+	width:500px;
+	height: 300px;
+	background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+	background-image: url("../images/home/lash1.png");
+	transition: all 0.5s ease-in-out;
+}
+
+#star-falak:hover
+{
+	background-image: url("../images/home/falak.jpg");
+}
+
+#star-lashkara:hover
+{
+	background-image: url("../images/home/lash.jpg");
+}
+
 #homepage-logo
 {
-	margin-top: 6em;
-	width:62%;
-	text-align: center;
-	padding-bottom: 10em;
+	position: absolute;
+	top: 3em;
+	left: 3em;
+	width: 300px;
+	/*text-align: left;*/
+	/*text-align: center;*/
+	padding-bottom: 1em;
 }
 
 #news-container
