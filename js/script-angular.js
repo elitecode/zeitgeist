@@ -101,6 +101,10 @@ else
 		});
 	}
 	]);
+	myapp.run(function ($templateCache, $http) {
+        $http.get('partials/events.php', { cache: $templateCache });
+        console.log("ojiuhuguik");
+    });
 	myapp.run(function ($rootScope, $location) {
     $rootScope.$on('$routeChangeSuccess', function(){
         ga('send', 'pageview',  { page: $location.path() } );

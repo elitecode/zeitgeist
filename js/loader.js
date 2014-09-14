@@ -1,4 +1,4 @@
-$(document).ready(function(){
+//$(document).ready(function(){
 	var progress = 0;
     // soundBoard.loadAll(function () {
     //     progress.value = progress.value+1;
@@ -91,7 +91,7 @@ $(document).ready(function(){
         .attr("src", this);
     });
 	    
-});
+//});
 
 function loadpage()
 {
