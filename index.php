@@ -147,7 +147,7 @@
                           <img src = 'images/Icons-Register.png' id = "register" class = "nav-image">
                           <!-- <img src = 'images/Icon-Register-color.png' id = "registerHover" class = "nav-image"> -->
                         </a>
-                        <center><div class = "description">Register/Login</div></center>
+                        <center><div class = "description">SignUp/Login</div></center>
                       </div>
                       <?php
                 }

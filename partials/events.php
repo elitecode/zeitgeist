@@ -2084,6 +2084,7 @@ else
 
     <!--each tile should specify what page type it opens (to determine which animation) and the corresponding page name it should open-->
     <div class="dashboard clearfix">
+        <span style='font-size:30px;font-variant:small-caps'> Register For the Events Here</span>
         <ul class="tiles">
             <div class="col1 clearfix">
                 <li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="category1">

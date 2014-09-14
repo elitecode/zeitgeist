@@ -64,7 +64,7 @@ else
 				$_SESSION[$event_name] = 1;
 			}
 			//echo "Access granted";
-			header('Location:../index.php');
+			header('Location:../#/events');
 		}
 	}
 	else					//passwords do not match

@@ -65,7 +65,7 @@ session_start();
 
 	<div style="width:30em;float:left;height:32em;margin-top:4em;margin-left:8em;margin-bottom:0.5em;">
 		<div style="background-color:#d59200;height:3em;">
-			<p style="color:white;font-weight:bold;font-size:20px;padding-top: 0.4em;">REGISTER</p>
+			<p style="color:white;font-weight:bold;font-size:20px;padding-top: 0.4em;">SIGN UP</p>
 		</div>
 		<div style="float:left;width:1em;background-color:rgba(0,0,0,0.0);height:17em;">
 			<div style="width: 0px;
@@ -85,7 +85,7 @@ session_start();
 			<input style="width:16em;height:3em;background-color:rgba(0,0,0,0.0);margin-top:1.5em;border:2px solid white;" placeholder="College.." name="college_name">
 			
 			<br>
-			<input type="submit" id="rajbhai" name="rajbhai"  value="REGISTER" style="border:2px solid white;width:8em;height:3em;margin-top:1.5em;background-color:rgba(0,0,0,0.0)" >
+			<input type="submit" id="rajbhai" name="rajbhai"  value="SIGN UP" style="border:2px solid white;width:8em;height:3em;margin-top:1.5em;background-color:rgba(0,0,0,0.0)" >
             		</form>
 
             
