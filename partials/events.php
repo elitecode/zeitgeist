@@ -52,7 +52,7 @@ session_start(); ?>
                                 </ul>
                                  <span class="event-subtitle">Finals : </span>
                                 <ul>   
-                                    <li>Maximum time limit for this round is 10 min.</li> 
+                                    <li>Maximum time limit for this round is 15 min.</li> 
                                     <li>The same theme can be continued from the last round in case teams have prepared just one theme for the competition. </li>
                                     <li>Short­listed Teams have to show case their next theme/themes in this allotted time.</li>
                                 </ul>
@@ -1036,6 +1036,95 @@ else
         </div>
 <!-- __________________________________________________________________________________________________________________ -->
 
+        <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Symphony</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        Where melodious symphonies pluck the strings of your heart..If you think that music has an indispensable place in your life and its more than just songs then you have surely arrived at the right place and we give you this platform to showcase your tribute to music and reach a thousand hearts !! <br />
+                        <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 1500!</strong> 
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Participation for Symphony is open to all students.</li>
+                            
+                            <li>Participants should bring their own instruments. Only mics and amplifiers will be provided by the organisers.</li>
+                            
+                            <li>Only 1 accompanist (not a vocalist) will be allowed. Accompanist should also bring his own instrument.</li>
+                            
+                            <li>Synthesizer (for accompanist) allowed in piano mode only.</li>
+                            
+                            <li>Solo synthesizer player can use any number of sounds.</li>
+                            
+                            <li>No pre-recorded sound tracks are allowed.</li>
+                            
+                            <li>4-6 minutes will be allotted for the performance. Negative marking for exceeding the TIME LIMIT.</li>
+                            
+                            <li>1 minute will be given for setting of the instrument, which will start as soon as the name of the participant is announced.</li>
+                            
+                            <li>Participants must report 2 hours prior to the start of the event.</li>
+                            
+                            <li>An elimination round may be held depending on the number of participants.</li>
+                            
+                            <li>The decision of the judges will be final.</li>
+                            
+                            <li>Judging criteria:  Rhythm, composition, innovation and overall impact.</li>
+                        </ul>
+                        <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 1500/-</li>
+                           
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration :</span>
+                        <ul>
+                           <li>Registration Fees : 100/- </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div>
+
+                    <?php
+
+if (!isset($_SESSION['symphony']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="symphony" />
+                    <button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>
+
+                </div>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
+
 <!-- This non floater div is added just to enclose floater elements it in parent div. Feel free to replace it -->
 <div class="wrap"></div>
     </div>
@@ -1638,6 +1727,98 @@ else
 
         </div>
 
+         <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Symposium</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        Ideas flow, thoughts emerge and knowledge grows when the greatest minds grab seats around a table to discuss, dispute and dominate.
+                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Groups will be made randomly and on the spot.</li>
+
+                            <li>The number of students allowed per group is 6-8.</li>
+
+                            <li>Every group will be allotted 12 minutes for deliberation on their topic.</li>
+
+                            <li>Topic for the 1st round will be uploaded 2 days prior to the event.</li>
+
+                            <li>Topic will be given 5 minutes prior to the discussion for all the other rounds.</li>
+
+                            <li>1 minute of conclusion time will be given to each student.</li>
+
+                            <li>Proper decorum to be maintained at all times.</li>
+
+                            <li>Participants to remain seated at all times. Use of improper language or display of vulgar action is strictly prohibited and may lead to disqualification.</li>
+
+                            <li>Judges will have absolute authority and can intervene during any time of the discussion. Their decision is incontestable and final.</li>
+                        </ul>
+                        <strong style="color:rgb(250,100,50)">Round 1:</strong> In the first round, top 2-3 students will be selected from each group.
+                        <br /><br />
+                        <strong style="color:rgb(250,100,50)">Round 2:</strong> In the second round which will be made totally randomly from the selected students of 1st round top 1-2 students will be selected for final round.
+                        <br /><br />
+                        <strong style="color:rgb(250,100,50)">Final round:</strong> In the last round, winners of second will go for the final battle in final tiff of ideas.
+
+
+                        
+                        <!-- <span class="event-subtitle">Prizes :</span><br />
+                        <ul>
+                           <li>Winner : 1500/-</li>
+                           <li>Runner-up : 1000/-</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration fees: 100/- per participant</li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div>
+                    <?php
+
+if (!isset($_SESSION['Symposium']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="Symposium" />
+                    <button type="submit" value="REGISTER" class="reg-button">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>
+
+                </div>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
+
+        
+
         
    </div>
 
@@ -1679,7 +1860,7 @@ else
 
                             <li>In each try, the participant can touch the bot maximum 5 times (with penalty for each touch)</li>
                         </ul>
-                        <br />For Elaborated Rules and Arena, <a style="text-decoration:none" href="http://zeitgeist.org.in/partials/pdf/Time_Lining_Z14.pdf"> Download pdf!</a>
+                        <br />For Elaborated Rules and Arena, <a style="text-decoration:none" href="http://zeitgeist.org.in/partials/pdf/Time_Lining_Z14.pdf" target="_blank"> Download pdf!</a>
                         <br />
                         <br />
                         <span style="color:rgb(250,100,50)">
@@ -1746,10 +1927,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
 
                             <li>The event will be conducted in 2 rounds. Round 1 will be an elimination round and only top 10 teams will be selected for Round 2.</li>
 
-                            <li>All the participants will be contacted shortly after they register for the event and will be provided with some basic preparatory material.</li>
-
                             <li>The decision of the judges and the organizers shall be final and abiding.</li>
                         </ul>
+                        <br />For detailed description and preparatory material click <a href="http://zeitgeist.org.in/partials/pdf/DeKode_Z14.pdf" target="_blank">here</a>
+                        <br /><br />
                         <span style="color:rgb(250,100,50)">
 					For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
                         <!-- <span class="event-subtitle">Prizes</span>
@@ -1793,8 +1974,54 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
             </div>
 
         </div>
+<!-- 
+        <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Robotryst</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        
+                        <br />
+                    </div>
+                    <div class="event-description">
+                        <br /><span class="event-subtitle">Introduction :</span>
+                        <br />Mankind took a huge leap in science and technology when it invented robots. Robots are always fascinating to them and are constantly evolving. ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œTime-LiningÃƒÂ¢Ã¢â€šÂ¬Ã‚Â brings you an opportunity of a lifetime to use this opus invention and prove your worth by making and controlling it. A multitude of exciting events awaits you that not only fulfils your appetite for imagination and application but also is a source of ultra-gratification when you bring your imaginative transformers into the real world. You will have to make a robot that meets given specifications and make your way to victory. So gear up, show your intellect and start ROBOTING!
+                        <br />
+                        <br /><span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>Students of any recognized college are eligible to participate. All participants should have their college ID cards with them.</li>
 
-    </div>
+                            <li>A team may consist of a maximum of 3 participants. These participants can be from same or different institutes.</li>
+                        </ul>
+                        <br /><span class="event-subtitle">Gameplay :</span>
+                        <ul>
+                            <li>Complete the course as fast as possible. If thereÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s a tie between the fastest, a run-off will determine the winner. If nobody finishes the run, the farthest one to run on tracks will win.</li>
+
+                            <li>There are a maximum of 3 tries for each robots. The fastest run of the 3 will count.</li>
+
+                            <li>In each try, the participant can touch the bot maximum 5 times (with penalty for each touch)</li>
+                        </ul>
+                        <br />For Elaborated Rules and Arena, <a style="text-decoration:none" href="http://zeitgeist.org.in/partials/pdf/Time_Lining_Z14.pdf" target="_blank"> Download pdf!</a>
+                        <br />
+                        <br />
+                        <span style="color:rgb(250,100,50)">
+                    For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
+                        <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration fees: 20/- per participant</li>
+                        </ul> 
+                    </div>
+                </div>
+        
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+        </div>-->
+
+    </div> 
 
 
 
@@ -2070,6 +2297,91 @@ else
                 <img src="images/events/codeomania.jpg">
             </div>
 
+        </div>
+
+        <!-- __________________________________________________________________________________________________________________ -->
+
+         <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Click Freaks</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        <span style="color:rgb(250,100,50)">"In photography there is a reality so subtle that it becomes more real than reality."</span>
+                        <br />
+                        Zeitgeist presents <span style="color:rgb(250,100,50)">"Click Freaks"</span> for all the photography lovers to showcase their snapping skills and win exciting prizes. Let the zenith of your imagination meet reality through the eyes of your camera.
+                        <br />
+                    </div>
+                    <div class="event-description">
+                        <span class="event-subtitle">Guidelines :</span>
+                        <ul>
+                            <li>Themes for the event:
+                            <ul>
+                                <li>Street photography</li>
+
+                                <li>Nature</li>
+                            </ul></li>
+                            <li>It is a single round Online Event.</li>
+
+                            <li>Participants have to visit <a href="http://www.rechargery.com/zeitgeist/clickfreaks" target="_blank">www.rechargery.com/zeitgeist/clickfreaks</a> to upload their entries and details.</li>
+
+                            <li>The photograph should be accompanied by a suitable Caption.</li>
+
+                            <li>A participant is allowed a maximum of 2 entries (1 entry per theme).</li>
+
+                            <li>If any problem occurs participants can mail their photographs via Email with SUBJECT clearly mention - "Caption_College name_Participant name_Event name"</li>
+
+                            <li>Entries should be mailed to "hello@rechargery.com" (with a caption, college name, participant name and event name in subject line) before Mid-night on 9th Oct, 2014.</li>
+                        </ul>
+                        <span class="event-subtitle">Rules :</span>
+                        <ul>
+                            <li>This event is open to all colleges with a limit of 1 entry per theme.</li>
+
+                            <li>The picture should be saved as " Participant's College_Participant's Name.jpeg ".</li>
+
+                            <li>The entries are to be accompanied with a caption not longer than 20 words.</li>
+
+                            <li>Copyright : The copyright in all images submitted to the Competition will remain with the owner who will be credited. Each entrant grants to the Organizers a license to use their images in relation to the Competition and the Exhibition, if required.</li>
+
+                            <li>There must not be any watermarks, copyright marks or any text/graphic on the picture.</li>
+
+                            <li>Please limit your adjustment to minor changes of cropping, sharpening and contrast. Avoid significant over or under color saturation. Dodging (to brighten shadows) or burning (to darken highlights) is allowed, but the alterations should enable the photograph to closely resemble what you see. Please avoid any extensive manipulation.</li>
+                            
+                            <li>The participant should be ready with the original image when asked upon by the organisers.</li>
+
+                            <li>The minimum resolution of the pictures should be 2000 pixels on the shorter side. However, images should not exceed 8 MB in size.</li>
+
+                            <li>Stitched panoramas are allowed.</li>
+
+                            <li>The photo should not have been previously entered in any competition/exhibition.</li>
+
+                            <li>Plagiarism should be strictly avoided and such photographs shall be immediately disqualified from the competition.</li>
+
+                            <li>A participant is allowed a maximum of 2 entries (1 entry per theme).</li>
+
+                            <li>The Evaluation Criteria is as follows: 
+                            <ul>
+                                <li>40% - Number of Facebook likes</li>
+
+                                <li>10% - Caption</li>
+
+                                <li>50% - Judges' Ratings</li>
+
+                                <li>The theme and originality of the photograph will also be considered.</li>
+                            </ul></li>
+                            <li>Each theme will have its own individual winner. Overall, there will be 2 separate winners. </li>
+
+                            <li>The decision of the organizers shall be final and binding on all contestants.</li>
+
+                            <li>The photographs submitted by all the participants will be uploaded on <a href="https://www.facebook.com/zeitgeist.iitrpr" target="_blank">www.facebook.com/zeitgeist.iitrpr</a> Photographs will be updated every day once in between 8 PM - 11 PM. Once uploaded, the participant will be acknowledged through an e-mail. The final result will be announced on 14th October.</li>
+                    </ul>
+                    </div>
+                </div>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
         </div>
 
 
