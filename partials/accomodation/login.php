@@ -74,7 +74,7 @@ else
 				}
 			}
 			//echo "Access granted";
-			header('Location:../#/events');
+			header('Location:../index.php');
 		}
 	}
 	else					//passwords do not match
