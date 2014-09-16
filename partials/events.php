@@ -7,6 +7,11 @@ session_start(); ?>
 <div class="demo-wrapper">
     <!-- classnames for the pages should include: 1) type of page 2) page name-->
 
+    <button class="register-button" onclick="showAccomodation()">
+            ACCOMODATION
+    </button>
+
+
     <div class="r-page category1">
 
         <button class="r-close-button">
@@ -2740,6 +2745,59 @@ else
     </div>
 </div>
 
+<div id="light4" class="white_content">
+    <p style="color:red;"></p>
+    <div id="fade4" class="black_overlay">
+        <button class="event-register-close" onclick="document.getElementById('light4').style.display='none';document.getElementById('fade4').style.display='none'">CLOSE</button>
+        <br />
+        <?php
+        if(isset($_SESSION['user_id']))     //checking if the user is logged in, only then the form is visible
+{
+    if(!isset($_SESSION['accomodation']))
+    {
+    ?>
+    <form action="partials/accomodate.php" method="post">
+    Gender:<br>
+
+    <select name="gender">
+    <option value="male">Male</option><br>
+
+    <option value="female">Female</option><br>
+
+    </select><br>
+    Check the dates you require to stay:<br>
+
+    9 <input type="checkbox" name="date[]" value="9"><br>
+
+    10 <input type="checkbox" name="date[]" value="10"><br>
+
+    11 <input type="checkbox" name="date[]" value="11"><br>
+    <input type="hidden" name="type" value="accomodate"/>
+    <input type="submit" value="Get Accomodation"/><br>
+    </form>
+    <?php
+    }
+    else        //for updating the accomodation
+    {
+        include('config.php');
+        $user_id = $_SESSION['user_id'];
+        $query = "SELECT * FROM accomodation WHERE user_id=$user_id;";
+        $res = mysqli_query($connect,$query);
+        $result = mysqli_fetch_array($res);
+        ?>
+        <form action="partials/accomodate.php" method="post">
+    Update the dates:
+    9 <input type="checkbox" name="date[]" value="9" <?php if($result['date9']) { ?> checked <?php } ?>>
+    10 <input type="checkbox" name="date[]" value="10" <?php if($result['date10']) { ?> checked <?php } ?>>
+    11 <input type="checkbox" name="date[]" value="11" <?php if($result['date11']) { ?> checked <?php } ?>><br>
+    <input type="hidden" name="type" value="update"/>
+    <input type="submit" name="action" value="Update"/> <input type="submit" name="action" value="delete"/>
+    <?php
+}
+}
+?>
+    </div>
+</div>
 
 
 <style type="text/css">
@@ -2976,4 +3034,8 @@ else
         document.getElementById('light3').style.display = 'block';
         document.getElementById('fade3').style.display = 'block';
     }
+     function showAccomodation(){
+        document.getElementById('light4').style.display = 'block';
+        document.getElementById('fade4').style.display = 'block';
+     }
 </script>
