@@ -7,9 +7,20 @@ session_start(); ?>
 <div class="demo-wrapper">
     <!-- classnames for the pages should include: 1) type of page 2) page name-->
 
-    <button class="register-button" onclick="showAccomodation()">
-            ACCOMODATION
-    </button>
+    <?php
+    if (isset($_SESSION['email']))
+    { ?>
+                    <button class="register-button" onclick="showAccomodation()">
+                        ACCOMODATION
+                    </button>
+                    <?php
+    }
+    else { ?>
+        <button class="register-button">
+            <a href="#/register">ACCOMODATION</a>
+        </button>
+    <?php } ?>
+    
 
 
     <div class="r-page category1">
