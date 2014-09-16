@@ -778,7 +778,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
                 <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/nukkad.jpg">
             </div>
 
 
