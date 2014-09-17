@@ -2893,16 +2893,7 @@ else
         background-color: rgba(0, 0, 0, 0.0);
         border: 2px solid white;
     }
-    .register-input-container {
-        position: relative;
-        width: 65%;
-        margin-left: 35%;
-        text-align: left;
-    }
-    .register-input-container .register-button {
-        left: auto;
-        position: relative;
-    }
+    
     .black_overlay1 {
         display: none;
         position: absolute;
