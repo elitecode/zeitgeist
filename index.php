@@ -242,9 +242,9 @@
         document.getElementById('fade4').style.display = 'block';
      }
      </script>
-      <div id="light4" class="white_content">
+      <div id="light4" class="white_content2">
             <p style="color:red;"></p>
-        <div id="fade4" class="black_overlay">
+        <div id="fade4" class="black_overlay2">
                 <button class="event-register-close" onclick="document.getElementById('light4').style.display='none';document.getElementById('fade4').style.display='none'">CLOSE</button>
                 <br />
                 <?php
@@ -326,7 +326,7 @@
     </div>
     <style type="text/css">
 
-    .black_overlay {
+    .black_overlay2 {
         top: 0%;
         left: 0%;
         width: 100%;
@@ -337,7 +337,7 @@
         opacity: .80;
         filter: alpha(opacity=80);
     }
-    .white_content {
+    .white_content2 {
         display: none;
         position: fixed;
         top: 15%;
