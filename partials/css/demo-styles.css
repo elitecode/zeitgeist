@@ -146,23 +146,30 @@
   margin-top: 7px;
 }
 
-#accomodation-button a:hover
+#accomodation-container a:hover
 {
+  color: #FFFFFF;
   text-decoration: none;
+}
+
+#accomodation-button a{
+  color: #FFFFFF;
 }
 
 #accomodation-button
 {
   position: absolute;
+  border-radius: 64px;
   right: 0;
-  top: 2em;
-  left: auto;
+  bottom: 0;
+  margin-bottom: -60px;
+  margin-right: -1.3em;
+  color: #FFFFFF;
   width: 128px;
-  height: 3em;
   z-index: 100;
   color: white;
   border:2px solid white;
-  height:3em;
+  height:32px;
   color: white;
   background-color:rgba(0,0,0,0.0);
 }

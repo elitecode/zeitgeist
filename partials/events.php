@@ -1,26 +1,14 @@
 <?php
 ob_start();
 session_start(); ?>
-<link rel="stylesheet" href="partials/css/demo-styles.css" />
+<!--<link rel="stylesheet" href="partials/css/demo-styles.css" />-->
 <!--<script src="partials/js/modernizr-1.5.min.js"></script>-->
 <script type="text/javascript" src="partials/js/aj.js"></script>
 <div class="demo-wrapper">
     <!-- classnames for the pages should include: 1) type of page 2) page name-->
 
 
-    <?php
-    if (isset($_SESSION['email']))
-    { ?>
-                    <button onclick="showAccomodation()" id='accomodation-button'>
-                        ACCOMODATION
-                    </button>
-                    <?php
-    }
-    else { ?>
-        <button id='accomodation-button'>
-            <a href="#/register">ACCOMODATION</a>
-        </button>
-    <?php } ?>
+    
 
 
     <div class="r-page category1">
@@ -36,7 +24,7 @@ session_start(); ?>
                         <div class="event-text">
                             <div class="event-caption">
                                 The time has come for you to step aside and choose the path untrodden , unleash the glamour in you, and show the world that conventions are not your cup of tea. And Zeitgeist gives you a golden opportunity to realise your ravishing dreams here at <strong style="color:rgb(250,100,50)">"Lashkara"</strong>. <br />
-                               <strong style="color:rgb(250,100,50)">Prize money revealing soon!!</strong>
+                               <strong style="color:rgb(250,100,50)">Prizes worth Rs. 28000!</strong>
                             </div>
                             <div class="event-description">
                                 <br /><span class="event-subtitle">Rules :</span>
@@ -2866,88 +2854,6 @@ else
     </div>
 </div>
 
-<div id="light4" class="white_content">
-    <p style="color:red;"></p>
-    <div id="fade4" class="black_overlay">
-        <button class="event-register-close" onclick="document.getElementById('light4').style.display='none';document.getElementById('fade4').style.display='none'">CLOSE</button>
-        <br />
-        <?php
-        if(isset($_SESSION['user_id']))     //checking if the user is logged in, only then the form is visible
-{
-    if(!isset($_SESSION['accomodation']))
-    {
-    ?>
-    <form action="partials/accomodate.php" method="post">
-    <div class="register-input-container">
-    <span style='font-size:16px'>Gender: </span>
-    <select name="gender" style='color:black'>
-    <option value="male" style='color:black'>Male</option>
-    <option value="female" style='color:black'>Female</option>
-    </select>
-    </div>
-    <div class="register-input-container" style="margin-left:25%">
-    <span style='font-size:20px'>Check the dates you require to stay:</span>
-    </div>
-    <div class="register-input-container">
-    <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="9">
-    9 October
-    </div>
-    <div class="register-input-container">
-    <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="10">
-    10 October
-    </div>
-    <div class="register-input-container">
-    <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="11">
-    11 October
-    </div>
-    <div class="register-input-container" style="margin-left:25%">
-        *Nominal Fee might be charged (to be paid on the spot)
-    </div>
-    <input type="hidden" name="type" value="accomodate"/>
-    <div class="register-input-container">
-    <input type="submit" class='register-button' style="margin-top:2em;margin-left:6%;width:160px" value="GET ACCOMODATION"/>
-    </div>
-    </form>
-    <?php
-    }
-    else        //for updating the accomodation
-    {
-        include('config.php');
-        $user_id = $_SESSION['user_id'];
-        $query = "SELECT * FROM accomodation WHERE user_id=$user_id;";
-        $res = mysqli_query($connect,$query);
-        $result = mysqli_fetch_array($res);
-        ?>
-        <form action="partials/accomodate.php" method="post">
-    <div class="register-input-container">
-    <span style='font-size:20px'>Update the dates:</span>
-    </div>
-    <div class="register-input-container">
-    <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="9" <?php if($result['date9']) { ?> checked <?php } ?>>
-    9 October
-    </div>
-    <div class="register-input-container">
-    <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="10" <?php if($result['date10']) { ?> checked <?php } ?>>
-    10 October
-    </div>
-    <div class="register-input-container">
-    <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="11" <?php if($result['date11']) { ?> checked <?php } ?>>
-    11 October
-    </div>
-    <div class="register-input-container" style="margin-left:25%">
-        *Nominal Fee might be charged (to be paid on the spot)
-    </div>
-    <input type="hidden" name="type" value="update"/>
-    <div class="register-input-container">
-        <input class='register-button' style="margin-top:2em;" type="submit" name="action" value="Update"/>
-        <input class='register-button' style="margin-top:2em;" type="submit" name="action" value="delete"/>
-    </div>
-    <?php
-}
-}
-?>
-    </div>
-</div>
 
 
 <style type="text/css">
@@ -3184,8 +3090,5 @@ else
         document.getElementById('light3').style.display = 'block';
         document.getElementById('fade3').style.display = 'block';
     }
-     function showAccomodation(){
-        document.getElementById('light4').style.display = 'block';
-        document.getElementById('fade4').style.display = 'block';
-     }
+    
 </script>

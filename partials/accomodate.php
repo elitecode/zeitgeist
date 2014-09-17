@@ -46,7 +46,7 @@ if($type === 'accomodate')
 	echo $query;
 	$result = mysqli_query($connect,$query);
 	$_SESSION['accomodation'] = 1;
-	header('Location:../#/events');
+	header('Location:../#/');
 }
 elseif($type === 'update' && $_POST['action'] === 'delete')
 {
@@ -58,7 +58,7 @@ elseif($type === 'update' && $_POST['action'] === 'delete')
 	$result = mysqli_query($connect,$query);
 	$_SESSION['accomodation'] = 0;
 	unset($_SESSION['accomodation']);
-	header('Location:../#/events');
+	header('Location:../#/');
 }
 elseif($type === 'update')
 {
@@ -76,5 +76,5 @@ elseif($type === 'update')
 	$accomodation_id = $result['accomodation_id'];
 	$query = "UPDATE accomodation SET name='$name',date9=$date9,date10=$date10,date11=$date11,days=$days WHERE accomodation_id=$accomodation_id;";
 	$result = mysqli_query($connect,$query);
-	header('Location:../#/events');
+	header('Location:../#/');
 }
