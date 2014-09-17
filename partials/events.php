@@ -60,10 +60,16 @@ session_start(); ?>
                                     <li>The same theme can be continued from the last round in case teams have prepared just one theme for the competition. </li>
                                     <li>Short­listed Teams have to show case their next theme/themes in this allotted time.</li>
                                 </ul>
-                                <!--<span class="event-subtitle">Registration :</span>
+                                
+                                <span class="event-subtitle">Prizes :</span><br />
+                                <ul>
+                                    <li>Winner : 20000/-</li>
+                                    <li>Runner-up : 8000/-</li>
+                                </ul> 
+                                <span class="event-subtitle">Registration :</span>
                                 <ul>
                                    <li>Registration Fees : 1000/- per team</li>
-                                </ul>--> 
+                                </ul>
                             </div>
                         </div>
 
@@ -899,7 +905,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
 
                             <li>Weights 56Kg log, 70Kg barrel, 80Kg barrel and 150Kg duck/farmer's walk</li>
 
-                            <li>Athletes will load the log and the barrels on a table 20 meters from the starting point and perform duck/farmerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s walk for the same distance, all within a time limit of 75 seconds. Athletes are not allowed to roll or drag the objects.</li>
+                            <li>Athletes will load the log and the barrels on a table 20 meters from the starting point and perform duck/farmer's walk for the same distance, all within a time limit of 75 seconds. Athletes are not allowed to roll or drag the objects.</li>
 
                             <li>If completed, time will be noted, otherwise the number of objects carried successfully plus the distance of last object tried will be noted.</li>
                         </ul>
@@ -1215,7 +1221,7 @@ else
 
         <div class="wrap">
             <div class="event-desc-container">
-                <div class="event-title">Conclave ( Open Debate )</div>
+                <div class="event-title">Conclave ( English Debate )</div>
                 <div class="event-text">
                     <div class="event-caption">
                         Just as pure energy emerge on the collision of atoms, a torrent of raging thoughts is generated when wits collide in this epic oral battle.
@@ -1242,7 +1248,7 @@ else
 
                                     <li>Language: Right use of words and no wrong words.</li>
 
-                                    <li>Counter arguments: Valid interjections and satisfactory answers to the opponentÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s questions.</li>
+                                    <li>Counter arguments: Valid interjections and satisfactory answers to the opponent's questions.</li>
 
                                     <li>Presentation style: Ways to present ideas, argument and thoughts with good examples.</li>
                                 </ul>
@@ -1333,7 +1339,7 @@ else
 
                                     <li>Test will be conducted in teams.</li>
 
-                                    <li>20 MCQÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s</li>
+                                    <li>20 MCQs</li>
 
                                     <li>30 Blanks</li>
                                 </ul>
@@ -1423,7 +1429,7 @@ else
 
                             <li>After that one of the members will be blindfolded and other member has to guide.</li>
 
-                            <li>Time for competition ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ maximum 15 minutes only.</li>
+                            <li>Time for competition is maximum 15 minutes only.</li>
 
                             <li>Participants will be provided required materials.</li>
                         </ul>
@@ -1509,7 +1515,7 @@ else
 
                                     <li>Language: Only Hindi Language is allowed. However, English words that are most common can be used.</li>
 
-                                    <li>Counter arguments: Valid interjections and satisfactory answers to the opponentÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s questions.</li>
+                                    <li>Counter arguments: Valid interjections and satisfactory answers to the opponent's questions.</li>
 
                                     <li>Presentation style: Ways to present ideas, argument and thoughts with good examples.</li>
                                 </ul>
@@ -1679,7 +1685,7 @@ else
                            <li>Runner-up : 500/-</li>
                         </ul> 
                         <br />
-                </ul> -->
+                        </ul>
                         <span class="event-subtitle">Registration Fees :</span>
                         <ul>
                             <li>Registration Fees: 50 per Participant</li>
@@ -1838,7 +1844,7 @@ else
 
         <div class="wrap">
             <div class="event-desc-container">
-                <div class="event-title">Tryst</div>
+                <div class="event-title">RoboTryst</div>
                 <div class="event-text">
                     <div class="event-caption">
                         Robotics is one of the most vital organ of automation industry.             
@@ -1868,7 +1874,7 @@ else
                             <br /><br />
                         <span class="event-subtitle">Registration charges :</span>
 
-                            Rs.1450/- per participant. The fee includes workshop training, certification, Event registration (Zonal Round) and a free Robotic Kit to a group of 4-5 participants.
+                            Rs.1450/- per participant. The fee includes workshop training, certification, Event registration (Zonal Round) and a free Robotic Kit to a group of 5 participants.
                             <br /><br />
                             Contents of the Robotics Kit are detailed, <a href="http://zeitgeist.org.in/partials/pdf/kit.pdf" target="_blank">here</a>
                             <br /><br />
@@ -2002,7 +2008,7 @@ else
                     </div>
                     <div class="event-description">
                         <br /><span class="event-subtitle">Introduction :</span>
-                        <br />Mankind took a huge leap in science and technology when it invented robots. Robots are always fascinating to them and are constantly evolving. ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œTime-LiningÃƒÂ¢Ã¢â€šÂ¬Ã‚Â brings you an opportunity of a lifetime to use this opus invention and prove your worth by making and controlling it. A multitude of exciting events awaits you that not only fulfils your appetite for imagination and application but also is a source of ultra-gratification when you bring your imaginative transformers into the real world. You will have to make a robot that meets given specifications and make your way to victory. So gear up, show your intellect and start ROBOTING!
+                        <br />Mankind took a huge leap in science and technology when it invented robots. Robots are always fascinating to them and are constantly evolving. Time-Lining brings you an opportunity of a lifetime to use this opus invention and prove your worth by making and controlling it. A multitude of exciting events awaits you that not only fulfils your appetite for imagination and application but also is a source of ultra-gratification when you bring your imaginative transformers into the real world. You will have to make a robot that meets given specifications and make your way to victory. So gear up, show your intellect and start ROBOTING!
                         <br />
                         <br /><span class="event-subtitle">Rules :</span>
                         <ul>
@@ -2133,6 +2139,85 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
             </div>
 
         </div>
+
+        <div class="wrap">
+                    <div class="event-desc-container">
+                        <div class="event-title">App for Apple</div>
+                        <div class="event-text">
+                            <div class="event-caption">
+                                Hold your breath folks.This time, the tech level at Zetigeist will be at its zenith as Zeigeist in association with Paramatrix,
+                                leading provider of IT and network solutions in the IT sector, presents
+                                to you an exclusive tech event <span style="color:rgb(250,100,50)">"App for Apple"</span>.
+
+
+                            </div>
+                            <div class="event-description">
+                                <br />
+                                Here you just need to give us ideas 
+                                about new apps that Apple can develop for its future products and win
+                                cool and exciting Apple accessories like Apple Ipads and many more.
+                                <br />
+                                Don't think , register for the event and grab 'em all.
+                                <br /><br /><span class="event-subtitle">Rules :</span>
+                                <ul>
+                                    <li>Every team needs to prepare a presentation regarding their ideas and possible ways to implement them.(Ideas may not be too technical but must be feasible).</li>
+                                    <li>Each team can consist of maximum of 3 members (not necessarily from the same college).</li>
+                                    <li>The time of presentation must not exceed 20 minutes.Marks may be deducted if time limit exceeds.</li>
+                                    <li>Presentation must include the possible ways to implement the ideas and ways in which the app can be beneficial to people.</li>
+                                    <li>Final decision regarding any matter solely lies in the hands of the organisers of the event. </li>                               
+                                </ul>
+                                <br />
+                                
+
+                                <span class="event-subtitle">Prizes :</span>
+                                <ul>
+                                    <li>Apple accessories like Apple Ipads and many more.</li>
+                                </ul>
+                                
+                                <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
+                                <!-- <span class="event-subtitle">Prizes</span>
+                        <ul>
+                            <li>Goodies and Coupons</li>
+                        </ul> -->
+                                <!-- <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 20/- per participant</li>
+                        </ul> -->
+                            </div>
+                        </div>
+
+                        <?php
+
+if (isset($_SESSION['email']) && !isset($_SESSION['apple']))
+{ ?>
+                <button class="register-button" onclick="showLight3('apple')">REGISTER</button>
+                <?php
+}
+else
+if (!isset($_SESSION['email']))
+{ ?>
+                <button class="register-button">
+                    <a href="#/register">REGISTER</a>
+                </button>
+                <?php
+}
+else
+if (isset($_SESSION['email']) && isset($_SESSION['apple']))
+{ ?>
+                <div class="registered-div">
+                    <p>REGISTERED</p>
+                </div>
+                <?php
+} ?>
+                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                        <button class="event-close" onclick="closing(event)">CLOSE</button>
+                    </div>
+                    <div class="event-image">
+                        <img src="images/events/z.jpg">
+                    </div>
+
+                </div>
+
     </div> 
  <!--__________________________________________________________________________________________________________________-->
     <div class="r-page category4">
@@ -2494,6 +2579,85 @@ else
             </div>
         </div>
 
+         <div class="wrap floater">
+            <div class="event-desc-container floater">
+                <div class="event-title">Battle of Knights</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        “Club 64- Chess club of IIT Ropar introduces its first ever chess tournament. Compete against the best in the country. Beat all to be called the 'champ'.
+                    </div>
+                   <div class="event-description">
+                                
+                                <br />
+                                <span class="event-subtitle">Rules :</span>
+                                <ul>
+                                    <li>Tournament will be played as per FIDE’s rules and regulations.</li>
+                                    <li>Only school and college students are allowed.</li>
+                                    <li>Any number of students are allowed from a college.</li>
+                                    <li>Each player will play at least two rounds(Depending on the number of participants and match results).</li>
+                                    <li>Kindly bring your own chess boards along with your own chess clocks (Game timers).</li>
+                                    <li>In case of any dispute or claim, the decision of the arbiter will be final and binding to all rules and regulations.</li>
+                                    <li>Each match will be of 50 minutes (25 minutes each) for initial rounds.</li>
+                                </ul>
+                                <br />
+    
+
+                                <span class="event-subtitle">Prizes :</span>
+                                <ul>
+                                    <li>Excited prizes and certificates will be given.</li>
+                                </ul>
+                                
+                                
+                                <!-- <span class="event-subtitle">Prizes</span>
+                        <ul>
+                            <li>Goodies and Coupons</li>
+                        </ul> -->
+                                <br />
+                                <span class="event-subtitle">Registration Fees :</span>
+                                <ul>
+                                    <li>Registration Fees: 50/- per participant</li>
+                                </ul> 
+                                <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
+                            </div>
+                </div>
+                                         <?php
+
+if (!isset($_SESSION['chess']))
+{ ?>
+                    <form method="post" class="literary-form" <?php
+    if (!isset($_SESSION['user_id']))
+    { ?>
+                        action="#/register">
+                        <button type="submit" value="REGISTER" class="register-button floater">REGISTER</button>
+                    </form>
+                    <?php
+    }
+    else
+    { ?>id="singleone">
+                    <input type="hidden" id="event_name" name="event_name" value="chess" />
+                    <button type="submit" value="REGISTER" class="reg-button floater">REGISTER</button>
+                    </form>
+
+                    <?php
+    } ?>
+                    <?php
+}
+else
+{ ?>
+                    <div class="registered-div floater">
+                        <p>REGISTERED</p>
+                    </div>
+                    <?php
+} ?>                
+                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
+
 
             </div>
             
@@ -2544,7 +2708,7 @@ else
                 </li>
                 <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="category4">
                     <div>
-                        <p>Online Events</p>
+                        <p>Online/Gaming Events</p>
                     </div>
                     <div>
                         <p>Click Here To View!</p>
@@ -2809,7 +2973,7 @@ else
         <br />
         <?php
 
-if (!isset($_SESSION['dekode']) || !isset($_SESSION['timelining']))
+if (!isset($_SESSION['dekode']) || !isset($_SESSION['timelining']) || !isset($_SESSION['apple']))
 { ?>
         <form method="post" <?php
 	if (!isset($_SESSION['user_id']))
