@@ -146,8 +146,22 @@
   margin-top: 7px;
 }
 
+#accomodation-button
+{
+  position: absolute;
+  right: 0;
+  top: 2em;
+  left: auto;
+  width: 128px;
+  height: 3em;
+  z-index: 100;
+  color: white;
+  border:2px solid white;
+  height:3em;
+  background-color:rgba(0,0,0,0.0);
+}
 
- .r-close-button:hover, .event-register-close:hover
+ .r-close-button:hover, .event-register-close:hover, #accomodation-button:hover
  {
   background-color: rgb(100,150,250);
   border: none;
