@@ -2900,6 +2900,9 @@ else
     <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="11">
     11 October
     </div>
+    <div class="register-input-container" style="margin-left:25%">
+        *Nominal Fee might be charged (to be paid on the spot)
+    </div>
     <input type="hidden" name="type" value="accomodate"/>
     <div class="register-input-container">
     <input type="submit" class='register-button' style="margin-top:2em;margin-left:6%;width:160px" value="GET ACCOMODATION"/>
@@ -2930,7 +2933,9 @@ else
     <div class="register-input-container">
     <input style="margin-left:50px;height:20px;width:20px;" type="checkbox" name="date[]" value="11" <?php if($result['date11']) { ?> checked <?php } ?>>
     11 October
-    <br>
+    </div>
+    <div class="register-input-container" style="margin-left:25%">
+        *Nominal Fee might be charged (to be paid on the spot)
     </div>
     <input type="hidden" name="type" value="update"/>
     <div class="register-input-container">

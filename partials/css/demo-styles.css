@@ -146,6 +146,11 @@
   margin-top: 7px;
 }
 
+#accomodation-button a:hover
+{
+  text-decoration: none;
+}
+
 #accomodation-button
 {
   position: absolute;
@@ -158,6 +163,7 @@
   color: white;
   border:2px solid white;
   height:3em;
+  color: white;
   background-color:rgba(0,0,0,0.0);
 }
 
