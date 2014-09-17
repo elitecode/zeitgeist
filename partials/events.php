@@ -1833,10 +1833,164 @@ else
         <button class="r-close-button">
             GO BACK
         </button>
+        <!-- __________________________________________________________________________________________________________________ -->
+
+
+        <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Tryst</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        Robotics is one of the most vital organ of automation industry.             
+                        Realising this value, Zeitgeist gives you a platform to step into the world of robotics at <strong style="color:rgb(250,100,50)">"Tryst"</strong> being organised by <strong style="color:rgb(250,100,50)">"ROBOSAPIENS"</strong>.
+                        <br />
+                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
+                    </div>
+                    <div class="event-description">
+                        RoboTryst-2015 is an International Level Robotics Championship and Workshop series Joined by TRYST-2015, IIT-Delhi and Robosapiens Technologies Pvt. Ltd. This year Prelims Rounds of RoboTryst-
+                        2015 will be held at Selective Zonal Centers (Engineering Colleges/Universities) all across India. This is a 3 Stage Event as detailed below: 
+                        <ul>
+                            <li>Stage 1 (Workshop)
+
+                            <li>Stage 2 (Zonal Round): Just after the workshop, a competition (Prelims Round) of Robotics, RoboTryst-2015 will be held. Winners of the zonal rounds will be awarded Certificate of 
+                            Merit, and are required to participate in Final Rounds which will be held in the month of March 2015 at IIT-Delhi. 
+
+                            <li>Stage 3 (FINAL ROUND to be held at IIT-Delhi): Winners of all the Zonal Centers are invited to participate in the Final Round of RoboTryst-2015 in the month of March 2015 at IIT-Delhi.
+                        </ul>
+                         <span class="event-subtitle">Eligibility Criteria :</span>
+
+                            All engineering, Science, MBA, PhD students and hobbyist of Robotics can attend this event, as these have become the backbone of all the industry needs.
+                        <br /><br />
+                        <span class="event-subtitle">Duration :</span>
+
+                            10-11th Oct. 2014 (7-8 hours each day).
+
+                            <br /><br />
+                        <span class="event-subtitle">Registration charges :</span>
+
+                            Rs.1450/- per participant. The fee includes workshop training, certification, Event registration (Zonal Round) and a free Robotic Kit to a group of 4-5 participants.
+                            <br /><br />
+                            Contents of the Robotics Kit are detailed, <a href="http://zeitgeist.org.in/partials/pdf/kit.pdf" target="_blank">here</a>
+                            <br /><br />
+                            The registration will be on-spot on the first day of workshop. Payment through cash/cheque/DD.
+                            <br /><br />
+                        <span class="event-subtitle">Workshop Highlights :</span>
+                        <ul>
+                            <li>Live hands-on session on Robotics using a specially designed kit developed by Robomart.</li>
+
+                            <li>Live demonstration of various Robotics Applications. </li>
+
+                            <li>Learn and interact with one of the respected authorities of Robotic era. </li>
+
+                            <li>Robosapiens Technologies certification programs are recognized in the industry.</li> 
+
+                            <li>Improves job prospects and get an edge over counterparts.</li> 
+
+                            <li>Interactive Query sessions, Live Demos, PowerPoint Presentation.</li>
+                        </ul>
+                        <br />
+                        
+                        For detailed description about the workshop, click <a href="http://zeitgeist.org.in/partials/pdf/content.pdf" target="_blank">here</a>
+                        <br /><br />
+                        For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
+                        <!-- <span class="event-subtitle">Prizes</span>
+                <ul>
+                    <li>Goodies and Coupons</li>
+                </ul> -->
+                        <!-- <span class="event-subtitle">Registration Fees :</span>
+                <ul>
+                    <li>Registration Fees: 20/- per participant</li>
+                </ul> -->
+                    </div>
+                </div>
+                
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
+
+        </div>
 
 <!-- __________________________________________________________________________________________________________________ -->
 
+            <div class="wrap floater">
+                <div class="event-desc-container floater">
+                    <div class="event-title">HackerHunt</div>
+                    <div class="event-text">
+                        <div class="event-caption">
+                            A workshop in the field of Ethical Hacking will be conducted, as the preliminary stage of the championship. After the workshop, a competition will be organized and the winner of that competition will get Certificate of Merit in-Association with AIESEC IIT Delhi along with cash prizes, gift voucher, goodies and will be competing for Finale, which will be held at IIT Delhi Campus. 
+                            
+                            <br />
+                            
+                        </div>
+                        <div class="event-description">
+                            3 Winners of this finale will get an opportunity to work with <span style="color:rgb(250,100,50)">TechBharat Consulting Pvt. Ltd!</span>                        
+                            <br /><br />
+                            Students will be trained in the field of <span style="color:rgb(250,100,50)">Information Security</span>, <span style="color:rgb(250,100,50)">Cyber Security</span>, <span style="color:rgb(250,100,50)">Ethical Hacking</span> and various other emerging technologies like penetration testing, vulnerability analysis, cyber forensic, cyber consultant etc. Modules Covered official modules of the patented courses of EC-Council, USA.
+                            <br /><br />
+                            <span class="event-subtitle">Key Highlights :</span>
+                            <ul>
+                                <li>Introduction to Ethical Hacking </li>
 
+                                <li>Introduction to Cyber Forensics </li>
+
+                                <li>Internet - Email & Web Server Forensics & Email Hacking & Tracing</li> 
+
+                                <li>Buffer Overflow</li>
+
+                                <li>Computer Hacking and Forensics</li> 
+
+                                <li>Trojan and Backdoors & Sniffers </li>
+
+                                <li>Evading IDS, Honeypots, Firewall </li>
+
+                                <li>Social Engineering </li>
+
+                                <li>Malware Forensics </li>
+
+                                <li>Cryptography </li>
+
+                                <li>Advanced SQL Injection </li>
+
+                                <li>Pen testing with Kali-Linux</li>
+                            </ul>
+                            <span class="event-subtitle">Duration :</span> 
+                            10-11th Oct 2014 (8 hours each day)
+                            <br /><br />
+                            <span class="event-subtitle">Registration Fees :</span>
+                            <ul>
+                                <li>1200/- per participant</li>
+                            </ul> 
+
+                            The registration will be on-spot on the first day of workshop. Payment through cash/cheque/DD.
+                            <br /><br />
+                            For further details about the workshop please click <a href="http://zeitgeist.org.in/partials/pdf/level2.pdf" target="_blank">here</a> 
+                            Please visit these links for more information:
+                            <br />
+                            <a href="http://www.hackerhunt.org" target="_blank">www.hackerhunt.org</a>
+                            <br />
+                            <a href="http://www.techbharat.org " target="_blank">www.techbharat.org </a>
+                            <br />
+                            <a href="https://www.youtube.com/watch?v=BWAF_01e1U0" target="_blank">https://www.youtube.com/watch?v=BWAF_01e1U0</a>
+                            <br />
+                            <a href="https://www.youtube.com/watch?v=hdfuFktdEVU" target="_blank">https://www.youtube.com/watch?v=hdfuFktdEVU</a>
+                            <br /><br />
+                            <span style="color:rgb(250,100,50)">
+                            For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
+                        </div>
+                    </div>
+            
+                    <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                    <button class="event-close floater" onclick="closing(event)">CLOSE</button>
+                </div>
+                <div class="event-image">
+                    <img src="images/events/z.jpg">
+                </div>
+            </div>
+
+<!--_____________________________________________________________________________________________________________-->
         <div class="wrap">
             <div class="event-desc-container">
                 <div class="event-title">Time-Lining</div>
@@ -1979,166 +2133,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
             </div>
 
         </div>
- 
-        <div class="wrap">
-            <div class="event-desc-container">
-                <div class="event-title">HackerHunt</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        A workshop in the field of Ethical Hacking will be conducted, as the preliminary stage of the championship. After the workshop, a competition will be organized and the winner of that competition will get Certificate of Merit in-Association with AIESEC IIT Delhi along with cash prizes, gift voucher, goodies and will be competing for Finale, which will be held at IIT Delhi Campus. 
-                        
-                        <br />
-                        
-                    </div>
-                    <div class="event-description">
-                        3 Winners of this finale will get an opportunity to work with <span style="color:rgb(250,100,50)">TechBharat Consulting Pvt. Ltd!</span>                        
-                        <br /><br />
-                        Students will be trained in the field of <span style="color:rgb(250,100,50)">Information Security</span>, <span style="color:rgb(250,100,50)">Cyber Security</span>, <span style="color:rgb(250,100,50)">Ethical Hacking</span> and various other emerging technologies like penetration testing, vulnerability analysis, cyber forensic, cyber consultant etc. Modules Covered official modules of the patented courses of EC-Council, USA.
-                        <br /><br />
-                        <span class="event-subtitle">Key Highlights :</span>
-                        <ul>
-                            <li>Introduction to Ethical Hacking </li>
-
-                            <li>Introduction to Cyber Forensics </li>
-
-                            <li>Internet - Email & Web Server Forensics & Email Hacking & Tracing</li> 
-
-                            <li>Buffer Overflow</li>
-
-                            <li>Computer Hacking and Forensics</li> 
-
-                            <li>Trojan and Backdoors & Sniffers </li>
-
-                            <li>Evading IDS, Honeypots, Firewall </li>
-
-                            <li>Social Engineering </li>
-
-                            <li>Malware Forensics </li>
-
-                            <li>Cryptography </li>
-
-                            <li>Advanced SQL Injection </li>
-
-                            <li>Pen testing with Kali-Linux</li>
-                        </ul>
-                        <span class="event-subtitle">Duration :</span> 
-                        10-11th Oct 2014 (8 hours each day)
-                        <br /><br />
-                        <span class="event-subtitle">Registration Fees :</span>
-                        <ul>
-                            <li>1200/- per participant</li>
-                        </ul> 
-
-                        The registration will be on-spot on the first day of workshop. Payment through cash/cheque/DD.
-                        <br /><br />
-                        For further details about the workshop please click <a href="http://zeitgeist.org.in/partials/pdf/level2.pdf" target="_blank">here</a> 
-                        Please visit these links for more information:
-                        <br />
-                        <a href="http://www.hackerhunt.org" target="_blank">www.hackerhunt.org</a>
-                        <br />
-                        <a href="http://www.techbharat.org " target="_blank">www.techbharat.org </a>
-                        <br />
-                        <a href="https://www.youtube.com/watch?v=BWAF_01e1U0" target="_blank">https://www.youtube.com/watch?v=BWAF_01e1U0</a>
-                        <br />
-                        <a href="https://www.youtube.com/watch?v=hdfuFktdEVU" target="_blank">https://www.youtube.com/watch?v=hdfuFktdEVU</a>
-                        <br /><br />
-                        <span style="color:rgb(250,100,50)">
-                        For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
-                    </div>
-                </div>
-        
-                <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close" onclick="closing(event)">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/z.jpg">
-            </div>
-        </div>
-
-        <!-- __________________________________________________________________________________________________________________ -->
-
-
-        <div class="wrap floater">
-            <div class="event-desc-container floater">
-                <div class="event-title">Tryst</div>
-                <div class="event-text">
-                    <div class="event-caption">
-                        Robotics is one of the most vital organ of automation industry.             
-                        Realising this value, Zeitgeist gives you a platform to step into the world of robotics at <strong style="color:rgb(250,100,50)">"Tryst"</strong> being organised by <strong style="color:rgb(250,100,50)">"ROBOSAPIENS"</strong>.
-                        <br />
-                        <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
-                    </div>
-                    <div class="event-description">
-                        RoboTryst-2015 is an International Level Robotics Championship and Workshop series Joined by TRYST-2015, IIT-Delhi and Robosapiens Technologies Pvt. Ltd. This year Prelims Rounds of RoboTryst-
-                        2015 will be held at Selective Zonal Centers (Engineering Colleges/Universities) all across India. This is a 3 Stage Event as detailed below: 
-                        <ul>
-                            <li>Stage 1 (Workshop)
-
-                            <li>Stage 2 (Zonal Round): Just after the workshop, a competition (Prelims Round) of Robotics, RoboTryst-2015 will be held. Winners of the zonal rounds will be awarded Certificate of 
-                            Merit, and are required to participate in Final Rounds which will be held in the month of March 2015 at IIT-Delhi. 
-
-                            <li>Stage 3 (FINAL ROUND to be held at IIT-Delhi): Winners of all the Zonal Centers are invited to participate in the Final Round of RoboTryst-2015 in the month of March 2015 at IIT-Delhi.
-                        </ul>
-                         <span class="event-subtitle">Eligibility Criteria :</span>
-
-                            All engineering, Science, MBA, PhD students and hobbyist of Robotics can attend this event, as these have become the backbone of all the industry needs.
-                        <br /><br />
-                        <span class="event-subtitle">Duration :</span>
-
-                            10-11th Oct. 2014 (7-8 hours each day).
-
-                            <br /><br />
-                        <span class="event-subtitle">Registration charges :</span>
-
-                            Rs.1450/- per participant. The fee includes workshop training, certification, Event registration (Zonal Round) and a free Robotic Kit to a group of 4-5 participants.
-                            <br /><br />
-                            Contents of the Robotics Kit are detailed, <a href="http://zeitgeist.org.in/partials/pdf/kit.pdf" target="_blank">here</a>
-                            <br /><br />
-                            The registration will be on-spot on the first day of workshop. Payment through cash/cheque/DD.
-                            <br /><br />
-                        <span class="event-subtitle">Workshop Highlights :</span>
-                        <ul>
-                            <li>Live hands-on session on Robotics using a specially designed kit developed by Robomart.</li>
-
-                            <li>Live demonstration of various Robotics Applications. </li>
-
-                            <li>Learn and interact with one of the respected authorities of Robotic era. </li>
-
-                            <li>Robosapiens Technologies certification programs are recognized in the industry.</li> 
-
-                            <li>Improves job prospects and get an edge over counterparts.</li> 
-
-                            <li>Interactive Query sessions, Live Demos, PowerPoint Presentation.</li>
-                        </ul>
-                        <br />
-                        
-                        For detailed description about the workshop, click <a href="http://zeitgeist.org.in/partials/pdf/content.pdf" target="_blank">here</a>
-                        <br /><br />
-                        For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
-                        <!-- <span class="event-subtitle">Prizes</span>
-                <ul>
-                    <li>Goodies and Coupons</li>
-                </ul> -->
-                        <!-- <span class="event-subtitle">Registration Fees :</span>
-                <ul>
-                    <li>Registration Fees: 20/- per participant</li>
-                </ul> -->
-                    </div>
-                </div>
-                
-                <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
-                <button class="event-close floater" onclick="closing(event)">CLOSE</button>
-            </div>
-            <div class="event-image">
-                <img src="images/events/z.jpg">
-            </div>
-
-        </div>
-
     </div> 
-
-
-
+ <!--__________________________________________________________________________________________________________________-->
     <div class="r-page category4">
 
         <button class="r-close-button">
