@@ -157,6 +157,16 @@ audio
 	background-color: rgba(0,0,0,0.4);
 }
 
+#people-edit
+{
+	margin: 0 auto;
+	margin-bottom: 2em;
+	text-align: center;
+	width: 400px;
+	padding: 20px 20px 20px;
+	background-color: rgba(0,0,0,0.4);
+}
+
 #people-web-container
 {
 	margin-top: 2em;
