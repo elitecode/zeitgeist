@@ -70,6 +70,11 @@ session_start(); ?>
                                 <ul>
                                    <li>Registration Fees : 1000/- per team</li>
                                 </ul>
+                                <br />
+                                <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                                <br />
+                                <br />
+                                *In case of high participation, prelims will be held and the participants will be notified in time.
                             </div>
                         </div>
 
@@ -148,12 +153,17 @@ session_start(); ?>
                         </ol>
                         <span class="event-subtitle">Result</span>:
                         <br />The result will be based on the total sum of points obtained in the all the three rounds .
+                        <br /><br />
+                        <span class="event-subtitle">Event Coodinator :</span> Mohit Garg&nbsp;&nbsp;&nbsp;&nbsp;+919501652710&nbsp;&nbsp;&nbsp;&nbsp;mohitg@iitrpr.ac.in
                         <br />
+                        <br />
+
                         <span style="color:rgb(250,100,50)">*</span>The criteria for the formation of pairs will be decided on the spot.
                         <br />
                         <br />
                         <div class="event-subtitle">Disclaimer :</div>
                         If you have any further queries related to this event, mail your queries at support@zeitgeist.org.in.
+
                     </div>
                 </div>
                 <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
@@ -197,6 +207,12 @@ session_start(); ?>
 				        <ul>
 					       <li>Registration Fees: 1000/- per team</li>
 				        </ul> 
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                        <br />
+
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
                 <?php
@@ -294,7 +310,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
                         <span class="event-subtitle">Registration :</span>
 				        <ul>
 					       <li>Registration Fees : 1000/- per team</li>
-				        </ul> 
+				        </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+918591549337&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
+                        <br /> 
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
 
@@ -414,6 +435,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
                         <ul>
                            <li>Registration Fees : 300/- per team</li>
                         </ul> 
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+918591549337&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
+                        <br /> 
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
 
@@ -509,7 +535,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
                             <span class="event-subtitle">Registration :</span>
                             <ul>
                                 <li>Registration Fees : 150/-</li>
-                            </ul>  
+                            </ul> 
+                            <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+918591549337&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
+                        <br />  
+                            <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
                 <?php
@@ -697,6 +728,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
                            <li>Solo : 150/-</li>
                            <li>Duet : 300/- per team</li>
                         </ul> 
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                        <br />
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
                 <button class="register-button" onclick="showLight1('saaz')">REGISTER</button>
@@ -757,7 +793,14 @@ if (isset($_SESSION['email']) && isset($_SESSION['junoon1']))
                         <span class="event-subtitle">Registration :</span>
                         <ul>
                            <li>Registration Fees : 1000/- per team</li>
-                        </ul> 
+                        </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Amit Goyal&nbsp;&nbsp;&nbsp;&nbsp;+918288909906&nbsp;&nbsp;&nbsp;&nbsp;amitgoyal@iitrpr.ac.in
+                        <br /> 
+                        <br />
+                        <strong style="color:rgb(250,100,50)">PS : 1 more team member can be allowed in case of extreme circumstances but the Event Coordinator should be made aware of that in time.</strong>
+                        <br /><br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
 
@@ -846,6 +889,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['nukkad']))
                         <ul>
                            <li>Registration Fees : 800/- per team</li>
                         </ul> 
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Amit Goyal&nbsp;&nbsp;&nbsp;&nbsp;+918288909906&nbsp;&nbsp;&nbsp;&nbsp;amitgoyal@iitrpr.ac.in
+                        <br /> 
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
 
@@ -1003,6 +1051,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['yatharth']))
                         <ul>
                            <li>Registration Fees : 200/- </li>
                         </ul> 
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Abhishek Kalsi&nbsp;&nbsp;&nbsp;&nbsp;+918288909779&nbsp;&nbsp;&nbsp;&nbsp;abhishekkalsi@iitrpr.ac.in
+                        <br /> 
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
                 <div>
@@ -1090,7 +1143,12 @@ else
                         <span class="event-subtitle">Registration :</span>
                         <ul>
                            <li>Registration Fees : 100/- </li>
-                        </ul> 
+                        </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                        <br />
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time. 
                     </div>
                 </div>
                 <div>
@@ -1254,6 +1312,11 @@ else
                                 </ul>
                             </li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <br />
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                         <!-- <span class="event-subtitle">Prizes :</span>
 				<ul>
 					<li>Winner : 1000/-</li>
@@ -1353,6 +1416,12 @@ else
                                 </ul>
                             </li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <br />
+
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                         <!-- <span class="event-subtitle">Prizes :</span>
 				<ul>
 					<li>	Winner : 2000/-</li>
@@ -1433,6 +1502,11 @@ else
 
                             <li>Participants will be provided required materials.</li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Kashish Grover&nbsp;&nbsp;&nbsp;&nbsp;+919034725404&nbsp;&nbsp;&nbsp;&nbsp;kashish.grover@iitrpr.ac.in
+                        <br />
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                         <!-- <span class="event-subtitle">Registration Fees :</span>
 					<ul>
 						<li>Registration fees: 20/- per participant</li>
@@ -1521,6 +1595,12 @@ else
                                 </ul>
                             </li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <br />
+
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                         <!-- <span class="event-subtitle">Prizes :</span>
                 <ul>
                     <li>Winner : 1000/-</li>
@@ -1612,6 +1692,11 @@ else
                         <ul>
                             <li>Registration fees: 100/- per participant</li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Kashish Grover&nbsp;&nbsp;&nbsp;&nbsp;+919034725404&nbsp;&nbsp;&nbsp;&nbsp;kashish.grover@iitrpr.ac.in
+                        <br />
+                        <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                     </div>
                 </div>
                 <div>
@@ -1690,6 +1775,11 @@ else
                         <ul>
                             <li>Registration Fees: 50 per Participant</li>
                           </ul> 
+                          <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Kashish Grover&nbsp;&nbsp;&nbsp;&nbsp;+919034725404&nbsp;&nbsp;&nbsp;&nbsp;kashish.grover@iitrpr.ac.in
+                        <br />
+                          <br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
 
                     </div>
                 </div>
@@ -1771,7 +1861,11 @@ else
                         <strong style="color:rgb(250,100,50)">Round 2:</strong> In the second round which will be made totally randomly from the selected students of 1st round top 1-2 students will be selected for final round.
                         <br /><br />
                         <strong style="color:rgb(250,100,50)">Final round:</strong> In the last round, winners of second will go for the final battle in final tiff of ideas.
-
+                        <br /><br />
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <br />
+                        <br /><br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
 
                         
                         <!-- <span class="event-subtitle">Prizes :</span><br />
@@ -1895,6 +1989,9 @@ else
                             <li>Interactive Query sessions, Live Demos, PowerPoint Presentation.</li>
                         </ul>
                         <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Amogh Agrawal&nbsp;&nbsp;&nbsp;&nbsp;+919501651774&nbsp;&nbsp;&nbsp;&nbsp;amoghag@iitrpr.ac.in
+                        <br />
+                        <br />
                         
                         For detailed description about the workshop, click <a href="http://zeitgeist.org.in/partials/pdf/content.pdf" target="_blank">here</a>
                         <br /><br />
@@ -1968,7 +2065,10 @@ else
                             <span class="event-subtitle">Registration Fees :</span>
                             <ul>
                                 <li>1200/- per participant</li>
-                            </ul> 
+                            </ul>
+                            <br />
+                            <span class="event-subtitle">Event Coodinator :</span> Mohit Garg&nbsp;&nbsp;&nbsp;&nbsp;+919501652710&nbsp;&nbsp;&nbsp;&nbsp;mohitg@iitrpr.ac.in
+                            <br /> <br />
 
                             The registration will be on-spot on the first day of workshop. Payment through cash/cheque/DD.
                             <br /><br />
@@ -2024,6 +2124,9 @@ else
 
                             <li>In each try, the participant can touch the bot maximum 5 times (with penalty for each touch)</li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Amogh Agrawal&nbsp;&nbsp;&nbsp;&nbsp;+919501651774&nbsp;&nbsp;&nbsp;&nbsp;amoghag@iitrpr.ac.in
+                        <br />
                         <br />For Elaborated Rules, <a style="text-decoration:none" href="http://zeitgeist.org.in/partials/pdf/Time_Lining_Z14.pdf" target="_blank"> Download pdf!</a>
                         <br />
                         <br />For Sample Arena, click <a style="text-decoration:none" href="http://zeitgeist.org.in/partials/pdf/arena.jpg" target="_blank">here</a>
@@ -2094,6 +2197,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['timelining']))
 
                             <li>The decision of the judges and the organizers shall be final and abiding.</li>
                         </ul>
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Amogh Agrawal&nbsp;&nbsp;&nbsp;&nbsp;+919501651774&nbsp;&nbsp;&nbsp;&nbsp;amoghag@iitrpr.ac.in
+                        <br />
                         <br />For detailed description and preparatory material click <a href="http://zeitgeist.org.in/partials/pdf/DeKode_Z14.pdf" target="_blank">here</a>
                         <br /><br />
                         <span style="color:rgb(250,100,50)">
@@ -2173,8 +2279,14 @@ if (isset($_SESSION['email']) && isset($_SESSION['dekode']))
                                 <ul>
                                     <li>Apple accessories like Apple Ipads and many more.</li>
                                 </ul>
+                                <br />
+                                <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                                <br />
                                 
                                 <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
+
+                                <br /><br/>
+                                *In case of high participation, prelims will be held and the participants will be notified in time.
                                 <!-- <span class="event-subtitle">Prizes</span>
                         <ul>
                             <li>Goodies and Coupons</li>
@@ -2272,6 +2384,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
                                     
                                     <li>Also<span style="color:rgb(250,100,50)"> HackerEarth T-Shirts</span> to top 10 participants.</li>
                                 </ul>
+                                <br />
+                                <span class="event-subtitle">Event Coodinator :</span> Mohit Garg&nbsp;&nbsp;&nbsp;&nbsp;+919501652710&nbsp;&nbsp;&nbsp;&nbsp;mohitg@iitrpr.ac.in
+                                <br />
                                 
                                 <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
                                 <!-- <span class="event-subtitle">Prizes</span>
@@ -2346,6 +2461,9 @@ else
                         <br />
                         <a href="http://zhunt.zeitgeist.org.in" target="_blank">Go to Event Page</a>
                         <br />
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Aniket Sachdeva&nbsp;&nbsp;&nbsp;&nbsp;+919501651223&nbsp;&nbsp;&nbsp;&nbsp;aniket@iitrpr.ac.in
+                        <br />
                         <br />For any queries regarding the event , drop an email at support@zeitgeist.org.in
 
                         <!--<span style="color:rgb(250,100,50)">
@@ -2390,6 +2508,9 @@ else
                         <br />
                         <br />
                         <a href="http://zeitgeist.org.in/Zigmatics" target="_blank">Go to Event Page</a>
+                        <br />
+                        <br />
+                        <span class="event-subtitle">Event Coodinator :</span> Deepak Chawla&nbsp;&nbsp;&nbsp;&nbsp;+919646218688&nbsp;&nbsp;&nbsp;&nbsp;deepakc@iitrpr.ac.in
                         <br />
                         <br />For any queries regarding the event , drop an email at support@zeitgeist.org.in
                     </div>
@@ -2444,6 +2565,9 @@ else
                                     
                                     <li>Also<span style="color:rgb(250,100,50)"> HackerRank T-Shirts</span> to top 3 participants.</li>
                                 </ul>
+                                <br />
+                                <span class="event-subtitle">Event Coodinator :</span> Mohit Garg&nbsp;&nbsp;&nbsp;&nbsp;+919501652710&nbsp;&nbsp;&nbsp;&nbsp;mohitg@iitrpr.ac.in
+                                <br />
                                 
                                 <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
                                 <!-- <span class="event-subtitle">Prizes</span>
@@ -2569,6 +2693,7 @@ else
 
                             <li>The photographs submitted by all the participants will be uploaded on <a href="https://www.facebook.com/zeitgeist.iitrpr" target="_blank">www.facebook.com/zeitgeist.iitrpr</a> Photographs will be updated every day once in between 8 PM - 11 PM. Once uploaded, the participant will be acknowledged through an e-mail. The final result will be announced on 14th October.</li>
                     </ul>
+
                     </div>
                 </div>
                 <button class="event-register" onclick="showing(event)">SEE MORE</button>
@@ -2617,7 +2742,12 @@ else
                                 <ul>
                                     <li>Registration Fees: 50/- per participant</li>
                                 </ul> 
+                                <br />
+                                <span class="event-subtitle">Event Coodinator :</span> Sanket Gawade&nbsp;&nbsp;&nbsp;&nbsp;+917307685075&nbsp;&nbsp;&nbsp;&nbsp;gawade.sudhir@iitrpr.ac.in
+                                <br />
                                 <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
+                                <br /><br />
+                        *In case of high participation, prelims will be held and the participants will be notified in time.
                             </div>
                 </div>
                                          <?php
