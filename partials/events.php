@@ -360,7 +360,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
 
 <div class="wrap">
             <div class="event-desc-container">
-                <div class="event-title">Smack That ( Freestyle )</div>
+                <div class="event-title">Smack That ( Street Dance )</div>
                 <div class="event-text">
                     <div class="event-caption">
                         Do you have the confidence and talent to mesmerise the world by your moves? Well then, this is the place to showcase your skills and win it all.
