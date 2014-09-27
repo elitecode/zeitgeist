@@ -2464,7 +2464,7 @@ else
                         <span class="event-subtitle">Prizes</span>
 
                         <ul>
-                            <li>Winner : 5000/-</li>
+                            <li>Winner : 3000/-</li>
                             <li>Soft Copy of certificates to top 10.</li>
                             <li>Hard Copy of certificates to top 3 as well as fest benefits if they come to attend Zeitgeist'14</li>
                         </ul>
@@ -2517,7 +2517,7 @@ else
                         <br /><br />
                         <span class="event-subtitle">Prizes</span>
                         <ul>
-                            <li>Winner : 5000/-</li>
+                            <li>Winner : 3000/-</li>
                             <li>Soft Copy of certificates to top 10.</li>
                             <li>Hard Copy of certificates to top 3 as well as fest benefits if they come to attend Zeitgeist'14</li>
                         </ul>
