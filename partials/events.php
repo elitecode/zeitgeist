@@ -2460,8 +2460,14 @@ else
                         <br />
                         <br />
                         <a href="http://zhunt.zeitgeist.org.in" target="_blank">Go to Event Page</a>
-                        <br />
-                        <br />
+                        <br /><br />
+                        <span class="event-subtitle">Prizes</span>
+
+                        <ul>
+                            <li>Winner : 5000/-</li>
+                            <li>Soft Copy of certificates to top 10.</li>
+                            <li>Hard Copy of certificates to top 3 as well as fest benefits if they come to attend Zeitgeist'14</li>
+                        </ul>
                         <span class="event-subtitle">Event Coodinator :</span> Aniket Sachdeva&nbsp;&nbsp;&nbsp;&nbsp;+919501651223&nbsp;&nbsp;&nbsp;&nbsp;aniket@iitrpr.ac.in
                         <br />
                         <br />For any queries regarding the event , drop an email at support@zeitgeist.org.in
@@ -2508,7 +2514,13 @@ else
                         <br />
                         <br />
                         <a href="http://zeitgeist.org.in/Zigmatics" target="_blank">Go to Event Page</a>
-                        <br />
+                        <br /><br />
+                        <span class="event-subtitle">Prizes</span>
+                        <ul>
+                            <li>Winner : 5000/-</li>
+                            <li>Soft Copy of certificates to top 10.</li>
+                            <li>Hard Copy of certificates to top 3 as well as fest benefits if they come to attend Zeitgeist'14</li>
+                        </ul>
                         <br />
                         <span class="event-subtitle">Event Coodinator :</span> Deepak Chawla&nbsp;&nbsp;&nbsp;&nbsp;+919646218688&nbsp;&nbsp;&nbsp;&nbsp;deepakc@iitrpr.ac.in
                         <br />
