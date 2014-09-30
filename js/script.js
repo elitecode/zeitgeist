@@ -2,6 +2,7 @@
 var news = [
 	
 	"Fashion Show - Lashkara going to be held at Zeitgeist'14, Registrations are now open!",
+	"Result of Mr. & Ms. Zeitgeist online round will be released soon",
 ];
 
 $(window).load(function(){

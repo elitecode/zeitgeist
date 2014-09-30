@@ -1313,7 +1313,7 @@ else
                             </li>
                         </ul>
                         <br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
                         <br />
                         *In case of high participation, prelims will be held and the participants will be notified in time.
@@ -1417,7 +1417,7 @@ else
                             </li>
                         </ul>
                         <br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
 
                         <br />
@@ -1581,8 +1581,6 @@ else
 
                             <li>In all cases, the decision of the judges will be irrefutable.</li>
 
-                            <li></li>
-
                             <li>Following are the judging criteria:
                                 <ul>
                                     <li>Content: Awareness and Knowledge of the topic.</li>
@@ -1596,7 +1594,7 @@ else
                             </li>
                         </ul>
                         <br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
 
                         <br />
@@ -1862,7 +1860,7 @@ else
                         <br /><br />
                         <strong style="color:rgb(250,100,50)">Final round:</strong> In the last round, winners of second will go for the final battle in final tiff of ideas.
                         <br /><br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+917814310824&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
                         <br /><br />
                         *In case of high participation, prelims will be held and the participants will be notified in time.
@@ -2352,7 +2350,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
                             </div>
                             <div class="event-description">
                                <br />If you think, your programmer-self has the ability to rule the world of programming then it's nothing better than now. Register yourself for the event and you will know programming was never much fun than at Zetigeist.
-                                <br /><br />The event will begin on 28th September at 9PM.<br /><br />
+                                <br /><br />The event will begin on 30th September at 9PM.<br /><br />
 
                                 <a href="http://www.hackerearth.com/algoxtreme/" target="_blank">Go to Event Page</a>
                                 <br /><br /><span class="event-subtitle">Rules :</span>
@@ -2459,7 +2457,7 @@ else
                         <span style="color:rgb(250,100,50)">The Hunt will begin at 8 PM on September, the 29th .</span>
                         <br />
                         <br />
-                        <a href="http://zhunt.zeitgeist.org.in" target="_blank">Go to Event Page</a>
+                        <a href="http://zeitgeist.org.in/zhunt/" target="_blank">Go to Event Page</a>
                         <br /><br />
                         <span class="event-subtitle">Prizes</span>
 
@@ -2798,6 +2796,51 @@ else
                 <img src="images/events/z.jpg">
             </div>
 
+        </div>
+
+        <div class="wrap">
+            <div class="event-desc-container">
+                <div class="event-title">Battleground X</div>
+                <div class="event-text">
+                    <div class="event-caption">
+                        <span style="color:rgb(250,100,50)">"WELCOME TO THE VIRTUAL WORLD"</span><br />
+                        Feel the electrified atmosphere as the best gamers collide in a battle
+                        for glory.Alliances are formed...strategies fail...mpires established..
+                        Kingdoms fall..Egos get crushed and teams destroyed.
+                        In this war only one shall "PREVAIL".<br />
+                    </div>
+                    <div class="event-description">
+                        <span class="event-subtitle">FIFA 14 :</span><br />
+                            Brace yourselves , you crazy fans of football as Zeitgeist
+                            brings with it a glorious chance for you all to showcase your talent
+                            at one of the finest games of today's world "FIFA 14". A chance to
+                            show the world that you are none less than "Messi" or "Cristiano
+                            Ronaldo" when it comes to FIFA 14.
+                            <br /><br />
+                        <span class="event-subtitle">CS 1.6 :</span><br />
+                            When it comes to PC games , the most famous game
+                            CounterStrike 1.6, inspite of being old , tops the list and even in
+                            today's world of smart graphics, , it still has a position which other
+                            games donot hold. And Zetigiest too values it and is thus ,ready to
+                            thrill you with the most played game of all time "CounterStrike 1.6"
+                            where not only good shooting skills but also the teamwork and best
+                            strategy prevails. Are you ready to take on the "Mission Impossible".
+                            <br /><br />
+                        <span class="event-subtitle">AOE II The Conquerors :</span><br />
+                            Age of Empires II The Conquerors<br>
+                            Patrol all the way to the arena saying "Woolooloo"
+                            War is coming, War is coming, are your units ready ?
+                            We have Random Map, we have CBA, you will really love the stay
+                            Combat at agressive stance, flank the enemy and claim the victory of the day.
+
+                    </div>
+                </div>
+                <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                <button class="event-close" onclick="closing(event)">CLOSE</button>
+            </div>
+            <div class="event-image">
+                <img src="images/events/z.jpg">
+            </div>
         </div>
 
 
