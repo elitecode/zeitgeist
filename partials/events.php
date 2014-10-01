@@ -1292,9 +1292,7 @@ else
                         <ul>
                             <li>Any number of participants are allowed from a college.</li>
 
-                            <li>Around 10 participants per batch (individual participant entries).</li>
-
-                            <li>Flexible time limit.</li>
+                            <li>Each debate will be of 12 minutes.</li>
 
                             <li>Inappropriate (abusive) language will lead to disqualification.</li>
 
@@ -1369,7 +1367,7 @@ else
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/conclave.jpg">
             </div>
 
         </div>
@@ -1398,19 +1396,14 @@ else
                                 <br />
                                 <span class="event-subtitle" style="font-size:17px;">Preliminary Round :</span>
                                 <ul>
-                                    <li>Duration: 1 Hour</li>
+                                    <li>Duration: 30 minutes</li>
 
                                     <li>Test will be conducted in teams.</li>
 
-                                    <li>20 MCQs</li>
-
-                                    <li>30 Blanks</li>
                                 </ul>
                                 <span class="event-subtitle" style="font-size:17px;">Final Round :</span>
                                 <ul>
                                     <li>This will consist of sub-rounds which will be based on general knowledge, history, entertainment, etc.</li>
-
-                                    <li>Participants must report 2 hours prior to the start of the event.</li>
 
                                     <li>The decision of the organisers will be binding in all cases of dispute.</li>
                                 </ul>
@@ -1471,7 +1464,7 @@ else
                 <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/eureka.jpg">
             </div>
         </div>
 
@@ -1564,7 +1557,7 @@ else
                     <div class="event-caption">
                         Any language particular to a country is its uniqueness and "Hindi" is a language which is unique to us.One can express oneself truly only in a language that one has heard since birth.
                         
-                        This year again, Zeitgeist presents <strong style="color:rgb(250,100,50)">"Virudh"</strong>, the Hindi debate competition where opinions, ideas and wits behind the words will collide in the most fascinating and appealing way.
+                        This year again, Zeitgeist presents <strong style="color:rgb(250,100,50)">"Viruddh"</strong>, the Hindi debate competition where opinions, ideas and wits behind the words will collide in the most fascinating and appealing way.
                         <br />
                         <!-- <strong style="color:rgb(250,100,50)">Win Prizes worth Rs. 15000!</strong> -->
                     </div>
@@ -1573,9 +1566,7 @@ else
                         <ul>
                             <li>Any number of participants are allowed from a college.</li>
 
-                            <li>Around 10 participants per batch (individual participant entries).</li>
-
-                            <li>Flexible time limit.</li>
+                            <li>Each debate will be of 12 minutes.</li>
 
                             <li>Inappropriate (abusive) language will lead to disqualification.</li>
 
@@ -1733,7 +1724,7 @@ else
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/rangoli.jpg">
             </div>
 
         </div>
@@ -1838,15 +1829,11 @@ else
                         <ul>
                             <li>Groups will be made randomly and on the spot.</li>
 
-                            <li>The number of students allowed per group is 6-8.</li>
+                            <li>The number of students allowed per group is 6-10.</li>
 
-                            <li>Every group will be allotted 12 minutes for deliberation on their topic.</li>
+                            <li>Every group will be allotted 15 minutes for deliberation on their topic.</li>
 
-                            <li>Topic for the 1st round will be uploaded 2 days prior to the event.</li>
-
-                            <li>Topic will be given 5 minutes prior to the discussion for all the other rounds.</li>
-
-                            <li>1 minute of conclusion time will be given to each student.</li>
+                            <li>Topic will be given 5 minutes prior to the discussion for the final round.</li>
 
                             <li>Proper decorum to be maintained at all times.</li>
 
@@ -1854,16 +1841,14 @@ else
 
                             <li>Judges will have absolute authority and can intervene during any time of the discussion. Their decision is incontestable and final.</li>
                         </ul>
-                        <strong style="color:rgb(250,100,50)">Round 1:</strong> In the first round, top 2-3 students will be selected from each group.
+                        <strong style="color:rgb(250,100,50)">Round 1:</strong> In the preliminary round, top 2-3 students will be selected from each group.
                         <br /><br />
-                        <strong style="color:rgb(250,100,50)">Round 2:</strong> In the second round which will be made totally randomly from the selected students of 1st round top 1-2 students will be selected for final round.
-                        <br /><br />
-                        <strong style="color:rgb(250,100,50)">Final round:</strong> In the last round, winners of second will go for the final battle in final tiff of ideas.
+                        <strong style="color:rgb(250,100,50)">Final round:</strong> In the final round, winners of second will go for the final battle in final tiff of ideas.
                         <br /><br />
                         <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
                         <br /><br />
-                        *In case of high participation, prelims will be held and the participants will be notified in time.
+                        <!-- *In case of high participation, prelims will be held and the participants will be notified in time. -->
 
                         
                         <!-- <span class="event-subtitle">Prizes :</span><br />
@@ -2793,7 +2778,7 @@ else
                 <button class="event-close floater" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/chess.jpg">
             </div>
 
         </div>
@@ -2839,7 +2824,7 @@ else
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/battlegroundx.jpg">
             </div>
         </div>
 
