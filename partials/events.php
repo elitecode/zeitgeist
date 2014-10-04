@@ -2346,8 +2346,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
 
                 </div>
 
-        <!-- <div class="wrap">
-                    <div class="event-desc-container">
+        <div class="wrap floater">
+                    <div class="event-desc-container floater">
                         <div class="event-title">EBIZZ</div>
                         <div class="event-text">
                             <div class="event-caption">
@@ -2355,53 +2355,70 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
                             </div>
                             <div class="event-description">
                                 <br />
-                                <span style="color:rgb(250,100,50)">"App for Apple"</span>.
-                                Here you just need to give us ideas 
-                                about new apps that Apple can develop for its future products and win
-                                cool and exciting Apple accessories like Apple Ipads and many more.
-                                <br />
-                                Don't think , register for the event and grab 'em all.
-                                <br /><br /><span class="event-subtitle">Rules :</span>
+                                <div class="event-subtitle">Guidelines:</div>
                                 <ul>
-                                    <li>Every team needs to prepare a presentation regarding their ideas and possible ways to implement them.(Ideas may not be too technical but must be feasible).</li>
-                                    <li>Each team can consist of maximum of 3 members (not necessarily from the same college).</li>
-                                    <li>The time of presentation must not exceed 20 minutes.Marks may be deducted if time limit exceeds.</li>
+                                    <li>Team size: One to maximum five members. No changes in the team structure is allowed once the team has been registered.</li>
+                                    <li>There is no restriction on the number of teams that can participate from an institute. One person cannot be a part of more than one team.</li>
+                                    <li>The decisions of the organizers and the panel of judges will be final and binding on all the participants.</li>
                                     <li>Presentation must include the possible ways to implement the ideas and ways in which the app can be beneficial to people.</li>
-                                    <li>Final decision regarding any matter solely lies in the hands of the organisers of the event. </li>                               
+                                    <li>Participating teams are expected to submit original ideas. Plagiarized or copied ideas will be disqualified.</li>                               
                                 </ul>
                                 <br />
                                 
 
-                                <span class="event-subtitle">Prizes :</span>
+                                <span class="event-subtitle">Stage 1: Registration and Business Plan</span>
                                 <ul>
-                                    <li>Apple accessories like Apple Ipads and many more.</li>
+                                    <li>Teams are required to send an business plan in the specified format via  Email only. All the entries are to be sent to <span style="color:rgb(250,100,50)">events@zeitgiest.org</span> with subject line as: EBIZZ14_Teamname_EmailID (eg. EBIZZ14_Greyorange_greyorange@gmail.com)</li>
+                                    <li>Business plan should be in PDF format.
+                                        <br><span style="color:rgb(250,100,50)">Format details:</span> Times New Roman, 12 pt, 1.5 line spacing, 1” margins all around
+                                        <br>Business should contain (in brief) –
+                                        <ol>
+                                            <li>PARTICIPANT’S BACKGROUND </li>
+                                            <li>BUSINESSMODEL </li>
+                                            <li>CUSTOMER NEEDS/PROBLEMS </li>
+                                            <li>SOLUTION </li>
+                                            <li>FUND HISTORY (IF ANY) </li>
+                                            <li>VALUATION EXPECTED </li>
+                                            <li>3-5 YRS REVENUE FORECAST AND GROSS MARGIN AND EBITDA </li>
+                                            <li>MARKETSIZE </li>
+                                            <li>DISTRIBUTIONSTRATEGY</li>
+                                            <li>PRODUCT PRICING</li>
+                                            <li>COMPETITION</li>
+                                            <li>(Annexure)</li>
+                                        </ol>   
+                                    </li>
                                 </ul>
                                 <br />
-                                <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                                    <span class="event-subtitle">Stage 2: Presentation to be submitted by top 10 teams</span>
+                                    <ul>
+                                        <li>The final event will be conducted on campus at IIT ROPAR and it will be a closed house event with just the finalists, the organizing committee and the judges present during the finale</li>
+                                        <li>Presentation Format would be specified to the finalists after the results of the first round are announced</li>
+                                    </ul>
+                                <br>
+                                    Last Date to receive business plan pdf: <span style="color:rgb(250,100,50)">7th October, 11:59 pm</span>
+                                <br><br>
+                                <span class="event-subtitle">Results :</span>
+                                8th October<br>
+                                <span class="event-subtitle">Prize :</span>
+                                worth Rs.1500
+                                <br>
+                                <span class="event-subtitle">Event Coodinator :</span> Atri Gulati&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atrig@iitrpr.ac.in
                                 <br />
                                 
                                 <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
 
-                                <br /><br/>
-                                *In case of high participation, prelims will be held and the participants will be notified in time.
-                                <!-- <span class="event-subtitle">Prizes</span>
-                        <ul>
-                            <li>Goodies and Coupons</li>
-                        </ul> -->
-                                <!-- <span class="event-subtitle">Registration Fees :</span>
-                        <ul>
-                            <li>Registration Fees: 20/- per participant</li>
-                        </ul> -->
-                        <!--    </div>
+                                <br />
+
                         </div>
-                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
-                        <button class="event-close" onclick="closing(event)">CLOSE</button>
+                        </div>
+                        <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
+                        <button class="event-close floater" onclick="closing(event)">CLOSE</button>
                     </div>
                     <div class="event-image">
                         <img src="images/events/z.jpg">
                     </div>
 
-                </div> -->
+                </div>
 
     </div> 
  <!--__________________________________________________________________________________________________________________-->
