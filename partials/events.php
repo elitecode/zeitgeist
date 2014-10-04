@@ -2070,7 +2070,40 @@ else
                             For any further queries, drop an e-mail at support@zeitgeist.org.in</span>.
                         </div>
                     </div>
-            
+                    <div>
+                                        <?php
+
+                    if (!isset($_SESSION['hackerhunt']))
+                    { ?>
+                                        <form method="post" class="literary-form" <?php
+                    if (!isset($_SESSION['user_id']))
+                    { ?>
+                                            action="#/register">
+                                            <button type="submit" value="REGISTER"
+                    class="register-button floater">REGISTER</button>
+                                        </form>
+                                        <?php
+                    }
+                    else
+                    { ?>id="singleone">
+                                        <input type="hidden" id="event_name"
+                    name="event_name" value="hackerhunt" />
+                                        <button type="submit" value="REGISTER"
+                    class="floater reg-button">REGISTER</button>
+                                        </form>
+
+                                        <?php
+                    } ?>
+                                        <?php
+                    }
+                    else
+                    { ?>
+                                        <div class="floater registered-div">
+                                            <p>REGISTERED</p>
+                                        </div>
+                                        <?php
+                    } ?>
+                                    </div>
                     <button class="event-register floater" onclick="showing(event)">SEE MORE</button>
                     <button class="event-close floater" onclick="closing(event)">CLOSE</button>
                 </div>
@@ -2312,6 +2345,63 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
                     </div>
 
                 </div>
+
+        <!-- <div class="wrap">
+                    <div class="event-desc-container">
+                        <div class="event-title">EBIZZ</div>
+                        <div class="event-text">
+                            <div class="event-caption">
+                                The objective of this competition is to recognize and encourage budding entrepreneurs who have the potential to innovate and create value for the society.The business plan under this track should be developed keeping in mind that the idea is original, innovative and sustainable.
+                            </div>
+                            <div class="event-description">
+                                <br />
+                                <span style="color:rgb(250,100,50)">"App for Apple"</span>.
+                                Here you just need to give us ideas 
+                                about new apps that Apple can develop for its future products and win
+                                cool and exciting Apple accessories like Apple Ipads and many more.
+                                <br />
+                                Don't think , register for the event and grab 'em all.
+                                <br /><br /><span class="event-subtitle">Rules :</span>
+                                <ul>
+                                    <li>Every team needs to prepare a presentation regarding their ideas and possible ways to implement them.(Ideas may not be too technical but must be feasible).</li>
+                                    <li>Each team can consist of maximum of 3 members (not necessarily from the same college).</li>
+                                    <li>The time of presentation must not exceed 20 minutes.Marks may be deducted if time limit exceeds.</li>
+                                    <li>Presentation must include the possible ways to implement the ideas and ways in which the app can be beneficial to people.</li>
+                                    <li>Final decision regarding any matter solely lies in the hands of the organisers of the event. </li>                               
+                                </ul>
+                                <br />
+                                
+
+                                <span class="event-subtitle">Prizes :</span>
+                                <ul>
+                                    <li>Apple accessories like Apple Ipads and many more.</li>
+                                </ul>
+                                <br />
+                                <span class="event-subtitle">Event Coodinator :</span> Sajal Srivastava&nbsp;&nbsp;&nbsp;&nbsp;+919041496053&nbsp;&nbsp;&nbsp;&nbsp;sajalsr@iitrpr.ac.in
+                                <br />
+                                
+                                <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
+
+                                <br /><br/>
+                                *In case of high participation, prelims will be held and the participants will be notified in time.
+                                <!-- <span class="event-subtitle">Prizes</span>
+                        <ul>
+                            <li>Goodies and Coupons</li>
+                        </ul> -->
+                                <!-- <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 20/- per participant</li>
+                        </ul> -->
+                        <!--    </div>
+                        </div>
+                        <button class="event-register" onclick="showing(event)">SEE MORE</button>
+                        <button class="event-close" onclick="closing(event)">CLOSE</button>
+                    </div>
+                    <div class="event-image">
+                        <img src="images/events/z.jpg">
+                    </div>
+
+                </div> -->
 
     </div> 
  <!--__________________________________________________________________________________________________________________-->
@@ -2824,7 +2914,7 @@ else
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/battlegroundx.jpg">
+                <img src="images/events/battlegroundX.jpg">
             </div>
         </div>
 
