@@ -2368,7 +2368,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
 
                                 <span class="event-subtitle">Stage 1: Registration and Business Plan</span>
                                 <ul>
-                                    <li>Teams are required to send an business plan in the specified format via  Email only. All the entries are to be sent to <span style="color:rgb(250,100,50)">events@zeitgiest.org</span> with subject line as: EBIZZ14_Teamname_EmailID (eg. EBIZZ14_Greyorange_greyorange@gmail.com)</li>
+                                    <li>Teams are required to send an business plan in the specified format via  Email only. All the entries are to be sent to <span style="color:rgb(250,100,50)">events@zeitgiest.org.in</span> with subject line as: EBIZZ14_Teamname_EmailID (eg. EBIZZ14_Greyorange_greyorange@gmail.com)</li>
                                     <li>Business plan should be in PDF format.
                                         <br><span style="color:rgb(250,100,50)">Format details:</span> Times New Roman, 12 pt, 1.5 line spacing, 1” margins all around
                                         <br>Business should contain (in brief) –
