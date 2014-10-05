@@ -312,7 +312,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['torque']))
 					       <li>Registration Fees : 1000/- per team</li>
 				        </ul>
                         <br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+918591549337&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+919872497405&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
                         <br /> 
                         <br />
                         *In case of high participation, prelims will be held and the participants will be notified in time.
@@ -436,7 +436,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['tarang']))
                            <li>Registration Fees : 300/- per team</li>
                         </ul> 
                         <br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+918591549337&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+919872497405&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
                         <br /> 
                         <br />
                         *In case of high participation, prelims will be held and the participants will be notified in time.
@@ -537,7 +537,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['smack2']))
                                 <li>Registration Fees : 150/-</li>
                             </ul> 
                             <br />
-                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+918591549337&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
+                        <span class="event-subtitle">Event Coodinator :</span> Sai Harish&nbsp;&nbsp;&nbsp;&nbsp;+919872497405&nbsp;&nbsp;&nbsp;&nbsp;duddelash@iitrpr.ac.in
                         <br />  
                             <br />
                         *In case of high participation, prelims will be held and the participants will be notified in time.
@@ -1994,7 +1994,7 @@ else
                 <button class="event-close" onclick="closing(event)">CLOSE</button>
             </div>
             <div class="event-image">
-                <img src="images/events/z.jpg">
+                <img src="images/events/robotryst.jpg">
             </div>
 
         </div>
