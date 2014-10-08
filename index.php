@@ -277,7 +277,8 @@
             11 October
             </div>
             <div class="register-input-container" style="margin-left:25%">
-                *Nominal Fee might be charged (to be paid on the spot)
+                *Charges per day: Rs 150/- per day (to be paid on the spot)<br>
+                Food is not included in this.
             </div>
             <input type="hidden" name="type" value="accomodate"/>
             <div class="register-input-container">
@@ -311,7 +312,8 @@
             11 October
             </div>
             <div class="register-input-container" style="margin-left:25%">
-                *Nominal Fee might be charged (to be paid on the spot)
+                *Charges per day: Rs 150/- per day (to be paid on the spot)<br>
+                Food is not included in this.
             </div>
             <input type="hidden" name="type" value="update"/>
             <div class="register-input-container">

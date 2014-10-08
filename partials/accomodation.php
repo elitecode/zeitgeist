@@ -26,7 +26,7 @@ if(isset($_SESSION['user_id']))		//checking if the user is logged in, only then 
     <option value="female">Female</option><br>
 
     </select><br>
-    Check the dates you require to stay:<br>
+    Check the dates you require to stay(Rs 150/- per day):<br>
 
 	9 <input type="checkbox" name="date[]" value="9"><br>
 
