@@ -2047,7 +2047,7 @@ else
                             <br /><br />
                             <span class="event-subtitle">Registration Fees :</span>
                             <ul>
-                                <li>1200/- per participant</li>
+                                <li>1000/- per participant</li>
                             </ul>
                             <br />
                             <span class="event-subtitle">Event Coodinator :</span> Mohit Garg&nbsp;&nbsp;&nbsp;&nbsp;+919501652710&nbsp;&nbsp;&nbsp;&nbsp;mohitg@iitrpr.ac.in
@@ -2395,14 +2395,14 @@ if (isset($_SESSION['email']) && isset($_SESSION['apple']))
                                         <li>Presentation Format would be specified to the finalists after the results of the first round are announced</li>
                                     </ul>
                                 <br>
-                                    Last Date to receive business plan pdf: <span style="color:rgb(250,100,50)">7th October, 11:59 pm</span>
+                                    Last Date to receive business plan pdf: <span style="color:rgb(250,100,50)">8th October, 11:59 pm</span>
                                 <br><br>
                                 <span class="event-subtitle">Results :</span>
-                                8th October<br>
+                                9th October<br>
                                 <span class="event-subtitle">Prize :</span>
                                 worth Rs.1500
                                 <br>
-                                <span class="event-subtitle">Event Coodinator :</span> Atri Gulati&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atrig@iitrpr.ac.in
+                                <span class="event-subtitle">Event Coodinator :</span> Aashish Bhardwaj&nbsp;&nbsp;&nbsp;&nbsp;+918591903047&nbsp;&nbsp;&nbsp;&nbsp;aashishbh@iitrpr.ac.in
                                 <br />
                                 
                                 <br />For any further queries, drop an e-mail at support@zeitgeist.org.in
