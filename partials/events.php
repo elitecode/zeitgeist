@@ -2908,7 +2908,12 @@ else
                             at one of the finest games of today's world "FIFA 14". A chance to
                             show the world that you are none less than "Messi" or "Cristiano
                             Ronaldo" when it comes to FIFA 14.
-                            <br /><br />
+                            <br />
+                            PS: Participants should bring their own Controllers.
+                            <br />
+                            <span class="event-subtitle">Participation Fees :</span> 20/- per person
+                            <br />
+                            <br />
                         <span class="event-subtitle">CS 1.6 :</span><br />
                             When it comes to PC games , the most famous game
                             CounterStrike 1.6, inspite of being old , tops the list and even in
@@ -2917,14 +2922,19 @@ else
                             thrill you with the most played game of all time "CounterStrike 1.6"
                             where not only good shooting skills but also the teamwork and best
                             strategy prevails. Are you ready to take on the "Mission Impossible".
-                            <br /><br />
+                            <br />
+                            <span class="event-subtitle">Participation Fees :</span> 100/- per team (5 Members)
+                            <br />
+                            <br />
                         <span class="event-subtitle">AOE II The Conquerors :</span><br />
                             Age of Empires II The Conquerors<br>
                             Patrol all the way to the arena saying "Woolooloo"
                             War is coming, War is coming, are your units ready ?
                             We have Random Map, we have CBA, you will really love the stay
                             Combat at agressive stance, flank the enemy and claim the victory of the day.
-
+                            <br>
+                            <span class="event-subtitle">Participation Fees :</span> 80/- per team (4 Members)
+                            <br />
                     </div>
                 </div>
                 <button class="event-register" onclick="showing(event)">SEE MORE</button>
