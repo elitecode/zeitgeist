@@ -313,7 +313,7 @@
             </div>
             <div class="register-input-container" style="margin-left:25%">
                 *Charges per day: Rs 150/- per day (to be paid on the spot)<br>
-                Food is not included in this.
+                Cloak room will be provided. Food is not included in this.
             </div>
             <input type="hidden" name="type" value="update"/>
             <div class="register-input-container">
