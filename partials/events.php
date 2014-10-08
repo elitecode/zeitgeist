@@ -1311,8 +1311,20 @@ else
                             </li>
                         </ul>
                         <br />
+                         <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 50/- per Participant</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Prizes :</span>
+                        <ul>
+                            <li> Prizes worth 3500/-</li>
+                        </ul>
+                        <br />
                         <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
+                          
+
                         <br />
                         *In case of high participation, prelims will be held and the participants will be notified in time.
                         <!-- <span class="event-subtitle">Prizes :</span>
@@ -1321,11 +1333,7 @@ else
 
 					<li>Runner-up : 500/-</li>
 				</ul> -->
-                        <!-- <span class="event-subtitle">Registration Fees :</span>
-				<ul>
-					<li>Registration Fees: 50 per Participant</li>
-				</ul>	 -->
-
+                        
                     </div>
                 </div>
                 <div>
@@ -1410,6 +1418,16 @@ else
                             </li>
                         </ul>
                         <br />
+                         <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 50/- per Participant</li>
+                        </ul> 
+                        <br />
+                        <span class="event-subtitle">Prizes :</span>
+                        <ul>
+                            <li> Prizes worth 3500/-</li>
+                        </ul>
+
                         <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
 
@@ -1583,6 +1601,16 @@ else
                                     <li>Presentation style: Ways to present ideas, argument and thoughts with good examples.</li>
                                 </ul>
                             </li>
+                        </ul>
+                        <br />
+                         <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 50/- per Participant</li>
+                        </ul> 
+                        <br />
+                         <span class="event-subtitle">Prizes :</span>
+                        <ul>
+                            <li> Prizes worth 3500/-</li>
                         </ul>
                         <br />
                         <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
@@ -1845,6 +1873,16 @@ else
                         <br /><br />
                         <strong style="color:rgb(250,100,50)">Final round:</strong> In the final round, winners of second will go for the final battle in final tiff of ideas.
                         <br /><br />
+                         <span class="event-subtitle">Registration Fees :</span>
+                        <ul>
+                            <li>Registration Fees: 50/- per Participant</li>
+                        </ul>   
+                        <br />
+                         <span class="event-subtitle">Prizes :</span>
+                        <ul>
+                            <li> Prizes worth 3500/-</li>
+                        </ul>
+                        <br />
                         <span class="event-subtitle">Event Coodinator :</span> Sanyam Jain&nbsp;&nbsp;&nbsp;&nbsp;+918288909875&nbsp;&nbsp;&nbsp;&nbsp;sanyamjain@iitrpr.ac.in
                         <br />
                         <br /><br />
@@ -2831,7 +2869,7 @@ else
 
                                 <span class="event-subtitle">Prizes :</span>
                                 <ul>
-                                    <li>Excited prizes and certificates will be given.</li>
+                                    <li>Prizes worth Rs.2200</li>
                                 </ul>
                                 
                                 
